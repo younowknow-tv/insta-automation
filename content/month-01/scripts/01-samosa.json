@@ -1,0 +1,113 @@
+{
+  "id": "01-samosa",
+  "theme": "kitchen-history",
+  "title_hi": "समोसा",
+  "title_en": "Samosa",
+  "hook_archetype": "contrarian",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "समोसा भारत का नहीं है।",
+      "mode": "ANCIENT",
+      "query": "street vendor frying samosas in hot oil",
+      "onscreen": null,
+      "note": "Hold one shot. No cut until beat 2.",
+      "must": "samosa"
+    },
+    {
+      "n": "tension",
+      "t": 3,
+      "line": "जिस चीज़ को हम सबसे ज़्यादा अपना मानते हैं — शाम की चाय के साथ, बारिश में, स्टेशन पर — वो यहाँ की पैदाइश ही नहीं है।",
+      "mode": "MODERN",
+      "query": "samosa and chai indian street food stall",
+      "onscreen": null,
+      "note": "Three quick cuts on चाय / बारिश / स्टेशन.",
+      "kind": "auto",
+      "queries": [
+        "masala chai glass indian tea stall",
+        "monsoon rain street india",
+        "indian railway station train platform"
+      ],
+      "shots": 3
+    },
+    {
+      "n": "journey",
+      "t": 12,
+      "line": "इसका असली नाम है — संबोसग। पुरानी फ़ारसी का शब्द। दसवीं सदी की अरबी किताबों में इसकी रेसिपी मिलती है, और ग्यारहवीं सदी के इतिहासकार बैहक़ी ने इसका ज़िक्र किया है। भारत में ये आया व्यापारियों और दरबारियों के साथ, दिल्ली सल्तनत के दौर में। चौदहवीं सदी में इब्न बतूता मोहम्मद बिन तुग़लक़ के दरबार में था। उसने लिखा — पुलाव से पहले परोसा जाता था। अंदर कीमा, बादाम, पिस्ता, अख़रोट, प्याज़। ऊपर पतली तली हुई परत।",
+      "mode": "ANCIENT",
+      "query": "persian caravan trade route medieval manuscript sultanate court feast",
+      "onscreen": [
+        "संबोसग",
+        "इब्न बतूता · 1334"
+      ],
+      "note": "Slow pushes ~4s each.",
+      "kind": "auto",
+      "queries": [
+        "arabic calligraphy writing manuscript candlelight",
+        "camel caravan crossing desert dunes at sunset",
+        "hawa mahal mughal palace jaipur india",
+        "person putting almonds in a bowl",
+        "person adding seasoning to minced meat"
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "अब सबसे मज़ेदार बात। पंद्रहवीं सदी में मालवा के सुल्तान के लिए एक रेसिपी की किताब लिखी गई — निमतनामा। उसमें आठ तरह के समोसे हैं। हिरन का, पहाड़ी भेड़ का, मलाई का, गुलाबजल और खोए का, नारियल का — मीठा समोसा भी। आठ में से एक में भी आलू नहीं है। क्योंकि आलू तब भारत में था ही नहीं।",
+      "mode": "ANCIENT",
+      "query": "illuminated persian recipe manuscript page gold leaf",
+      "onscreen": [
+        "निमतनामा · 15वीं सदी",
+        "8 समोसे · 0 आलू"
+      ],
+      "note": "The beat the video exists for. Eight labelled cards appear one by one, then dim.",
+      "kind": "auto",
+      "queries": [
+        "turning pages of an old book candlelight",
+        "crispy samosas frying in hot oil",
+        "indian sweets dessert platter close up"
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 70,
+      "line": "आलू पुर्तगालियों के साथ आया, और आम हुआ अंग्रेज़ों के ज़माने में — 1797 के बाद, जब कंपनी मुफ़्त बीज बाँट रही थी। मतलब — आलू का समोसा, जिसे हम हज़ार साल पुराना मानते हैं, अमेरिका देश से भी नया है।",
+      "mode": "MODERN",
+      "query": "raw potatoes sack market",
+      "onscreen": [
+        "1797"
+      ],
+      "note": "Return to the exact opening framing. FINAL SHOT SHOULD BE OWN FOOTAGE: a samosa going into chutney, ASMR. Pin it with \"file\".",
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "hand reaching for potatoes on market stall",
+          "must": "potato"
+        },
+        {
+          "file": "brand/shots/samosa-plate.mp4"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 85,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card. Reuse the same audio file forever."
+    }
+  ],
+  "caption": "समोसा भारत का नहीं है — और 500 साल पुरानी शाही रेसिपी की किताब इसका सबूत है। आठ तरह के समोसे, एक में भी आलू नहीं।",
+  "hashtags": [
+    "#इतिहास",
+    "#समोसा",
+    "#भारतीयखाना",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Aparna Kapadia on the Ni'matnama (British Library) — scroll.in/article/936159 · Potato spread: atlasobscura.com/articles/potato-history-india",
+  "avoid": "Do NOT add the Amir Khusrau ~1300 samosa line. No verifiable source for it."
+}

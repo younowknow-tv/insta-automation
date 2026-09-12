@@ -1,0 +1,13 @@
+.env
+.venv/
+assets/broll/
+assets/voice/
+assets/*.ass
+output/
+__pycache__/
+assets/ig_token.json
+.DS_Store
+
+# own footage + music: large binaries belong in Releases, not git history
+brand/shots/
+brand/music/

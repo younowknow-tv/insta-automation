@@ -1,0 +1,25 @@
+{
+  "id": "05-shunya",
+  "theme": "numbers-and-sky",
+  "title_hi": "शून्य",
+  "title_en": "Zero",
+  "hook_archetype": "contrarian",
+  "duration_target": 90,
+  "beats": [
+    { "n": "hook", "t": 0, "line": "दुनिया के सबसे पुराने शून्य वाली वो ख़बर — ग़लत थी।",
+      "mode": "MODERN", "query": "newspaper headline archive close up", "onscreen": ["2017"], "note": "Strike-through on the headline." },
+    { "n": "tension", "t": 3, "line": "2017 में ऑक्सफ़ोर्ड ने कहा — बख़्शाली पांडुलिपि का शून्य तीसरी सदी का है। दुनिया भर में सुर्ख़ियाँ बनीं। भारत में सबने शेयर किया। और सात साल तक यही सच माना गया।",
+      "mode": "MODERN", "query": "wall of newspaper headlines montage", "onscreen": null, "note": "Accelerating cuts." },
+    { "n": "journey", "t": 12, "line": "लेकिन विद्वानों ने तभी सवाल उठाए। एक ही पांडुलिपि के अलग-अलग पन्नों की तारीख़ें सैकड़ों साल अलग आ रही थीं। और नतीजे बिना पीयर रिव्यू के प्रेस को दे दिए गए थे। 2024 में ऑक्सफ़ोर्ड ने दोबारा जाँच की, और माना कि पहली रिपोर्ट ग़लत थी। नई तारीख़ — करीब नौ सौ से एक हज़ार ईस्वी।",
+      "mode": "ANCIENT", "query": "birch bark manuscript folio ancient document laboratory", "onscreen": ["2024", "901–1032 ई."], "note": null },
+    { "n": "turn", "t": 45, "line": "पर असली बात ये है — भारत का दावा उस ख़बर पर टिका ही नहीं था। ख़ाली जगह का निशान बेबीलोन में भी था, माया सभ्यता में भी। भारत ने जो किया वो अलग था। भारत ने शून्य को एक संख्या माना। 628 ईस्वी में ब्रह्मगुप्त ने ब्रह्मस्फुटसिद्धांत में लिखा — शून्य के साथ जोड़ने पर क्या होता है, घटाने पर क्या, गुणा करने पर क्या। शून्य निशान नहीं रहा। शून्य संख्या बन गया।",
+      "mode": "ANCIENT", "query": "palm leaf manuscript sanskrit mathematics rajasthan desert town", "onscreen": ["ब्रह्मगुप्त · 628 ई."], "note": "Rules appear as clean type." },
+    { "n": "payoff", "t": 70, "line": "और उन्होंने एक ग़लती भी की। लिखा कि शून्य बटा शून्य, शून्य होता है। ये सुधरने में सदियाँ लग गईं। लेकिन ब्रह्मगुप्त को बड़ा बनाने के लिए तीसरी सदी की झूठी तारीख़ की ज़रूरत नहीं है। 628 काफ़ी है।",
+      "mode": "MODERN", "query": "abstract dark background", "onscreen": ["0 ÷ 0", "628"], "note": "Dissolve to just 628. End on the number alone." },
+    { "n": "tag", "t": 85, "line": "हर चीज़ की एक कहानी है।", "mode": "FIXED", "query": null, "onscreen": null, "note": null }
+  ],
+  "caption": "2017 में ऑक्सफ़ोर्ड ने कहा दुनिया का सबसे पुराना शून्य मिल गया। 2024 में उसी ने माना कि तारीख़ ग़लत थी। भारत का असली दावा उस ख़बर पर टिका ही नहीं था।",
+  "hashtags": ["#इतिहास", "#गणित", "#ब्रह्मगुप्त", "#हरचीज़कीएककहानीहै"],
+  "pinned_comment": "स्रोत: Chivall, Lladó-Buisán, Howell & Evison (Oxford, 2024) — ora.ox.ac.uk/objects/uuid:5a6d1dd7-f20c-4209-adb6-33849f5b08f4 · MacTutor: mathshistory.st-andrews.ac.uk/HistTopics/Zero/",
+  "avoid": "Expect pushback. Pin the Oxford 2024 link BEFORE posting — the 2017 version is still live on National Geographic and the Science Museum blog, and people will cite them in good faith."
+}

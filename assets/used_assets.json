@@ -1,0 +1,35 @@
+{
+ "used": [
+  "pexels:10039761",
+  "pexels:13096728",
+  "pexels:27052519",
+  "pexels:31577887",
+  "pexels:34430107",
+  "pexels:34535416",
+  "pexels:34680751",
+  "pexels:35144933",
+  "pexels:35643928",
+  "pexels:35821202",
+  "pexels:37649378",
+  "pexels:6803088",
+  "pexels:7237141",
+  "pexels:29875902",
+  "pexelsphoto:37586244"
+ ],
+ "assets": {
+  "01-samosa-01-00.mp4": "pexels:37649378",
+  "01-samosa-01-01.mp4": "pexels:34430107",
+  "01-samosa-01-02.mp4": "pexels:31577887",
+  "01-samosa-02-00.mp4": "pexels:34680751",
+  "01-samosa-02-01.mp4": "pexels:34535416",
+  "01-samosa-02-02.mp4": "pexels:27052519",
+  "01-samosa-02-03.mp4": "pexels:6803088",
+  "01-samosa-02-04.mp4": "pexels:7237141",
+  "01-samosa-03-00.mp4": "pexels:13096728",
+  "01-samosa-03-01.mp4": "pexels:35821202",
+  "01-samosa-03-02.mp4": "pexels:35144933",
+  "01-samosa-04-00.mp4": "pexels:10039761",
+  "01-samosa-04-01.mp4": "pexels:29875902",
+  "01-samosa-04-01.jpg": "pexelsphoto:37586244"
+ }
+}
