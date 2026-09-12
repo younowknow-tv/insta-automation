@@ -53,11 +53,26 @@ def broll_credit(sid):
     return f"B-roll: {' · '.join(names)}" if names else ""
 
 
+def commons_credits(sid):
+    """CC BY / BY-SA files oblige us to name creator and licence. Museum material
+    is credited in full; stock only needs the blanket provider line."""
+    if not C.LEDGER.exists():
+        return []
+    creds = json.loads(C.LEDGER.read_text()).get("credits", {})
+    return [v for f, v in sorted(creds.items()) if f.startswith(f"{sid}-")]
+
+
 def source_comment(sid, spec):
-    """The pinned comment: the story's sources, then the b-roll credit."""
+    """The pinned comment: the story's sources, then every required credit."""
     body = spec["pinned_comment"].strip()
+    parts = [body]
     credit = broll_credit(sid)
-    full = f"{body}\n\n{credit}" if credit else body
+    if credit:
+        parts.append(credit)
+    cc = commons_credits(sid)
+    if cc:
+        parts.append("\n".join(cc))
+    full = "\n\n".join(parts)
     if len(full) > COMMENT_MAX:
         raise RuntimeError(f"source comment {len(full)} chars, over Instagram's {COMMENT_MAX}")
     return full

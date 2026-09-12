@@ -150,8 +150,9 @@ def build_one(sid: str):
             q    = item["q"] if isinstance(item, dict) else item
             must = item.get("must") if isinstance(item, dict) else b.get("must")
             kind = item.get("kind") if isinstance(item, dict) else None
+            avoid = item.get("avoid") if isinstance(item, dict) else None
             dest = C.ASSETS / "broll" / f"{sid}-{i:02d}-{k:02d}.mp4"
-            src = fetch.clip(q, dest, must, kind or b.get("kind", "video"))
+            src = fetch.clip(q, dest, must, kind or b.get("kind", "video"), avoid)
             if src: got.append(src)
         if not got:
             print(f"  !! beat {i} has no visual — fix the query in the JSON and rerun")

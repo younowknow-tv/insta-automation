@@ -10,7 +10,7 @@ Two lessons from the first render, both of which put the wrong food on screen:
     can therefore name a `must` keyword that has to appear in the result's own
     title, which is the only relevance signal these APIs expose.
 """
-import json, re, requests
+import json, pathlib, re, requests
 from . import config as C
 
 STOP = {"a", "an", "the", "of", "in", "on", "with", "and", "close", "up", "shot",
@@ -21,13 +21,15 @@ def _ledger():
     return json.loads(C.LEDGER.read_text()) if C.LEDGER.exists() else {"used": []}
 
 
-def _remember(uid, dest):
+def _remember(uid, dest, credit=None):
     # Also map file -> uid, so the publisher can credit the providers a given
     # video actually pulled from rather than crediting both every time.
     l = _ledger()
     l["used"].append(uid)
     l.setdefault("assets", {})[dest.name] = uid
-    C.LEDGER.write_text(json.dumps(l, indent=1))
+    if credit:                      # CC BY / BY-SA oblige us to name the source
+        l.setdefault("credits", {})[dest.name] = credit
+    C.LEDGER.write_text(json.dumps(l, indent=1, ensure_ascii=False))
 
 
 def _slug(v):
@@ -47,7 +49,7 @@ def _score(v, query, must):
     return hits * 10 + portrait + min(h, 2160) / 10000
 
 
-def _pexels(q, used, must=None, want=1):
+def _pexels(q, used, must=None, want=1, avoid=None):
     if not C.PEXELS_KEY:
         return []
     r = requests.get("https://api.pexels.com/videos/search",
@@ -59,6 +61,8 @@ def _pexels(q, used, must=None, want=1):
     for v in r.json().get("videos", []):
         uid = f"pexels:{v['id']}"
         if uid in used:
+            continue
+        if avoid and avoid.lower() in _slug(v):
             continue
         s = _score(v, q, must)
         if s < 0:
@@ -77,8 +81,15 @@ def _pexels(q, used, must=None, want=1):
 
 
 def _pixabay(q, used, must=None, want=1):
-    """Pixabay ORs its terms, so without a `must` it happily returns nonsense."""
-    if not C.PIXABAY_KEY:
+    """Pixabay ORs its terms and its tag lists are unreliable.
+
+    Proven in the 02-shampoo render: a clip tagged
+    "torn, balloon, air bubbles, explosion, colors, abstract" satisfied
+    must="shampoo" and landed in the middle of the reveal. So when a beat has
+    declared its subject we skip Pixabay entirely and let the fetch fail loudly
+    — a missing clip is a fixable error, a wrong one ships.
+    """
+    if not C.PIXABAY_KEY or must:
         return []
     r = requests.get("https://pixabay.com/api/videos/",
                      params={"key": C.PIXABAY_KEY, "q": q, "per_page": 30}, timeout=30)
@@ -100,7 +111,7 @@ def _pixabay(q, used, must=None, want=1):
     return out[:want]
 
 
-def _pexels_photos(q, used, must=None, want=1):
+def _pexels_photos(q, used, must=None, want=1, avoid=None):
     """Stills. Far deeper catalogue than video for specific dishes, and `alt`
     gives a real caption to match against instead of a URL slug."""
     if not C.PEXELS_KEY:
@@ -118,6 +129,8 @@ def _pexels_photos(q, used, must=None, want=1):
         desc = f"{p.get('alt','')} {p.get('url','')}".lower()
         if must and must.lower() not in desc:
             continue
+        if avoid and avoid.lower() in desc:
+            continue
         words = {w for w in re.findall(r"[a-z]+", q.lower()) if w not in STOP}
         hits = sum(1 for w in words if w in desc)
         src = p.get("src", {})
@@ -129,13 +142,80 @@ def _pexels_photos(q, used, must=None, want=1):
     return sorted(out, key=lambda c: -c["score"])[:want]
 
 
-def candidates(query, must=None, want=6):
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+COMMONS_UA  = {"User-Agent": "ReelFactory/0.1 (younowknow.tv@gmail.com)"}
+# Only licences we can actually use. Everything here is free to reuse; the
+# CC ones additionally REQUIRE credit, which is why _commons carries `credit`
+# all the way through to the pinned comment.
+FREE_LIC = ("public domain", "pd-", "cc0", "cc by", "cc-by")
+
+
+def _strip(html):
+    """Commons' Artist field often nests the same name in two elements, so
+    stripping tags yields "Unknown authorUnknown author". Collapse the doubling."""
+    t = re.sub(r"<[^>]+>", "", html or "").strip()
+    half = len(t) // 2
+    if t and len(t) % 2 == 0 and t[:half] == t[half:]:
+        t = t[:half]
+    return t
+
+
+def _commons(q, used, must=None, want=1, min_px=900, avoid=None):
+    """Museum and archive material — the artifacts stock libraries do not have.
+
+    Stock has no Gyan Chaupar board and no Bakhshali manuscript; Wikimedia does,
+    photographed by the Ashmolean, the National Museum and the Bodleian. Files
+    vary from 400px to 4700px, so anything too small to fill a 1080x1920 frame
+    is rejected rather than upscaled into mush.
+    """
+    try:
+        r = requests.get(COMMONS_API, headers=COMMONS_UA, timeout=30, params={
+            "action": "query", "format": "json", "generator": "search",
+            "gsrsearch": f"filetype:bitmap {q}", "gsrnamespace": "6", "gsrlimit": 20,
+            "prop": "imageinfo", "iiprop": "url|size|extmetadata",
+            "iiextmetadatafilter": "LicenseShortName|Artist|ImageDescription"})
+    except requests.RequestException:
+        return []
+    if r.status_code != 200:
+        return []
+    out = []
+    for pg in ((r.json().get("query") or {}).get("pages") or {}).values():
+        ii = (pg.get("imageinfo") or [{}])[0]
+        md = ii.get("extmetadata") or {}
+        uid = f"commons:{pg['pageid']}"
+        if uid in used:
+            continue
+        lic = (md.get("LicenseShortName", {}) or {}).get("value", "")
+        if not any(f in lic.lower() for f in FREE_LIC):
+            continue
+        w, h = ii.get("width", 0), ii.get("height", 0)
+        if max(w, h) < min_px:
+            continue
+        title = pg["title"].replace("File:", "")
+        desc  = _strip((md.get("ImageDescription", {}) or {}).get("value", ""))
+        hay   = f"{title} {desc}".lower()
+        if must and must.lower() not in hay:
+            continue
+        if avoid and avoid.lower() in hay:
+            continue
+        words = {x for x in re.findall(r"[a-z]+", q.lower()) if x not in STOP}
+        hits  = sum(1 for x in words if x in hay)
+        artist = _strip((md.get("Artist", {}) or {}).get("value", "")) or "unknown"
+        credit = f"{title} — {artist} ({lic}), via Wikimedia Commons"
+        out.append({"uid": uid, "url": ii["url"], "score": hits * 10 + max(w, h) / 10000,
+                    "title": title[:70], "page": ii.get("descriptionurl", ""),
+                    "size": f"{w}x{h}", "photo": True, "credit": credit,
+                    "headers": COMMONS_UA})
+    return sorted(out, key=lambda c: -c["score"])[:want]
+
+
+def candidates(query, must=None, want=6, avoid=None):
     """Ranked options for a query, for human review before anything downloads."""
     used = set(_ledger()["used"])
-    return _pexels(query, used, must, want) + _pixabay(query, used, must, want)
+    return _pexels(query, used, must, want, avoid) + _pixabay(query, used, must, want)
 
 
-def clip(query: str, dest, must=None, kind="video"):
+def clip(query: str, dest, must=None, kind="video", avoid=None):
     """Download the best unused asset for `query`. Returns path or None.
 
     kind="photo" pulls a still instead; the renderer gives it the same slow push
@@ -147,20 +227,25 @@ def clip(query: str, dest, must=None, kind="video"):
         if cand.exists():
             return cand
     used = set(_ledger()["used"])
-    if kind == "photo":
-        hits = _pexels_photos(query, used, must, want=1)
+    if kind == "commons":
+        hits = _commons(query, used, must, want=1, avoid=avoid)
+    elif kind == "photo":
+        hits = _pexels_photos(query, used, must, want=1, avoid=avoid)
     elif kind == "auto":
         # motion first — a stills sequence reads as a slideshow next to footage
-        hits = candidates(query, must, want=1) or _pexels_photos(query, used, must, want=1)
+        hits = (candidates(query, must, want=1, avoid=avoid)
+                or _pexels_photos(query, used, must, want=1, avoid=avoid))
     else:
-        hits = candidates(query, must, want=1)
+        hits = candidates(query, must, want=1, avoid=avoid)
     if not hits:
         print(f"  !! no clip for: {query}" + (f"  (must contain '{must}')" if must else ""))
         return None
     c = hits[0]
     if c.get("photo"):
-        dest = dest.with_suffix(".jpg")
-    dest.write_bytes(requests.get(c["url"], timeout=180).content)
-    _remember(c["uid"], dest)
+        ext = pathlib.Path(c["url"]).suffix.lower()
+        dest = dest.with_suffix(ext if ext in (".jpg", ".jpeg", ".png", ".webp") else ".jpg")
+    dest.write_bytes(requests.get(c["url"], timeout=180,
+                                  headers=c.get("headers") or {}).content)
+    _remember(c["uid"], dest, c.get("credit"))
     print(f"  b-roll {c['uid']:<20} {c['title'][:48]}")
     return dest

@@ -6,20 +6,148 @@
   "hook_archetype": "cold_date",
   "duration_target": 90,
   "beats": [
-    { "n": "hook", "t": 0, "line": "1892। लंदन। एक खिलौना बनाने वाला एक खेल का पेटेंट कराता है।",
-      "mode": "ANCIENT", "query": "victorian patent document workshop london 1890s", "onscreen": ["लंदन · 1892"], "note": null },
-    { "n": "tension", "t": 3, "line": "बच्चों का खेल। साँप, सीढ़ियाँ, पासा। लेकिन ये खेल उसका बनाया हुआ नहीं था। और असल में ये बच्चों के लिए था ही नहीं।",
-      "mode": "MODERN", "query": "snakes and ladders board game dice rolling", "onscreen": null, "note": "Hard cut to darkness before the Journey." },
-    { "n": "journey", "t": 12, "line": "भारत में इसे कहते थे — ज्ञान चौपड़। मोक्ष पटम। और दक्षिण में परमपद सोपानम। हर ख़ाने पर एक हाल लिखा होता था। माया। क्रोध। लोभ। दया। भक्ति। सीढ़ियाँ अच्छे कर्म थीं, जो ऊपर ले जाती थीं। और साँप बुरे कर्म — जो वापस जन्म और मरण के चक्र में गिरा देते थे। सबसे ऊपर का ख़ाना — मोक्ष।",
-      "mode": "ANCIENT", "query": "painted gyan chaupar moksha patam board indian miniature", "onscreen": ["ज्ञान चौपड़", "मोक्ष"], "note": "Let the camera find the words rather than cutting to them." },
-    { "n": "turn", "t": 45, "line": "हिंदू बोर्ड अक्सर बहत्तर ख़ाने के होते थे। जैन बोर्ड चौरासी के। और पहाड़ी वैष्णव बोर्ड तीन सौ से भी ज़्यादा के। सबसे पुराने बचे हुए बोर्ड सत्रहवीं सदी के मेवाड़ से हैं। और 1780 के आसपास लखनऊ में ईस्ट इंडिया कंपनी के एक अफ़सर ने अपने लिए एक बोर्ड बनवाया। वो आज ब्रिटिश लाइब्रेरी में रखा है। उसमें साँपों के साथ दो बिच्छू भी हैं।",
-      "mode": "ANCIENT", "query": "mewar miniature painting british library manuscript scorpion detail", "onscreen": ["72 · 84 · 300+", "1780 · लखनऊ"], "note": "Push in on the scorpions." },
-    { "n": "payoff", "t": 70, "line": "अंग्रेज़ी संस्करण में बिच्छू हटा दिए गए। ख़ानों के नाम हटा दिए गए। मोक्ष हटा दिया गया। बचे सिर्फ़ साँप और सीढ़ी। कर्म का हिसाब, खिलौना बन गया।",
-      "mode": "MODERN", "query": "plain modern snakes and ladders board flat lay", "onscreen": null, "note": "Elements drop away one by one. Hold the last shot a full second in silence." },
-    { "n": "tag", "t": 85, "line": "हर चीज़ की एक कहानी है।", "mode": "FIXED", "query": null, "onscreen": null, "note": null }
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "1892। लंदन। एक खिलौना बनाने वाला एक खेल का पेटेंट कराता है।",
+      "mode": "ANCIENT",
+      "query": "victorian patent document workshop london 1890s",
+      "onscreen": [
+        "लंदन · 1892"
+      ],
+      "note": null,
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "old patent document paper close up"
+        },
+        {
+          "q": "artisan wood carving workshop craftsmanship"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 3,
+      "line": "बच्चों का खेल। साँप, सीढ़ियाँ, पासा। लेकिन ये खेल उसका बनाया हुआ नहीं था। और असल में ये बच्चों के लिए था ही नहीं।",
+      "mode": "MODERN",
+      "query": "snakes and ladders board game dice rolling",
+      "onscreen": null,
+      "note": "Hard cut to darkness before the Journey.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "board game with dice and pins",
+          "must": "dice"
+        },
+        {
+          "q": "rolling dice on a board game table",
+          "must": "dice"
+        },
+        {
+          "q": "snakes and ladders board game",
+          "kind": "photo",
+          "must": "ladders"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 12,
+      "line": "भारत में इसे कहते थे — ज्ञान चौपड़। मोक्ष पटम। और दक्षिण में परमपद सोपानम। हर ख़ाने पर एक हाल लिखा होता था। माया। क्रोध। लोभ। दया। भक्ति। सीढ़ियाँ अच्छे कर्म थीं, जो ऊपर ले जाती थीं। और साँप बुरे कर्म — जो वापस जन्म और मरण के चक्र में गिरा देते थे। सबसे ऊपर का ख़ाना — मोक्ष।",
+      "mode": "ANCIENT",
+      "query": "painted gyan chaupar moksha patam board indian miniature",
+      "onscreen": [
+        "ज्ञान चौपड़",
+        "मोक्ष"
+      ],
+      "note": "Let the camera find the words rather than cutting to them.",
+      "kind": "commons",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Gyan Chaupar Ashmolean serpents",
+          "must": "gyan"
+        },
+        {
+          "q": "Gyan Chaupar National Museum",
+          "must": "gyan"
+        },
+        {
+          "q": "Gyan chaupar board",
+          "must": "gyan",
+          "avoid": "jain"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "हिंदू बोर्ड अक्सर बहत्तर ख़ाने के होते थे। जैन बोर्ड चौरासी के। और पहाड़ी वैष्णव बोर्ड तीन सौ से भी ज़्यादा के। सबसे पुराने बचे हुए बोर्ड सत्रहवीं सदी के मेवाड़ से हैं। और 1780 के आसपास लखनऊ में ईस्ट इंडिया कंपनी के एक अफ़सर ने अपने लिए एक बोर्ड बनवाया। वो आज ब्रिटिश लाइब्रेरी में रखा है। उसमें साँपों के साथ दो बिच्छू भी हैं।",
+      "mode": "ANCIENT",
+      "query": "mewar miniature painting british library manuscript scorpion detail",
+      "onscreen": [
+        "72 · 84 · 300+",
+        "1780 · लखनऊ"
+      ],
+      "note": "Push in on the scorpions.",
+      "kind": "commons",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Jain gyan chaupar",
+          "must": "gyan"
+        },
+        {
+          "q": "Mewar Bhagavata Purana painting",
+          "must": "mewar"
+        },
+        {
+          "q": "Gyan Chaupad Kangra knowledge game board",
+          "must": "gyan"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 70,
+      "line": "अंग्रेज़ी संस्करण में बिच्छू हटा दिए गए। ख़ानों के नाम हटा दिए गए। मोक्ष हटा दिया गया। बचे सिर्फ़ साँप और सीढ़ी। कर्म का हिसाब, खिलौना बन गया।",
+      "mode": "MODERN",
+      "query": "plain modern snakes and ladders board flat lay",
+      "onscreen": null,
+      "note": "Elements drop away one by one. Hold the last shot a full second in silence.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "snakes and ladders board flat lay",
+          "kind": "photo",
+          "must": "ladders"
+        },
+        {
+          "q": "board game pieces on board close up"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 85,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": null
+    }
   ],
   "caption": "साँप-सीढ़ी बच्चों का खेल नहीं था। ये कर्म और मोक्ष पर एक जैन-हिंदू ध्यान था — अंग्रेज़ी संस्करण ने बस नाम हटा दिए।",
-  "hashtags": ["#इतिहास", "#साँपसीढ़ी", "#भारत", "#हरचीज़कीएककहानीहै"],
+  "hashtags": [
+    "#इतिहास",
+    "#साँपसीढ़ी",
+    "#भारत",
+    "#हरचीज़कीएककहानीहै"
+  ],
   "pinned_comment": "स्रोत: Andrew Topsfield's survey of gyan chaupar boards — scroll.in/article/972864 · MAP Academy via theprint.in",
   "avoid": "Do NOT claim Dnyaneshwar invented it (single 1871 source, no corroboration). Do NOT call the game 'ancient' — no surviving board predates the 17th century."
 }

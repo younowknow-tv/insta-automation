@@ -6,20 +6,151 @@
   "hook_archetype": "question",
   "duration_target": 90,
   "beats": [
-    { "n": "hook", "t": 0, "line": "आप दिन में कितनी चाय पीते हैं?",
-      "mode": "MODERN", "query": "chai being poured into glass steam close up", "onscreen": null, "note": "Warm grade." },
-    { "n": "tension", "t": 3, "line": "अब ये सोचिए — आपके परदादा शायद एक भी नहीं पीते थे। भारत में चाय पीना उतना पुराना नहीं है जितना हम मानते हैं।",
-      "mode": "ANCIENT", "query": "early 20th century indian street scene sepia", "onscreen": null, "note": "Texture change marks the jump back." },
-    { "n": "journey", "t": 12, "line": "1823 में असम में रॉबर्ट ब्रूस को पता चला कि सिंगफो लोग सदियों से चाय उगा रहे हैं, और पी रहे हैं। यानी चाय भारत में थी। लेकिन एक इलाक़े में, एक समुदाय के पास। बाक़ी देश के लिए ये कुछ भी नहीं थी — न रोज़ की चीज़, न आदत।",
-      "mode": "ANCIENT", "query": "assam tea hills camellia plant colonial map", "onscreen": ["असम · 1823"], "note": null },
-    { "n": "turn", "t": 45, "line": "फिर अंग्रेज़ों ने चाय बेचनी शुरू की — भारत को ही। 1903 में टी सेस बिल आया, स्टेशनों पर प्रचार शुरू हुआ, और 1904 तक फेल हो गया। असली मुहिम चली 1930 के दशक में। हावड़ा स्टेशन पर मुफ़्त कप। गाँव-गाँव जाती चाय की वैन। एक पैसे के काग़ज़ी पैकेट। और डेमो — कि चाय अंग्रेज़ी तरीक़े से कैसे बनाई जाती है।",
-      "mode": "ANCIENT", "query": "vintage tea advertisement poster railway platform 1930s promotional van", "onscreen": ["1903", "1930s"], "note": "Montage. Cut faster here." },
-    { "n": "payoff", "t": 70, "line": "और भारत ने वो तरीक़ा नहीं अपनाया। दुकानदारों ने महँगी पत्ती को दूध, चीनी और मसाले में उबाल दिया — सस्ता करने के लिए। टी बोर्ड को ये बिल्कुल पसंद नहीं आया। आज उसी का नाम है — मसाला चाय।",
-      "mode": "MODERN", "query": "masala chai boiling pan spices strainer pour", "onscreen": ["मसाला चाय"], "note": "Land on the same glass as 0:00." },
-    { "n": "tag", "t": 85, "line": "हर चीज़ की एक कहानी है।", "mode": "FIXED", "query": null, "onscreen": null, "note": null }
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "आप दिन में कितनी चाय पीते हैं?",
+      "mode": "MODERN",
+      "query": "chai being poured into glass steam close up",
+      "onscreen": null,
+      "note": "Warm grade.",
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "pouring tea into a glass mug steam",
+          "must": "tea"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 3,
+      "line": "अब ये सोचिए — आपके परदादा शायद एक भी नहीं पीते थे। भारत में चाय पीना उतना पुराना नहीं है जितना हम मानते हैं।",
+      "mode": "ANCIENT",
+      "query": "early 20th century indian street scene sepia",
+      "onscreen": null,
+      "note": "Texture change marks the jump back.",
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "vintage black and white family photographs"
+        },
+        {
+          "q": "close up on old photographs sepia"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 12,
+      "line": "1823 में असम में रॉबर्ट ब्रूस को पता चला कि सिंगफो लोग सदियों से चाय उगा रहे हैं, और पी रहे हैं। यानी चाय भारत में थी। लेकिन एक इलाक़े में, एक समुदाय के पास। बाक़ी देश के लिए ये कुछ भी नहीं थी — न रोज़ की चीज़, न आदत।",
+      "mode": "ANCIENT",
+      "query": "assam tea hills camellia plant colonial map",
+      "onscreen": [
+        "असम · 1823"
+      ],
+      "note": null,
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "lush green tea plantation hillside",
+          "must": "tea"
+        },
+        {
+          "q": "woman picking tea leaves plantation",
+          "must": "tea"
+        },
+        {
+          "q": "Map of Assam",
+          "kind": "commons",
+          "must": "map"
+        },
+        {
+          "q": "tea leaves drying process close up",
+          "must": "tea"
+        },
+        {
+          "q": "misty hills northeast india"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "फिर अंग्रेज़ों ने चाय बेचनी शुरू की — भारत को ही। 1903 में टी सेस बिल आया, स्टेशनों पर प्रचार शुरू हुआ, और 1904 तक फेल हो गया। असली मुहिम चली 1930 के दशक में। हावड़ा स्टेशन पर मुफ़्त कप। गाँव-गाँव जाती चाय की वैन। एक पैसे के काग़ज़ी पैकेट। और डेमो — कि चाय अंग्रेज़ी तरीक़े से कैसे बनाई जाती है।",
+      "mode": "ANCIENT",
+      "query": "vintage tea advertisement poster railway platform 1930s promotional van",
+      "onscreen": [
+        "1903",
+        "1930s"
+      ],
+      "note": "Montage. Cut faster here.",
+      "kind": "auto",
+      "shots": 5,
+      "queries": [
+        {
+          "q": "indian railway station with passing trains",
+          "must": "train"
+        },
+        {
+          "q": "vintage retro advertisement print"
+        },
+        {
+          "q": "crowded indian railway platform passengers",
+          "must": "platform"
+        },
+        {
+          "q": "old printing press letterpress type",
+          "must": "print"
+        },
+        {
+          "q": "pouring tea from kettle into cups",
+          "must": "tea"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 70,
+      "line": "और भारत ने वो तरीक़ा नहीं अपनाया। दुकानदारों ने महँगी पत्ती को दूध, चीनी और मसाले में उबाल दिया — सस्ता करने के लिए। टी बोर्ड को ये बिल्कुल पसंद नहीं आया। आज उसी का नाम है — मसाला चाय।",
+      "mode": "MODERN",
+      "query": "masala chai boiling pan spices strainer pour",
+      "onscreen": [
+        "मसाला चाय"
+      ],
+      "note": "Land on the same glass as 0:00.",
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "indian street vendor cooking chai on roadside",
+          "must": "chai"
+        },
+        {
+          "q": "indian spices cardamom ginger close up"
+        },
+        {
+          "q": "street vendor preparing traditional kolkata chai",
+          "must": "chai"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 85,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": null
+    }
   ],
   "caption": "अंग्रेज़ों ने भारत को चाय पीना सिखाने में सालों लगाए — और भारत ने उसे दूध, चीनी और मसाले में उबाल दिया। मसाला चाय उस मुहिम की नाकामी है।",
-  "hashtags": ["#इतिहास", "#चाय", "#मसालाचाय", "#हरचीज़कीएककहानीहै"],
+  "hashtags": [
+    "#इतिहास",
+    "#चाय",
+    "#मसालाचाय",
+    "#हरचीज़कीएककहानीहै"
+  ],
   "pinned_comment": "स्रोत: Mohona Kanjilal, 'A Taste of Time' — theprint.in excerpt · Wikipedia: History of tea in India",
   "avoid": "Do NOT say tea was unknown in India before the British. The Singpho disprove it — and the Journey beat says so, which is what makes the video trustworthy."
 }

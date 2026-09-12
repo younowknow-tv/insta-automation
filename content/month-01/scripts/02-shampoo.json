@@ -6,25 +6,141 @@
   "hook_archetype": "delayed_reveal",
   "duration_target": 90,
   "beats": [
-    { "n": "hook", "t": 0, "line": "ये शब्द आप हर दिन बोलते हैं, और अंग्रेज़ी समझकर बोलते हैं।",
-      "mode": "MODERN", "query": "unlabelled bottle extreme close up bathroom shelf",
-      "onscreen": null, "note": "Withhold the word. Brand out of focus." },
-    { "n": "tension", "t": 3, "line": "बोतल पर लिखा होता है, विज्ञापन में सुनाई देता है, दुनिया की हर भाषा में पहुँच गया। लेकिन ये शब्द निकला है हिंदी से। शब्द है — शैम्पू।",
-      "mode": "MODERN", "query": "shampoo bottle label close up",
-      "onscreen": ["शैम्पू ← चाँपो ← चाँपना"], "note": "Reveal lands here, ~8s." },
-    { "n": "journey", "t": 12, "line": "चाँपो — चाँपना से। यानी दबाना, मालिश करना। अंग्रेज़ी में ये शब्द 1762 में दर्ज हुआ, और तब इसका मतलब बाल धोना बिल्कुल नहीं था। मतलब था — मालिश। और इसे मशहूर किया एक आदमी ने। नाम — शेख़ दीन मोहम्मद। पैदाइश — पटना, 1759।",
-      "mode": "ANCIENT", "query": "18th century patna street portrait old english dictionary page",
-      "onscreen": ["1762", "पटना · 1759"], "note": null },
-    { "n": "turn", "t": 45, "line": "1794 में उसने अंग्रेज़ी में किताब लिखी — किसी भारतीय की अंग्रेज़ी में लिखी पहली किताब। 1810 में लंदन में हिंदुस्तानी कॉफ़ी हाउस खोला। और 1814 में ब्राइटन जाकर भाप और तेल की मालिश का स्नानघर। अंग्रेज़ इसे कहने लगे — शैम्पूइंग। और दीन मोहम्मद को ख़िताब मिला: किंग जॉर्ज चौथे का शैम्पूइंग सर्जन। जॉर्ज के बाद विलियम चौथे ने भी उसे अपने पास रखा।",
-      "mode": "ANCIENT", "query": "regency brighton seafront victorian bath house royal seal",
-      "onscreen": ["1814 · ब्राइटन", "Shampooing Surgeon"], "note": "Three beats ~7s each." },
-    { "n": "payoff", "t": 70, "line": "बालों वाला मतलब बहुत बाद में आया — करीब 1860 में। उससे पहले तक शैम्पू का मतलब सिर्फ़ एक चीज़ थी — भारतीय मालिश। और वो शब्द आज भी हर बोतल पर लिखा है।",
-      "mode": "MODERN", "query": "shampoo bottle in focus on shelf",
-      "onscreen": ["1860"], "note": "Same framing as 0:00, now labelled." },
-    { "n": "tag", "t": 85, "line": "हर चीज़ की एक कहानी है।", "mode": "FIXED", "query": null, "onscreen": null, "note": null }
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "ये शब्द आप हर दिन बोलते हैं, और अंग्रेज़ी समझकर बोलते हैं।",
+      "mode": "MODERN",
+      "query": "unlabelled bottle extreme close up bathroom shelf",
+      "onscreen": null,
+      "note": "Withhold the word. Brand out of focus.",
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "unlabelled glass bottle on bathroom shelf",
+          "must": "bottle"
+        }
+      ],
+      "shots": 1
+    },
+    {
+      "n": "tension",
+      "t": 3,
+      "line": "बोतल पर लिखा होता है, विज्ञापन में सुनाई देता है, दुनिया की हर भाषा में पहुँच गया। लेकिन ये शब्द निकला है हिंदी से। शब्द है — शैम्पू।",
+      "mode": "MODERN",
+      "query": "shampoo bottle label close up",
+      "onscreen": [
+        "शैम्पू ← चाँपो ← चाँपना"
+      ],
+      "note": "Reveal lands here, ~8s.",
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "refilling a glass bottle with shampoo",
+          "must": "shampoo"
+        }
+      ],
+      "shots": 1
+    },
+    {
+      "n": "journey",
+      "t": 12,
+      "line": "चाँपो — चाँपना से। यानी दबाना, मालिश करना। अंग्रेज़ी में ये शब्द 1762 में दर्ज हुआ, और तब इसका मतलब बाल धोना बिल्कुल नहीं था। मतलब था — मालिश। और इसे मशहूर किया एक आदमी ने। नाम — शेख़ दीन मोहम्मद। पैदाइश — पटना, 1759।",
+      "mode": "ANCIENT",
+      "query": "18th century patna street portrait old english dictionary page",
+      "onscreen": [
+        "1762",
+        "पटना · 1759"
+      ],
+      "note": null,
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "man turning pages of a dictionary",
+          "must": "dictionary"
+        },
+        {
+          "q": "masseuse giving a head massage",
+          "must": "massage"
+        },
+        {
+          "q": "Sake Deen Mahomed lithograph Baynes",
+          "kind": "commons",
+          "must": "mahomed"
+        }
+      ],
+      "shots": 3
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "1794 में उसने अंग्रेज़ी में किताब लिखी — किसी भारतीय की अंग्रेज़ी में लिखी पहली किताब। 1810 में लंदन में हिंदुस्तानी कॉफ़ी हाउस खोला। और 1814 में ब्राइटन जाकर भाप और तेल की मालिश का स्नानघर। अंग्रेज़ इसे कहने लगे — शैम्पूइंग। और दीन मोहम्मद को ख़िताब मिला: किंग जॉर्ज चौथे का शैम्पूइंग सर्जन। जॉर्ज के बाद विलियम चौथे ने भी उसे अपने पास रखा।",
+      "mode": "ANCIENT",
+      "query": "regency brighton seafront victorian bath house royal seal",
+      "onscreen": [
+        "1814 · ब्राइटन",
+        "Shampooing Surgeon"
+      ],
+      "note": "Three beats ~7s each.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Hindoostane Coffee House",
+          "kind": "commons",
+          "must": "hindoostane"
+        },
+        {
+          "q": "Mahomed's Baths Shampooing 1826",
+          "kind": "commons",
+          "must": "mahomed"
+        },
+        {
+          "q": "Sake Dean Mahomed plaque",
+          "kind": "commons",
+          "must": "mahomed"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 70,
+      "line": "बालों वाला मतलब बहुत बाद में आया — करीब 1860 में। उससे पहले तक शैम्पू का मतलब सिर्फ़ एक चीज़ थी — भारतीय मालिश। और वो शब्द आज भी हर बोतल पर लिखा है।",
+      "mode": "MODERN",
+      "query": "shampoo bottle in focus on shelf",
+      "onscreen": [
+        "1860"
+      ],
+      "note": "Same framing as 0:00, now labelled.",
+      "kind": "auto",
+      "queries": [
+        {
+          "q": "cosmetic products in a bottle",
+          "must": "bottle"
+        },
+        {
+          "q": "washing hair with shampoo lather",
+          "must": "hair"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 85,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": null
+    }
   ],
   "caption": "'शैम्पू' अंग्रेज़ी का शब्द नहीं है। ये हिंदी के 'चाँपो' से आया — और इसे मशहूर किया पटना के एक आदमी ने, जो दो अंग्रेज़ राजाओं का शैम्पूइंग सर्जन बना।",
-  "hashtags": ["#इतिहास", "#हिंदी", "#शब्दोंकीकहानी", "#हरचीज़कीएककहानीहै"],
+  "hashtags": [
+    "#इतिहास",
+    "#हिंदी",
+    "#शब्दोंकीकहानी",
+    "#हरचीज़कीएककहानीहै"
+  ],
   "pinned_comment": "स्रोत: etymonline.com/word/shampoo (1762, 1860 datings) · Brighton Museums on Sake Dean Mahomed",
   "avoid": "Do NOT say he introduced the word to English (predates him by ~50 yrs). Do NOT give a year for the royal appointment — no warrant document is cited anywhere."
 }
