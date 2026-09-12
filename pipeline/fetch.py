@@ -10,6 +10,7 @@ Two lessons from the first render, both of which put the wrong food on screen:
     can therefore name a `must` keyword that has to appear in the result's own
     title, which is the only relevance signal these APIs expose.
 """
+import html as _html
 import json, pathlib, re, requests
 from . import config as C
 
@@ -153,7 +154,7 @@ FREE_LIC = ("public domain", "pd-", "cc0", "cc by", "cc-by")
 def _strip(html):
     """Commons' Artist field often nests the same name in two elements, so
     stripping tags yields "Unknown authorUnknown author". Collapse the doubling."""
-    t = re.sub(r"<[^>]+>", "", html or "").strip()
+    t = _html.unescape(re.sub(r"<[^>]+>", "", html or "")).strip()
     half = len(t) // 2
     if t and len(t) % 2 == 0 and t[:half] == t[half:]:
         t = t[:half]

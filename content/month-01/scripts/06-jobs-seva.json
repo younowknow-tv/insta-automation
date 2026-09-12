@@ -1,0 +1,161 @@
+{
+  "id": "06-jobs-seva",
+  "theme": "everyday-words",
+  "title_hi": "स्टीव जॉब्स",
+  "title_en": "Steve Jobs and Seva",
+  "hook_archetype": "delayed_reveal",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "स्टीव जॉब्स 1974 में भारत आए थे — एक बाबा से मिलने। वो बाबा कुछ महीने पहले ही जा चुके थे।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1974"
+      ],
+      "note": "Everyone knows this much. Say it flat, like old news.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "Kainchi Dham ashram",
+          "kind": "commons"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "ये कहानी आपने सुनी होगी। हर जगह यहीं ख़त्म हो जाती है। लेकिन जॉब्स ने उसके बाद जो किया — उसकी बात कोई नहीं करता।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "The turn away from the trending version.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "scrolling through social media on smartphone"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 13,
+      "line": "1973 में नीम करोली बाबा ने एक अमेरिकी डॉक्टर से कहा — दिल्ली जाओ, और चेचक ख़त्म करो। नाम था लैरी ब्रिलियंट। महामारी विज्ञान का कोई अनुभव नहीं। WHO ने पहले मना कर दिया — बड़ी दाढ़ी, सफ़ेद चोगा। फिर बाल कटवाए, सूट पहना, और टीम में शामिल हो गए। 1980 में चेचक दुनिया से मिट गई। इतिहास में ऐसी पहली बीमारी।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1973",
+        "1980"
+      ],
+      "note": "Report what he was told, never whether it was prophecy.",
+      "kind": "auto",
+      "shots": 5,
+      "queries": [
+        {
+          "q": "busy indian market street with rickshaws"
+        },
+        {
+          "q": "World Health Organization headquarters Geneva",
+          "kind": "commons",
+          "must": "health"
+        },
+        {
+          "q": "man with long hair sitting on a barber chair",
+          "must": "barber"
+        },
+        {
+          "q": "a man in a suit adjusting his tie",
+          "must": "suit"
+        },
+        {
+          "q": "Smallpox vaccine",
+          "kind": "commons",
+          "must": "smallpox"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "1978 में ब्रिलियंट और उनकी पत्नी गिरिजा ने एक लेख लिखा। चंदा आना शुरू हुआ। सबसे पहला बड़ा निजी दान था पाँच हज़ार डॉलर। भेजने वाला तब मशहूर नहीं था। नाम — स्टीव जॉब्स। उसी से बनी सेवा फ़ाउंडेशन। फिर जॉब्स ने भेजा एक Apple II, और पाँच मेगाबाइट की हार्ड ड्राइव। साथ में कहा — इतनी मेमोरी तुम कभी इस्तेमाल नहीं कर पाओगे। पाँच मेगाबाइट है!",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "$5,000 · 1978",
+        "5 MB"
+      ],
+      "note": "The beat the video exists for. The five-megabyte line is the laugh.",
+      "kind": "auto",
+      "shots": 4,
+      "queries": [
+        {
+          "q": "a person using a vintage typewriter",
+          "must": "typewriter"
+        },
+        {
+          "q": "Apple II computer",
+          "kind": "commons",
+          "must": "apple"
+        },
+        {
+          "q": "floppy disk 80s computer retro diskette",
+          "must": "floppy"
+        },
+        {
+          "q": "Apple II",
+          "kind": "commons",
+          "must": "apple"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 72,
+      "line": "उस कंप्यूटर पर नेपाल में आँखों के ऑपरेशन का हिसाब रखा गया। वो मशीन तैंतीस साल काठमांडू के एक तहख़ाने में पड़ी रही। 2013 में जॉब्स के परिवार को लौटा दी गई। और सेवा का कहना है — उसके कामों से सात करोड़ से ज़्यादा लोग फिर से देख पाए।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "33 साल",
+        "2013"
+      ],
+      "note": "Land on the number. Hold a beat before the tag.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "a doctor doing an eye examination to his patient",
+          "must": "eye"
+        },
+        {
+          "q": "a room with boxes and a light shining on the floor"
+        },
+        {
+          "q": "cataract eye surgery operation",
+          "must": "eye"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 88,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card. Reuse the same audio file forever."
+    }
+  ],
+  "caption": "स्टीव जॉब्स जिस बाबा से मिलने भारत आए थे, वो पहले ही जा चुके थे। लेकिन उसके बाद जॉब्स ने जो किया — पाँच हज़ार डॉलर, एक Apple II, और सात करोड़ आँखें।",
+  "hashtags": [
+    "#नीमकरोलीबाबा",
+    "#स्टीवजॉब्स",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Seva Foundation history (seva.org) — 1978, Jobs' first $5,000 donation · Seva Canada on the returned Apple II: seva.ca/news/gift-steve-jobs-returns-home · Neem Karoli Baba d. 11 Sept 1973 (Wikipedia) · Larry Brilliant interview, Tricycle",
+  "avoid": "Jobs NEVER met Neem Karoli Baba — he reached India months after the September 1973 death. Do NOT imply a meeting. Do NOT use the '3 million blind people cured' figure (Hollywood Reporter, paywalled, basis unverified) — use Seva's own attributed 72 million eye-care figure instead. Do NOT state his birth name: sources split between 'Lakshman Narayan Sharma' and 'Lakshmi Narayan'. Report the smallpox instruction as what Brilliant says he was told, never as prophecy — Brilliant himself calls it a mystery he cannot explain. Wikipedia and Seva's own site disagree on the founder list, so say 'a group that included', never a definitive list."
+}

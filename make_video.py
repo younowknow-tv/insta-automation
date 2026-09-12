@@ -115,7 +115,9 @@ def build_one(sid: str):
 
     # 3. visuals — a long beat becomes several shots, per its own note
     for i, b in enumerate(beats):
-        if b["mode"] == "FIXED" or not b.get("query"):
+        # a beat may carry EITHER a single `query` or a `queries` list; checking
+        # only `query` sent every queries-only beat into the end-card branch
+        if b["mode"] == "FIXED" or not (b.get("query") or b.get("queries")):
             src = C.ENDCARD
             if not src.exists(): src = clips[-1][0] if clips else None
             if src is None:
