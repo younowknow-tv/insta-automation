@@ -69,9 +69,9 @@
           "must": "boat"
         },
         {
-          "q": "indian bank building reserve bank",
-          "must": "bank",
-          "avoid": "polish"
+          "q": "Reserve Bank of India building",
+          "kind": "commons",
+          "must": "bank"
         }
       ]
     },
@@ -117,9 +117,10 @@
       "shots": 2,
       "queries": [
         {
-          "q": "old indian coins collection",
-          "must": "coins",
-          "avoid": "polish"
+          "q": "antique map of India and Arabia",
+          "kind": "commons",
+          "must": "india",
+          "avoid": "california"
         },
         {
           "q": "indian rupee banknotes spread",

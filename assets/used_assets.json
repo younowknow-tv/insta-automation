@@ -148,9 +148,9 @@
   "pexels:7082895",
   "pexels:36338911",
   "pexels:15534764",
-  "pexels:35012567",
   "pexels:31593748",
-  "pexels:7080902"
+  "commons:111133342",
+  "commons:14675818"
  ],
  "assets": {
   "01-samosa-01-00.mp4": "pexels:37649378",
@@ -299,9 +299,9 @@
   "12-currency-03-00.mp4": "pexels:7082895",
   "12-currency-03-01.mp4": "pexels:36338911",
   "12-currency-04-01.mp4": "pexels:15534764",
-  "12-currency-02-02.mp4": "pexels:35012567",
   "12-currency-03-02.mp4": "pexels:31593748",
-  "12-currency-04-00.mp4": "pexels:7080902"
+  "12-currency-02-02.jpg": "commons:111133342",
+  "12-currency-04-00.jpg": "commons:14675818"
  },
  "credits": {
   "05-shunya-02-00.jpg": "Bakhshali numerals 2.jpg — Augustus Hoernle (1841-1918) (Public domain), via Wikimedia Commons",
@@ -333,6 +333,8 @@
   "10-zip-02-00.jpg": "002 Sundback zipper 1917 patent.jpg — Gideon Sundback (Public domain), via Wikimedia Commons",
   "10-zip-02-02.jpg": "001 Sundback zipper 1917 patent.jpg — Gideon Sundbäck (Public domain), via Wikimedia Commons",
   "11-terahvin-02-00.jpg": "2nd-century CE Sanskrit, Kizil China, Spitzer Manuscript folio 383 fragment recto and verso.jpg — Ms Sarah Welch (CC BY-SA 4.0), via Wikimedia Commons",
-  "12-currency-01-01.jpg": "Persian Gulf, detail from Old Map of Arabia 1851 by Tallis & Rapkin.jpg — John Rapkin (Public domain), via Wikimedia Commons"
+  "12-currency-01-01.jpg": "Persian Gulf, detail from Old Map of Arabia 1851 by Tallis & Rapkin.jpg — John Rapkin (Public domain), via Wikimedia Commons",
+  "12-currency-02-02.jpg": "Tower and building of Reserve Bank of India, Mumbai 01.jpg — Pinakpani (CC BY-SA 4.0), via Wikimedia Commons",
+  "12-currency-04-00.jpg": "1784 D'Anville Wall Map of Asia - Geographicus - Asia-anville-1794.jpg — Jean Baptiste Bourguignon d'Anville (Public domain), via Wikimedia Commons"
  }
 }
