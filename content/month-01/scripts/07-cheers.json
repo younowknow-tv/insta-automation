@@ -1,0 +1,151 @@
+{
+  "id": "07-cheers",
+  "theme": "everyday-words",
+  "title_hi": "चीयर्स",
+  "title_en": "Cheers",
+  "hook_archetype": "question",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "गिलास टकराते वक़्त आप जो शब्द बोलते हैं — उसका मतलब ख़ुशी नहीं है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "A question the viewer thinks they already know.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "people clinking glasses",
+          "must": "clinking"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "और जो कहानी सब सुनाते हैं — कि गिलास इसलिए टकराते थे ताकि ज़हर छलककर दूसरे के गिलास में चला जाए — इतिहासकार कहते हैं, उसका कोई सबूत नहीं है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "State it as what historians say, never as verdict.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "two people clinking glasses over a table",
+          "must": "clinking"
+        },
+        {
+          "q": "pouring wine into a glass close up",
+          "must": "wine"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 13,
+      "line": "ये कहानी सबसे ज़्यादा दोहराई जाती है। मध्ययुगीन यूरोप, राजदरबार, ज़हर का डर। सुनने में एकदम सही लगती है। लेकिन इसका कोई ऐतिहासिक रिकॉर्ड नहीं मिलता — न किसी दस्तावेज़ में, न किसी शिष्टाचार की किताब में। Snopes ने इसे जाँचा और यही पाया।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "ज़हर की कहानी = सबूत नहीं"
+      ],
+      "note": "Do not sneer at the myth. Just show the evidence is absent.",
+      "kind": "auto",
+      "shots": 4,
+      "queries": [
+        {
+          "q": "medieval castle stone hall interior"
+        },
+        {
+          "q": "old handwritten manuscript page candlelight"
+        },
+        {
+          "q": "library old books shelves dim"
+        },
+        {
+          "q": "magnifying glass over printed text",
+          "must": "magnifying"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 42,
+      "line": "अब शब्द की बात। Cheers आया है पुरानी फ़्रेंच के शब्द chiere से — जिसका मतलब था चेहरा। हाव-भाव। तेरहवीं सदी में ये अंग्रेज़ी में आया, और तब इसका मतलब ख़ुशी नहीं, सिर्फ़ चेहरे का भाव था। मतलब बाद में बदला।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "chiere = चेहरा",
+        "13वीं सदी"
+      ],
+      "note": "The actual reveal. Let it sit.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "man turning pages of a dictionary",
+          "must": "dictionary"
+        },
+        {
+          "q": "medieval illuminated manuscript Europe",
+          "kind": "commons",
+          "avoid": "persian"
+        },
+        {
+          "q": "close up of printed text on aged paper",
+          "must": "paper",
+          "avoid": "hindi"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 68,
+      "line": "और टकराने की सबसे मानी हुई वजह? पीने में चार इंद्रियाँ लगती हैं — देखना, सूँघना, चखना, छूना। आवाज़ छूट जाती है। गिलास टकराने से पाँचवीं भी जुड़ जाती है। ज़हर से बचाव नहीं — बस पूरी होती हुई एक आदत।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "4 + 1"
+      ],
+      "note": "Land on the fifth sense. Hold before the tag.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "friends toasting drinks at a table",
+          "must": "toast"
+        },
+        {
+          "q": "women clinking glasses and enjoying drinks",
+          "must": "clinking"
+        },
+        {
+          "q": "champagne glasses clinking celebration",
+          "must": "clinking"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 86,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "गिलास टकराने की ज़हर वाली कहानी का कोई सबूत नहीं है। और 'cheers' का मतलब कभी ख़ुशी था ही नहीं — इसका मतलब था चेहरा।",
+  "hashtags": [
+    "#शब्दोंकीकहानी",
+    "#इतिहास",
+    "#cheers",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Snopes fact-check 'Of Drinks and Clinks' — snopes.com/fact-check/of-drinks-and-clinks · Wikipedia: Clinking glasses · Etymology of 'cheer' from Anglo-French 'chiere' (face/countenance), 13th c.",
+  "avoid": "Do NOT state the poison story as true — historians say there is no evidence, which is different from saying it is definitively false. Do NOT claim a single proven origin for clinking: the sensory, evil-spirit and Greek/Roman health-toast theories all compete and none is settled. Say 'सबसे मानी हुई वजह', never 'असली वजह'. Do NOT mock people who believe the poison story; it is repeated by reputable outlets in good faith."
+}

@@ -154,7 +154,10 @@ FREE_LIC = ("public domain", "pd-", "cc0", "cc by", "cc-by")
 def _strip(html):
     """Commons' Artist field often nests the same name in two elements, so
     stripping tags yields "Unknown authorUnknown author". Collapse the doubling."""
-    t = _html.unescape(re.sub(r"<[^>]+>", "", html or "")).strip()
+    # Commons' Artist field can hold several names separated by newlines, which
+    # sprawls a single credit across five lines of the pinned comment
+    t = _html.unescape(re.sub(r"<[^>]+>", "", html or ""))
+    t = re.sub(r"\s+", " ", t).strip()
     half = len(t) // 2
     if t and len(t) % 2 == 0 and t[:half] == t[half:]:
         t = t[:half]
