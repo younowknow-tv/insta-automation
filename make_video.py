@@ -83,6 +83,10 @@ def build_one(sid: str):
     spec = json.loads((C.SCRIPTS / f"{sid}.json").read_text())
     print(f"\n=== {spec['id']}  ({spec['hook_archetype']}) ===")
     vdir = C.ASSETS / "voice" / sid; vdir.mkdir(parents=True, exist_ok=True)
+    if globals().get("_FRESH"):
+        for w in vdir.glob("*.wav"):
+            w.unlink()
+        print(f"  --fresh: discarded cached voice for {sid}")
 
     # 1. voice, per beat, so a beat's length sets its own visual duration
     beats, clips, all_words, t0 = spec["beats"], [], [], 0.0
@@ -187,9 +191,14 @@ if __name__ == "__main__":
     ap.add_argument("script_id", nargs="?")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--fresh", action="store_true",
+                    help="discard cached voice for this script and re-synthesise. "
+                         "Sarvam can return corrupt audio that caches permanently and "
+                         "is acoustically indistinguishable from a good take.")
     ap.add_argument("--audition", nargs="?", const="", metavar="v1,v2",
                     help="render the tag line in several voices, then stop")
     a = ap.parse_args()
+    _FRESH = a.fresh
     if a.check: sys.exit(0 if check() else 1)
     if a.audition is not None:
         audition([v.strip() for v in a.audition.split(",") if v.strip()] or None)

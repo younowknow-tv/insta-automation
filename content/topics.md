@@ -11,7 +11,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | 07 | why we say "cheers" | everyday-words | **approved** | poison story has no evidence; *chiere* = face |
 | 08 | what "Dolby" actually means | everyday-words | rendered? | a surname; first invention was killing tape hiss |
 | 09 | ganpati visarjan — the immersion | mythology-and-ritual | rendered? | clay was *designed* to dissolve; POP breaks that logic |
-| 10 | who invented the zip | everyday-words | scripted | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
+| 10 | who invented the zip | everyday-words | **approved** | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
 | 11 | तेरहवीं — 13 days after death | mythology-and-ritual | scripted | Garuda Purana puts *sapindikarana* on day **12**, not 13; some observe 12, South India often 16. So 13 is custom, not scripture. **Most sensitive yet** — religious + death. |
 | 12 | why every country has its own currency | money-and-trade | scripted | **Gulf rupee**: RBI issued a separate currency 1959-66 for Bahrain, Kuwait, Muscat & Oman, Qatar, Trucial States. India was the Gulf's central bank. Cause: Indian rupees abroad fuelled gold smuggling home — RBI estimated $92.4m by 1959. |
 
@@ -20,8 +20,8 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 - `kitchen-history` — samosa, chai
 - `everyday-words` — shampoo, saanp-seedhi, jobs-seva, cheers, dolby, zip
 - `numbers-and-sky` — shunya
-- `mythology-and-ritual` — **provisional name, Gaurav to confirm** (visarjan, terahvin)
-- `money-and-trade` — **provisional name, Gaurav to confirm** (gulf rupee)
+- `mythology-and-ritual` — **confirmed by Gaurav 2026-09-13** (visarjan, terahvin)
+- `money-and-trade` — **confirmed by Gaurav 2026-09-13** (gulf rupee)
 
 CLAUDE.md says six to eight stories in one theme plus connective narration and a
 16:9 re-render becomes a long-form episode. So theme assignment is not cosmetic —
@@ -40,3 +40,22 @@ script bandit starts at ~40 videos.
 Spread is healthier now. 12-currency was deliberately written as a cold_date
 open ("1959। भारत सरकार एक नई करेंसी छापती है — जो भारत में नहीं चलेगी।")
 because that archetype had only one entry.
+
+
+## Open — needs topics
+
+Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
+
+Bank target is 15 before daily posting starts. Current: 07-cheers and 10-zip
+approved (2). 08, 09, 11, 12 rendered but held — 09, 11 and 12 have an audio
+fault, 08 awaits a shot swap. **~9 more topics needed.**
+
+## Known issue: audio fault on 09, 11, 12
+
+Gaurav reported disrupted audio from ~0:35 to the end on 09, and audio issues on
+11 and 12. Durations, sample rates and the voice concat all check out clean, so
+it is not truncation. Prime suspect is `brand/music/00-drone-placeholder.mp3` —
+a synthesised test bed, never chosen, measured as inaudible at -22dB — going
+through sidechaincompress plus single-pass loudnorm, whose gain estimate adapts
+as the file runs. That would start a fault partway in and hold it to the end.
+Drone moved to `brand/music-unused/`; 09 re-rendered without it as the test.
