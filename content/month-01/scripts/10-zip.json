@@ -1,0 +1,145 @@
+{
+  "id": "10-zip",
+  "theme": "everyday-words",
+  "title_hi": "ज़िप",
+  "title_en": "The Zip",
+  "hook_archetype": "delayed_reveal",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "आपकी पैंट पर जो चीज़ रोज़ लगती है — उसे चलन में आने में लगभग पचास साल लगे।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Withhold the word 'zip'. Show it, don't name it.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "jeans zipper close up",
+          "must": "zipper"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "1893, शिकागो। विश्व मेले में एक आदमी अपना आविष्कार दिखाता है — जूतों के लिए एक ताला। नाम — क्लैस्प लॉकर। वो ठीक से चलता नहीं। कोई नहीं ख़रीदता।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "शिकागो · 1893"
+      ],
+      "note": "Judson is unillustrated; show the era, not the man.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "Chicago World Fair 1893",
+          "kind": "commons",
+          "must": "chicago"
+        },
+        {
+          "q": "old patent document paper close up"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 14,
+      "line": "बीस साल बाद एक स्वीडिश-अमेरिकी इंजीनियर उसे दोबारा डिज़ाइन करता है। नाम — गिडियन सुंदबैक। उसने हुक हटा दिए, और आमने-सामने फँसने वाले दाँत लगा दिए। 1913 में पेटेंट, फिर 1917 में एक और। अब ये काम करता था। लेकिन कपड़ों पर अब भी कोई नहीं लगाता था।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "सुंदबैक · 1913"
+      ],
+      "note": "Sundback's 1917 patent drawing is on Commons.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Sundback zipper 1917 patent",
+          "kind": "commons",
+          "must": "sundback"
+        },
+        {
+          "q": "zipper teeth macro close up",
+          "must": "zipper"
+        },
+        {
+          "q": "Gideon Sundback zipper patent",
+          "kind": "commons",
+          "must": "sundback"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "1923। एक रबर कंपनी — बी.एफ. गुडरिच — इसे अपने बरसाती जूतों पर लगाती है। और जो आवाज़ आती है, उसी पर उन्होंने जूते का नाम रख दिया। ज़िपर। यानी ज़िपर नाम उस चीज़ का नहीं था। वो जूते का ब्रांड नाम था।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "1923 · Zipper"
+      ],
+      "note": "The beat the video exists for.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "yellow rubber rain boots wellington",
+          "must": "boots"
+        },
+        {
+          "q": "rubber rain boots walking",
+          "must": "rubber"
+        },
+        {
+          "q": "zipper pull being opened",
+          "must": "zipper"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 72,
+      "line": "कपड़ों की दुनिया ने इसे तीस के दशक के आख़िर में जाकर अपनाया। मतलब — जो चीज़ आप बिना सोचे रोज़ खींचते हैं, उसका नाम एक जूते से आया, और आपकी पैंट तक पहुँचने में उसे लगभग आधी सदी लगी।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Return to the opening framing.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "jacket zipper being zipped",
+          "must": "zipper"
+        },
+        {
+          "q": "clothing rack garments shop",
+          "must": "clothing"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 88,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "ज़िप का नाम ज़िप का नाम ही नहीं था — वो एक बरसाती जूते का ब्रांड नाम था। और पैंट तक पहुँचने में उसे लगभग पचास साल लगे।",
+  "hashtags": [
+    "#शब्दोंकीकहानी",
+    "#इतिहास",
+    "#zip",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Whitcomb Judson's clasp locker, 1893 World's Columbian Exposition (Lemelson-MIT) · Gideon Sundback patents 1913 & 1917 · B.F. Goodrich coined 'zipper' for galoshes, 1923 (YKK / Threads Magazine histories)",
+  "avoid": "Do NOT say Judson invented 'the zip' as we know it — his clasp locker was a hook-and-eye shoe fastener that worked poorly. Sundback's interlocking-teeth design is the modern one. Do NOT show a portrait of Judson: no free image of him exists, and a stock 'vintage man' would be a fabrication. Do NOT give a single tidy invention date — that is the whole point of the story."
+}

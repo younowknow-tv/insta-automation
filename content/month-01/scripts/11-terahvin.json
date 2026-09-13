@@ -1,0 +1,137 @@
+{
+  "id": "11-terahvin",
+  "theme": "mythology-and-ritual",
+  "title_hi": "तेरहवीं",
+  "title_en": "The Thirteenth Day",
+  "hook_archetype": "question",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "तेरहवीं तेरहवें दिन ही क्यों होती है?",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Calm and plain. This is a house of mourning, not a puzzle.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "diya oil lamp flame",
+          "must": "diya"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 4,
+      "line": "हम सब जानते हैं कि तेरहवें दिन होती है। लेकिन जिस ग्रंथ का नाम इसके साथ सबसे ज़्यादा लिया जाता है, उसमें संख्या तेरह नहीं है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "State it gently. No triumph.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "marigold garland flowers",
+          "must": "marigold"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 12,
+      "line": "गरुड़ पुराण के अनुसार, मृत्यु के बाद आत्मा प्रेत अवस्था में मानी जाती है — अस्थिर, अधूरी। जो संस्कार उसे पितरों में शामिल करता है, उसे कहते हैं सपिंडीकरण। छह छोटे पिंड और एक बड़ा पिंड — और उन्हें मिला देना। यही वो क्षण है जब प्रेत, पितृ बनता है।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "सपिंडीकरण"
+      ],
+      "note": "Report the text. Attribute belief as belief.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "palm leaf Sanskrit manuscript Brahmi script",
+          "kind": "commons"
+        },
+        {
+          "q": "brass oil lamp burning slowly",
+          "must": "lamp"
+        },
+        {
+          "q": "old handwritten manuscript page",
+          "must": "manuscript"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "और गरुड़ पुराण में ये संस्कार बारहवें दिन बताया गया है। तेरहवें नहीं। तेरहवीं उसके बाद का दिन है — जब परिवार इकट्ठा होता है। और हर जगह तेरह भी नहीं है। कई परंपराओं में बारह। दक्षिण भारत में अक्सर सोलह।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "12 · 13 · 16"
+      ],
+      "note": "The reveal. Do not make it sound like a correction.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Varanasi river ghat morning",
+          "must": "varanasi"
+        },
+        {
+          "q": "diya floating on river water",
+          "must": "diya"
+        },
+        {
+          "q": "marigold petals on water",
+          "must": "marigold"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 72,
+      "line": "तो तेरह ग्रंथ की संख्या नहीं है — वो परंपरा की संख्या है। जो परिवार करते आए हैं, इलाक़े के हिसाब से, पीढ़ी के हिसाब से। और शायद यही सबसे सही बात है — कि ये दिन किताब से नहीं, लोगों से तय हुआ।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "End warm. Custom is not lesser than text.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "diya oil lamp warm light",
+          "must": "diya"
+        },
+        {
+          "q": "river water flowing calm",
+          "must": "river"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 88,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "तेरहवीं तेरहवें दिन होती है — लेकिन गरुड़ पुराण में सपिंडीकरण बारहवें दिन बताया गया है। कहीं बारह, कहीं सोलह। तेरह ग्रंथ की नहीं, परंपरा की संख्या है।",
+  "hashtags": [
+    "#परंपरा",
+    "#तेरहवीं",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Garuda Purana — sapindikarana on the twelfth day · Terahvin & Indian rituals after death (Wikipedia) · regional variation: 12 days in some sampradayas, commonly 16 in South India",
+  "avoid": "RELIGIOUS MATERIAL ABOUT DEATH — the most sensitive script in this project. Frame ONLY as text history and regional custom, NEVER as a verdict on anyone's practice. Do NOT say families doing 13 days are wrong; the closing beat must affirm custom. Do NOT describe Garuda Purana accounts of hell, punishment or the soul's torments — distressing and unnecessary. Do NOT use imagery of funerals, pyres, grieving people or bodies; use diyas, marigolds, river, text. Do NOT state preta/pitru transition as fact — attribute it as what the text describes. Do NOT date the origin of the practice."
+}

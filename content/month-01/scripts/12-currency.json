@@ -1,0 +1,149 @@
+{
+  "id": "12-currency",
+  "theme": "money-and-trade",
+  "title_hi": "गल्फ़ रुपया",
+  "title_en": "The Gulf Rupee",
+  "hook_archetype": "cold_date",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "1959। भारत सरकार एक नई करेंसी छापती है — जो भारत में नहीं चलेगी।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1959"
+      ],
+      "note": "Flat cold open. Let the contradiction sit.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "indian rupee banknote close up",
+          "must": "rupee"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "नाम था — गल्फ़ रुपया। और ये छह जगहों पर असली पैसा था। भारत के बाहर।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Short. Then expand.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "counting currency notes by hand",
+          "must": "counting"
+        },
+        {
+          "q": "old map of Arabia",
+          "kind": "commons",
+          "must": "arabia"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 12,
+      "line": "बहरीन। कुवैत। मस्कट और ओमान। क़तर। और ट्रुशल स्टेट्स — जो आगे चलकर संयुक्त अरब अमीरात बने। इन सब जगहों पर लोग भारतीय रिज़र्व बैंक के छापे नोट इस्तेमाल करते थे। यानी कुछ साल के लिए, भारत का रिज़र्व बैंक खाड़ी का भी बैंक था।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "6 देश"
+      ],
+      "note": "Let the list land slowly.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Dubai skyline city",
+          "must": "skyline"
+        },
+        {
+          "q": "dhow boat arabian gulf harbour",
+          "must": "boat"
+        },
+        {
+          "q": "indian bank building reserve bank",
+          "must": "bank",
+          "avoid": "polish"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "वजह सोने की थी। भारतीय रुपया खाड़ी में खुलेआम चलता था, और उसी के ज़रिए सोना भारत में तस्करी होकर आ रहा था। रिज़र्व बैंक की 1959 की एक रिपोर्ट के मुताबिक़, उस वक़्त तक बानवे करोड़ से ज़्यादा डॉलर का सोना इस तरह आ चुका था। तो एक अलग करेंसी छापी गई — सिर्फ़ खाड़ी के लिए।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "$92.4 मिलियन"
+      ],
+      "note": "The beat the video exists for.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "gold bars stacked",
+          "must": "gold"
+        },
+        {
+          "q": "gold jewellery shop display",
+          "must": "gold"
+        },
+        {
+          "q": "counting indian rupee notes",
+          "must": "rupee",
+          "avoid": "polish"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 74,
+      "line": "1966 तक खाड़ी के देशों ने अपनी करेंसी शुरू कर दी, और गल्फ़ रुपया ख़त्म हो गया। लेकिन बात ये है — हर देश का अपना पैसा होना कोई पुरानी बात नहीं है। ज़्यादातर इतिहास में पैसा सरहदें पार करता रहा है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1966"
+      ],
+      "note": "Land on the bigger idea.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "old indian coins collection",
+          "must": "coins",
+          "avoid": "polish"
+        },
+        {
+          "q": "indian rupee banknotes spread",
+          "must": "rupee"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 88,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "1959 में भारत ने एक करेंसी छापी जो भारत में नहीं चलती थी। गल्फ़ रुपया — बहरीन, कुवैत, क़तर, ओमान और UAE में असली पैसा। वजह? सोने की तस्करी।",
+  "hashtags": [
+    "#इतिहास",
+    "#रुपया",
+    "#गल्फरुपया",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Gulf rupee (Wikipedia) — RBI Amendment Act 1959, circulation 1959-66 in Bahrain, Kuwait, Muscat & Oman, Qatar, Trucial States · Scroll.in: 'When the Reserve Bank of India played central banker in West Asia' · RBI 1959 estimate of smuggled gold",
+  "avoid": "Do NOT say the Gulf states 'used Indian rupees' after 1959 — they used the separate Gulf rupee, which is the point. Do NOT claim India 'controlled' Gulf economies; RBI issued currency, it did not govern. The $92.4m figure is an RBI ESTIMATE of smuggled gold up to 1959 — say estimate. Do NOT give a single end date for all six: they adopted their own currencies at different times up to and past 1966."
+}

@@ -85,18 +85,18 @@
       "shots": 3,
       "queries": [
         {
-          "q": "Ganpati Visarjan Mumbai",
-          "kind": "commons",
-          "must": "visarjan"
+          "q": "clay dissolving in water close up",
+          "must": "clay"
         },
         {
           "q": "white plaster powder mixing",
           "must": "plaster"
         },
         {
-          "q": "Ganesh visarjan immersion",
+          "q": "clay Ganesh Visarjan",
           "kind": "commons",
-          "must": "immersion"
+          "must": "visarjan",
+          "avoid": "procession"
         }
       ]
     },
