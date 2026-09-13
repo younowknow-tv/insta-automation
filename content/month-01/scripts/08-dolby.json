@@ -1,0 +1,151 @@
+{
+  "id": "08-dolby",
+  "theme": "everyday-words",
+  "title_hi": "डॉल्बी",
+  "title_en": "Dolby",
+  "hook_archetype": "question",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "क्या आप जानते हैं — साउंड सिस्टम पर लिखा Dolby का मतलब क्या होता है?",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Ask it flat. Let them realise they don't know.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "home theatre speaker system close up",
+          "must": "speaker"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "ज़्यादातर लोग मानते हैं कि ये किसी टेक्नोलॉजी का नाम है। तेज़ आवाज़, सराउंड साउंड। लेकिन ये किसी चीज़ का नाम है ही नहीं। ये एक आदमी का नाम है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "The first small reveal.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "cinema film projector",
+          "must": "projector"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 13,
+      "line": "रे डॉल्बी। जन्म 1933, पोर्टलैंड। स्कूल के दिनों में ही वो Ampex नाम की कंपनी में काम करने लगे — और दुनिया के पहले वीडियो टेप रिकॉर्डर के इलेक्ट्रॉनिक्स पर काम किया। फिर स्टैनफ़र्ड, फिर कैम्ब्रिज। और 1965 में उन्होंने अपनी कंपनी शुरू की — अमेरिका में नहीं, लंदन में।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "रे डॉल्बी · 1933",
+        "लंदन · 1965"
+      ],
+      "note": "The London detail surprises people.",
+      "kind": "auto",
+      "shots": 4,
+      "queries": [
+        {
+          "q": "vintage reel to reel tape recorder in action",
+          "must": "recorder"
+        },
+        {
+          "q": "a reel to reel tape recorder spinning",
+          "must": "recorder"
+        },
+        {
+          "q": "vintage electronics circuit board close up",
+          "must": "circuit"
+        },
+        {
+          "q": "london red telephone box street",
+          "must": "london"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 45,
+      "line": "और उनका पहला आविष्कार तेज़ आवाज़ नहीं था। उसका उल्टा था। टेप पर एक लगातार सरसराहट रहती थी — वो हिस। 1966 में आया Dolby A, और 1968 में Dolby B — कैसेट के लिए। वही बटन जो आपके पुराने टेप रिकॉर्डर पर लिखा होता था।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1966 · Dolby A",
+        "1968 · Dolby B"
+      ],
+      "note": "The beat the video exists for.",
+      "kind": "auto",
+      "shots": 4,
+      "queries": [
+        {
+          "q": "audio cassette tape close up",
+          "must": "cassette"
+        },
+        {
+          "q": "cassette player deck buttons",
+          "must": "cassette"
+        },
+        {
+          "q": "magnetic tape spooling macro",
+          "must": "tape"
+        },
+        {
+          "q": "vintage stereo hifi equipment knobs",
+          "must": "stereo"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 72,
+      "line": "उससे पहले कैसेट को घटिया माना जाता था — रिकॉर्ड के सामने कहीं नहीं। डॉल्बी बी ने कैसेट को उस बराबरी पर पहुँचा दिया। यानी जिस नाम को हम तेज़ आवाज़ समझते हैं, उसने शुरुआत की थी — आवाज़ हटाने से।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Land on the inversion: it began with silence.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "vinyl record player turntable",
+          "must": "vinyl"
+        },
+        {
+          "q": "stack of audio cassettes",
+          "must": "cassette"
+        },
+        {
+          "q": "cassette tape inserted into player",
+          "must": "cassette"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 88,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "साउंड सिस्टम पर लिखा Dolby किसी टेक्नोलॉजी का नाम नहीं — एक आदमी का नाम है। और उनका पहला आविष्कार तेज़ आवाज़ नहीं, ख़ामोशी थी।",
+  "hashtags": [
+    "#शब्दोंकीकहानी",
+    "#डॉल्बी",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Dolby noise-reduction system (Wikipedia) — Dolby A 1966, Dolby B 1968 · Ray Dolby, Dolby Laboratories founded London 1965 (dolby.com) · Sound On Sound on Dolby NR varieties",
+  "avoid": "Do NOT say Dolby 'invented surround sound' — Dolby Stereo came in 1974, nine years after the company. Do NOT claim Dolby B was the first noise reduction; Dolby A (1966, professional) came first and Dolby B (1968) was the consumer version. Do NOT state the logo's double-D meaning as fact — sources give three competing explanations. Ray Dolby died 12 Sept 2013; do not imply he is living."
+}

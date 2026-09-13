@@ -1,0 +1,149 @@
+{
+  "id": "09-visarjan",
+  "theme": "mythology-and-ritual",
+  "title_hi": "विसर्जन",
+  "title_en": "Visarjan",
+  "hook_archetype": "contrarian",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "मूर्ति को पानी में डालना कोई विदाई नहीं है। वो डिज़ाइन था।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Respectful, not debunking. The tradition is the clever part.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "Ganpati Visarjan",
+          "kind": "commons",
+          "must": "visarjan"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 4,
+      "line": "हर साल विसर्जन होता है। लेकिन एक सवाल कम पूछा जाता है — मूर्ति बनी किस चीज़ की है?",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Turn attention to the material.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "ganesh idol decorated festival",
+          "must": "ganesh"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 11,
+      "line": "परंपरा में मूर्ति नदी किनारे की मिट्टी से बनती थी। शाडू मिट्टी। बिना पकाई हुई। रंग प्राकृतिक। और विसर्जन के बाद वो मिट्टी उसी पानी में लौट जाती थी, जहाँ से आई थी। बनना, और मिट जाना — दोनों एक ही चक्र का हिस्सा थे।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "शाडू मिट्टी"
+      ],
+      "note": "The heart. Slow.",
+      "kind": "auto",
+      "shots": 4,
+      "queries": [
+        {
+          "q": "potter making clay pot on wheel",
+          "must": "potter"
+        },
+        {
+          "q": "potter hands shaping wet clay",
+          "must": "clay"
+        },
+        {
+          "q": "river bank water flowing india",
+          "must": "river"
+        },
+        {
+          "q": "Ganesh idol clay",
+          "kind": "commons",
+          "must": "ganesh"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 42,
+      "line": "यानी मूर्ति का घुल जाना कोई दुर्घटना नहीं थी। वही तो पूरी बात थी। रूप बनता है, रूप मिटता है — और यही विसर्जन कहता है। फिर आया प्लास्टर ऑफ़ पेरिस। सस्ता, हल्का, बारीक। एक दिक़्क़त के साथ — वो घुलता नहीं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "State the material fact. Do not moralise.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Ganpati Visarjan Mumbai",
+          "kind": "commons",
+          "must": "visarjan"
+        },
+        {
+          "q": "white plaster powder mixing",
+          "must": "plaster"
+        },
+        {
+          "q": "Ganesh visarjan immersion",
+          "kind": "commons",
+          "must": "immersion"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 70,
+      "line": "केंद्रीय प्रदूषण नियंत्रण बोर्ड ने इसी पर दिशानिर्देश जारी किए हैं। और कई जगह लोग शाडू मिट्टी की तरफ़ लौट रहे हैं — कुछ मूर्तियों में तो बीज भी होते हैं, जो विसर्जन के बाद उग आते हैं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "CPCB"
+      ],
+      "note": "End on return, not on blame.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "seedling sprouting from soil",
+          "must": "seedling"
+        },
+        {
+          "q": "potter making clay idol by hand",
+          "must": "potter"
+        },
+        {
+          "q": "clean river water flowing",
+          "must": "river"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 86,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "विसर्जन में मूर्ति का घुल जाना कोई दुर्घटना नहीं — वही पूरी बात थी। नदी की मिट्टी, नदी को वापस।",
+  "hashtags": [
+    "#विसर्जन",
+    "#गणपति",
+    "#शाडूमिट्टी",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: CPCB Guidelines for Idol Immersion — cpcb.nic.in · शाडू मिट्टी और प्राकृतिक रंगों की परंपरा पर सामग्री। विसर्जन का अर्थ: सृजन और विसर्जन का चक्र।",
+  "avoid": "RELIGIOUS MATERIAL — frame as material history and ritual meaning, NEVER as verdict on faith. Do NOT tell anyone their POP idol is wrong, sinful or shameful; state the material fact and stop. Do NOT moralise or lecture. Do NOT claim a date or founder for when visarjan began — it is not reliably datable. Do NOT conflate this with Tilak's 1893 public festival, which is a different story. Do NOT say Ganesha 'returns to Kailash' as fact; attribute belief statements as belief."
+}
