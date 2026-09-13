@@ -11,3 +11,4 @@ assets/ig_token.json
 # own footage + music: large binaries belong in Releases, not git history
 brand/shots/
 brand/music/
+brand/music-unused/
