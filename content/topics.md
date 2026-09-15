@@ -60,9 +60,11 @@ beat, payoff on the Talon ad in Esquire's first issue (Autumn 1933). The
 
 Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
 
-Bank target is 15 before daily posting starts. Current: 07, 08, 09, 11
-approved (4). 08, 09, 11, 12 rendered but held — 09, 11 and 12 have an audio
-fault, 08 awaits a shot swap. **~9 more topics needed.**
+Bank target is 15 before daily posting starts. Current (2026-09-15):
+**6** approved and unposted — 05-shunya, 07-cheers, 08-dolby, 10-zip,
+11-terahvin, 12-currency. Posted: 01, 02, 03, 04, 06, 09. **~9 more topics needed.**
+
+05-shunya reminder: pin the Oxford 2024 link BEFORE posting it.
 
 ## Known issue: audio fault on 09, 11, 12
 
