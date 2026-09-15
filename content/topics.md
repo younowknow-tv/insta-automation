@@ -10,10 +10,10 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 |---|---|---|---|---|
 | 07 | why we say "cheers" | everyday-words | **approved** | poison story has no evidence; *chiere* = face |
 | 08 | what "Dolby" actually means | everyday-words | **approved** | a surname; first invention was killing tape hiss |
-| 09 | ganpati visarjan — the immersion | mythology-and-ritual | **approved** | clay was *designed* to dissolve; POP breaks that logic |
-| 10 | who invented the zip | everyday-words | rewritten, awaiting review | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
+| 09 | ganpati visarjan — the immersion | mythology-and-ritual | **posted** | clay was *designed* to dissolve; POP breaks that logic |
+| 10 | who invented the zip | everyday-words | **approved** (rewrite) | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
 | 11 | तेरहवीं — 13 days after death | mythology-and-ritual | **approved** | Garuda Purana puts *sapindikarana* on day **12**, not 13; some observe 12, South India often 16. So 13 is custom, not scripture. **Most sensitive yet** — religious + death. |
-| 12 | why every country has its own currency | money-and-trade | awaiting review | **Gulf rupee**: RBI issued a separate currency 1959-66 for Bahrain, Kuwait, Muscat & Oman, Qatar, Trucial States. India was the Gulf's central bank. Cause: Indian rupees abroad fuelled gold smuggling home — RBI estimated $92.4m by 1959. |
+| 12 | why every country has its own currency | money-and-trade | **approved** | **Gulf rupee**: RBI issued a separate currency 1959-66 for Bahrain, Kuwait, Muscat & Oman, Qatar, Trucial States. India was the Gulf's central bank. Cause: Indian rupees abroad fuelled gold smuggling home — RBI estimated $92.4m by 1959. |
 
 ## Themes in use
 
@@ -49,8 +49,8 @@ Diagnosis: the strongest fact ("zipper" was a boot brand) lands at 45s; before
 it is a march of three inventors and four dates with no stake for the viewer;
 the payoff restates the hook instead of landing somewhere new.
 
-`masters/10-zip.mp4` and `output/10-zip/` hold the SUPERSEDED cut. Clobber both
-when the rewrite is approved — do not post the old one.
+Rewrite approved 2026-09-15; `masters/10-zip.mp4` and `output/10-zip/` now hold
+the new cut (old one clobbered).
 
 Rewritten 2026-09-14: opens on the boot-name reveal, three inventors in one
 beat, payoff on the Talon ad in Esquire's first issue (Autumn 1933). The
