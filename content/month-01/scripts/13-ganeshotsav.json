@@ -1,0 +1,171 @@
+{
+  "id": "13-ganeshotsav",
+  "theme": "mythology-and-ritual",
+  "title_hi": "गणेशोत्सव",
+  "title_en": "Why Ganeshotsav is Maharashtra's",
+  "hook_archetype": "contrarian",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "महाराष्ट्र में गणेशोत्सव इतना बड़ा क्यों है? कई लोग इसका जवाब गणेश जी के भाई कार्तिकेय की कथा में ढूँढते हैं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Open on the viewer's own guess. Respectful — the legend is told properly next.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "artist painting large ganesha statue in workshop",
+          "kind": "video",
+          "must": "ganesha"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 6,
+      "line": "शिव पुराण में कथा है — शर्त लगी कि जो पहले पृथ्वी की परिक्रमा करके लौटेगा, उसका विवाह पहले होगा। कार्तिकेय तुरंत निकल पड़े। गणेश जी ने माता-पिता की परिक्रमा की, और कहा — यही मेरी पृथ्वी है। कार्तिकेय लौटे, तो नाराज़ होकर क्रौंच पर्वत चले गए।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "शिव पुराण"
+      ],
+      "note": "Tell the legend as a story from the text, warmly. Attributed, not asserted.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Parvati Shiva family Pahari",
+          "kind": "commons",
+          "must": "shiva"
+        },
+        {
+          "q": "peacock spreading feathers",
+          "must": "peacock"
+        },
+        {
+          "q": "Kartikeya Modern Period Government Museum Mathura",
+          "kind": "commons",
+          "must": "mathura",
+          "avoid": "mandir"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 26,
+      "line": "दक्षिण भारत में वो आज भी मुरुगन के रूप में बहुत पूजे जाते हैं। कथा सुंदर है — लेकिन ये महाराष्ट्र की बात नहीं करती। और गणेश चतुर्थी तो कर्नाटक, गोवा, तेलंगाना, तमिलनाडु में भी मनाई जाती है। महाराष्ट्र में अलग है — सड़क पर, सबका, सार्वजनिक गणेशोत्सव। और उसकी कहानी इतिहास में है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "सार्वजनिक"
+      ],
+      "note": "The pivot. Never 'the legend is false' — it simply answers a different question.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Palani Murugan Hill Temple",
+          "kind": "commons",
+          "must": "murugan"
+        },
+        {
+          "q": "Ganpati pandal decoration Mumbai",
+          "kind": "photo",
+          "must": "pandal"
+        },
+        {
+          "q": "installing large ganesh idol for festival",
+          "must": "ganesh"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 46,
+      "line": "अठारहवीं सदी में पुणे के पेशवाओं के कुलदेवता गणपति थे, और शनिवार वाड़ा में बड़ा उत्सव होता था। 1818 में पेशवाई ख़त्म हुई, और गणपति फिर घरों के अंदर लौट गए। फिर 1892 और 1893 में पुणे में सार्वजनिक गणपति बैठाए गए — और लोकमान्य तिलक ने अपने अख़बार केसरी में इसे आंदोलन बना दिया।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1893"
+      ],
+      "note": "Do not name a single founder: Rangari 1892 vs Tilak 1893 is disputed.",
+      "kind": "auto",
+      "shots": 4,
+      "queries": [
+        {
+          "q": "Shaniwar Wada",
+          "kind": "commons",
+          "must": "shaniwar"
+        },
+        {
+          "q": "Kesari Wada",
+          "kind": "commons",
+          "must": "kesari"
+        },
+        {
+          "q": "Kasba Ganapati Pune",
+          "kind": "commons",
+          "must": "ganapati"
+        },
+        {
+          "q": "Bal Gangadhar Tilak 1856-1920",
+          "kind": "commons",
+          "must": "1856-1920",
+          "avoid": "railway"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 68,
+      "line": "मंडप, भाषण, मेले — तिलक ने केसरी में लिखा कि ऐसे राष्ट्रीय उत्सवों से वो हो सकता है, जो कांग्रेस नहीं कर पाई। और 2025 में महाराष्ट्र सरकार ने सार्वजनिक गणेशोत्सव को राज्य उत्सव घोषित कर दिया।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "राज्य उत्सव · 2025"
+      ],
+      "note": "Land on the present day, not on politics.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "Dagdusheth Halwai Ganapati Temple decorated",
+          "kind": "commons",
+          "must": "dagdusheth"
+        },
+        {
+          "q": "Ganesha procession",
+          "kind": "commons",
+          "must": "procession",
+          "avoid": "ram"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 86,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "महाराष्ट्र में गणेशोत्सव इतना बड़ा क्यों? कार्तिकेय की कथा सुंदर है — पर जवाब पेशवाओं के पुणे, 1893 और एक अख़बार में है।",
+  "hashtags": [
+    "#गणेशोत्सव",
+    "#गणपतिबप्पामोरया",
+    "#लोकमान्यतिलक",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: शिव पुराण, रुद्र संहिता, कुमार खंड (गणेश-कार्तिकेय विवाह प्रसंग) · Richard Cashman, The Myth of the Lokamanya (UC Press, 1975) · UCLA South Asia Center, 'Ganpati Festival' (Kesari quote, 1894 onwards) · AIR News, 11 Jul 2025: सार्वजनिक गणेशोत्सव राज्य उत्सव घोषित",
+  "avoid": "RELIGIOUS MATERIAL — tell the Shiva Purana story as text, attributed ('शिव पुराण में कथा है'), never as history and never as false. Do NOT say the legend is wrong; say it does not talk about Maharashtra. Do NOT say Ganesh Chaturthi is only Maharashtra's. Do NOT name one founder of the public festival (Bhausaheb Rangari 1892 vs Tilak 1893 is a live dispute). Do NOT claim 'the British banned all gatherings' — weakly sourced. Do NOT use the Shivaji-era claim (unsourced). Tamil tradition places Kartikeya at Palani; Shiva Purana says Krauncha — keep them separate.",
+  "hook_text": [
+    "महाराष्ट्र में ही",
+    "इतना बड़ा क्यों?"
+  ]
+}

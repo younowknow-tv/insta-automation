@@ -14,6 +14,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | 10 | who invented the zip | everyday-words | **approved** (rewrite) | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
 | 11 | तेरहवीं — 13 days after death | mythology-and-ritual | **approved** | Garuda Purana puts *sapindikarana* on day **12**, not 13; some observe 12, South India often 16. So 13 is custom, not scripture. **Most sensitive yet** — religious + death. |
 | 12 | why every country has its own currency | money-and-trade | **approved** | **Gulf rupee**: RBI issued a separate currency 1959-66 for Bahrain, Kuwait, Muscat & Oman, Qatar, Trucial States. India was the Gulf's central bank. Cause: Indian rupees abroad fuelled gold smuggling home — RBI estimated $92.4m by 1959. |
+| 13 | why Ganeshotsav is so big in Maharashtra (Gaurav: "link to Kartikeya?") | mythology-and-ritual | **scripted** | Premise corrected: celebrated in many states; what is Maharashtra's is the *public* festival. Kartikeya race is real text (Shiva Purana, Kumara Khanda ch. 19–20: winner marries first; Skanda leaves "infuriated" for Krauncha) but says nothing about Maharashtra, so it is the hook, not the answer. Answer: Peshwa kuldaivat (Shaniwar Wada) → lost patronage 1818 → public idols 1892 (Rangari) / 1893 (Tilak, Kesari; founder disputed) → state festival 10 Jul 2025. Rejected: Shivaji-era claim (unsourced), "British banned all gatherings" (weak), James Wales 1792 diary (one secondary source). |
 
 ## Themes in use
 
