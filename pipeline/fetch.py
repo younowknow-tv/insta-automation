@@ -22,12 +22,14 @@ def _ledger():
     return json.loads(C.LEDGER.read_text()) if C.LEDGER.exists() else {"used": []}
 
 
-def _remember(uid, dest, credit=None):
+def _remember(uid, dest, credit=None, query=None):
     # Also map file -> uid, so the publisher can credit the providers a given
     # video actually pulled from rather than crediting both every time.
     l = _ledger()
     l["used"].append(uid)
     l.setdefault("assets", {})[dest.name] = uid
+    if query:                       # a cached clip is only valid for this query
+        l.setdefault("queries", {})[dest.name] = query
     if credit:                      # CC BY / BY-SA oblige us to name the source
         l.setdefault("credits", {})[dest.name] = credit
     C.LEDGER.write_text(json.dumps(l, indent=1, ensure_ascii=False))
@@ -219,17 +221,40 @@ def candidates(query, must=None, want=6, avoid=None):
     return _pexels(query, used, must, want, avoid) + _pixabay(query, used, must, want)
 
 
+def _cached(dest, query):
+    """A cached clip is only valid for the query that fetched it.
+
+    The cache used to be keyed by slot position alone, so rewriting a beat
+    served the OLD clips under the NEW narration: 10-zip's rewrite showed the
+    1893 Chicago fair under the hookless-fastener line and a SALE tag under the
+    Esquire line. Legacy entries with no recorded query are kept, so approved
+    reels are not disturbed by this change.
+    """
+    l = _ledger()
+    for cand in sorted(dest.parent.glob(dest.stem + ".*")):
+        rec = l.get("queries", {}).get(cand.name)
+        if rec is None or rec == query:
+            return cand
+        uid = l.get("assets", {}).pop(cand.name, None)
+        if uid:
+            l["used"] = [u for u in l["used"] if u != uid]
+        l.get("credits", {}).pop(cand.name, None)
+        l.get("queries", {}).pop(cand.name, None)
+        C.LEDGER.write_text(json.dumps(l, indent=1, ensure_ascii=False))
+        cand.unlink()
+        print(f"  stale  {cand.name}: fetched for a different query, refetching")
+    return None
+
+
 def clip(query: str, dest, must=None, kind="video", avoid=None):
     """Download the best unused asset for `query`. Returns path or None.
 
     kind="photo" pulls a still instead; the renderer gives it the same slow push
     as footage, which is what makes a stills sequence read as deliberate.
     """
-    if dest.exists():
-        return dest
-    for cand in (dest.parent.glob(dest.stem + ".*")):
-        if cand.exists():
-            return cand
+    hit = _cached(dest, query)
+    if hit:
+        return hit
     used = set(_ledger()["used"])
     if kind == "commons":
         hits = _commons(query, used, must, want=1, avoid=avoid)
@@ -250,6 +275,6 @@ def clip(query: str, dest, must=None, kind="video", avoid=None):
         dest = dest.with_suffix(ext if ext in (".jpg", ".jpeg", ".png", ".webp") else ".jpg")
     dest.write_bytes(requests.get(c["url"], timeout=180,
                                   headers=c.get("headers") or {}).content)
-    _remember(c["uid"], dest, c.get("credit"))
+    _remember(c["uid"], dest, c.get("credit"), query)
     print(f"  b-roll {c['uid']:<20} {c['title'][:48]}")
     return dest
