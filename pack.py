@@ -20,9 +20,10 @@ def pack(sid):
     courtesy = [v for v in mine.values() if v not in must]
 
     d = C.OUTPUT / sid; d.mkdir(exist_ok=True)
-    loose = C.OUTPUT / f"{sid}.mp4"
-    if loose.exists():
-        shutil.move(str(loose), str(d / f"{sid}.mp4"))
+    for name in (f"{sid}.mp4", f"{sid}.raw.mp4"):   # finished reel + its untouched render
+        loose = C.OUTPUT / name
+        if loose.exists():
+            shutil.move(str(loose), str(d / name))
 
     caption = publish.caption_for(spec)
     if must:
@@ -33,6 +34,11 @@ def pack(sid):
     L = [f"{spec['title_hi']}  ({spec['title_en']})",
          f"{sid}   ·   {spec['theme']}   ·   hook: {spec['hook_archetype']}", "",
          "="*60, "CAPTION  —  paste this into Instagram", "="*60, caption, "",
+         "="*60, "COVER", "="*60,
+         ("The opening text is burned into the video from the very first frame:\n  "
+          + "  /  ".join(spec["hook_text"])
+          + "\nIn the Instagram cover picker, choose the FIRST frame."
+          if spec.get("hook_text") else "No opening text on this reel."), "",
          "="*60, "PINNED COMMENT  —  post as a comment, then PIN it",
          "(the API cannot pin; this has to be done by hand)", "="*60,
          publish.source_comment(sid, spec), "",

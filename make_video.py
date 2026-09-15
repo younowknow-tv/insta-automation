@@ -8,7 +8,8 @@ Reel Factory v0 — one script JSON in, one QC-passed MP4 out.
 
 Everything runs locally except Sarvam TTS and the stock-clip APIs.
 """
-import argparse, json, subprocess, sys, shutil
+import argparse, json, os, subprocess, sys, shutil
+import finish
 from pathlib import Path
 from pipeline import config as C, tts, align, fetch, render
 from pipeline.qc import qc
@@ -176,6 +177,11 @@ def build_one(sid: str):
         if (C.BRAND / "music").exists() else None
     out = C.OUTPUT / f"{sid}.mp4"
     render.build(clips, voice, ap, out, music=music)
+    # finishing pass: opening text + flicker into the tagline. The untouched
+    # render is kept as <id>.raw.mp4 so the pass can be re-run safely.
+    raw = out.with_name(f"{sid}.raw.mp4")
+    os.replace(out, raw)
+    finish.finish(sid, raw, out)
 
     dur, mb, fails = qc(out)
     print(f"  -> {out.name}  {dur:.1f}s  {mb:.1f}MB  " +
