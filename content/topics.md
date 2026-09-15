@@ -64,7 +64,7 @@ Bank target is 15 before daily posting starts. Current (2026-09-15):
 **6** approved and unposted — 05-shunya, 07-cheers, 08-dolby, 10-zip,
 11-terahvin, 12-currency. Posted: 01, 02, 03, 04, 06, 09. **~9 more topics needed.**
 
-05-shunya reminder: pin the Oxford 2024 link BEFORE posting it.
+05-shunya reminder: post and pin the Oxford 2024 source comment IMMEDIATELY after publishing, before sharing it.
 
 ## Known issue: audio fault on 09, 11, 12
 

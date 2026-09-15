@@ -22,7 +22,7 @@ print to the terminal when each render finishes — copy those when you post.
 3. `03-chai` — the most personal one; implicates the viewer's own kitchen.
 4. `04-saanp-seedhi` — cold-date opener.
 5. `05-shunya` — corrects a story your audience has proudly shared. Expect
-   pushback, and pin the Oxford 2024 link **before** you post, not after.
+   pushback, and post and pin the Oxford 2024 source comment **immediately** after publishing, before sharing — a comment can't exist before the post does.
 
 ## What's here
 
