@@ -25,11 +25,7 @@ def pack(sid):
         if loose.exists():
             shutil.move(str(loose), str(d / name))
 
-    caption = publish.caption_for(spec)
-    if must:
-        lic = {m.group(1) for v in must for m in [re.search(r"\(([^)]+)\), via", v)] if m}
-        fam = sorted({"CC BY-SA" if "by-sa" in l.lower() else "CC BY" for l in lic})
-        caption += f"\n\nचित्र: Wikimedia Commons ({' / '.join(fam)}) · पूरी सूची पिन किए कमेंट में"
+    caption = publish.caption_with_credits(sid, spec)   # same function the API post uses
 
     L = [f"{spec['title_hi']}  ({spec['title_en']})",
          f"{sid}   ·   {spec['theme']}   ·   hook: {spec['hook_archetype']}", "",
