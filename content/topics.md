@@ -75,3 +75,19 @@ a synthesised test bed, never chosen, measured as inaudible at -22dB — going
 through sidechaincompress plus single-pass loudnorm, whose gain estimate adapts
 as the file runs. That would start a fault partway in and hold it to the end.
 Drone moved to `brand/music-unused/`; 09 re-rendered without it as the test.
+
+## Opening text (hook_text) — approved by Gaurav 2026-09-15
+
+Burned in by finish.py from frame 0; the cover is the first frame.
+
+| Reel | Opening text |
+|---|---|
+| 05-shunya | सबसे पुराना शून्य? / वो ख़बर ग़लत थी |
+| 07-cheers | Cheers का मतलब / ख़ुशी नहीं है |
+| 08-dolby | Dolby का मतलब / क्या होता है? |
+| 10-zip | ज़िप का असली नाम / क्या था? |
+| 11-terahvin | तेरहवीं / तेरहवें दिन ही क्यों? |
+| 12-currency | भारत का पैसा / जो भारत में नहीं चला |
+
+Every future script needs a `hook_text` before render; I propose, Gaurav approves.
+
