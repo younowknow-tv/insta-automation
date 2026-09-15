@@ -20,7 +20,7 @@ import json, os, re, subprocess, sys, tempfile
 from pathlib import Path
 from pipeline import config as C
 
-MAX_PX, READABLE_PX = 170, 120      # font size cap, and the floor below which we flag
+MAX_PX, READABLE_PX = 220, 140      # font size cap (170 read small on a phone), and the floor below which we flag
 SAFE_W = 1080 - 2 * 80              # brand/style.md: 80px left/right safe margins
 ACCENT = "&H0000D7FF&"              # gold, BGR order — ASS colours are &HBBGGRR
 
