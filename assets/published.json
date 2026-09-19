@@ -46,5 +46,13 @@
   "at": "2026-09-15T14:27:23.051571+00:00",
   "pinned": null,
   "how": "posted by hand from output/<id>/ — not via publish.py"
+ },
+ "05-shunya": {
+  "media_id": "17988591105045699",
+  "permalink": "https://www.instagram.com/reel/DdejWt9Al7c/",
+  "comment_id": "18102451817359869",
+  "at": "2026-09-19T17:32:12.209181+00:00",
+  "pinned": false,
+  "how": "publish.py"
  }
 }
