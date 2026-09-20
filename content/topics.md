@@ -14,7 +14,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | 10 | who invented the zip | everyday-words | **approved** (rewrite) | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
 | 11 | तेरहवीं — 13 days after death | mythology-and-ritual | **approved** | Garuda Purana puts *sapindikarana* on day **12**, not 13; some observe 12, South India often 16. So 13 is custom, not scripture. **Most sensitive yet** — religious + death. |
 | 12 | why every country has its own currency | money-and-trade | **approved** | **Gulf rupee**: RBI issued a separate currency 1959-66 for Bahrain, Kuwait, Muscat & Oman, Qatar, Trucial States. India was the Gulf's central bank. Cause: Indian rupees abroad fuelled gold smuggling home — RBI estimated $92.4m by 1959. |
-| 13 | why Ganeshotsav is so big in Maharashtra (Gaurav: "link to Kartikeya?") | mythology-and-ritual | **approved** 2026-09-15 | Premise corrected: celebrated in many states; what is Maharashtra's is the *public* festival. Kartikeya race is real text (Shiva Purana, Kumara Khanda ch. 19–20: winner marries first; Skanda leaves "infuriated" for Krauncha) but says nothing about Maharashtra, so it is the hook, not the answer. Answer: Peshwa kuldaivat (Shaniwar Wada) → lost patronage 1818 → public idols 1892 (Rangari) / 1893 (Tilak, Kesari; founder disputed) → state festival 10 Jul 2025. Rejected: Shivaji-era claim (unsourced), "British banned all gatherings" (weak), James Wales 1792 diary (one secondary source). **Rewrite 2026-09-15:** Gaurav wants NO politics, so Tilak/Kesari/Congress quote/2025 state festival are cut. He also asked whether Ganesha came to meet Kartikeya in Maharashtra — no source found; tradition puts Krauncha at Srisailam (Andhra), Palani in Tamil tradition. Real Maharashtra link used instead: Morgaon Mayureshwar — Ganesha Purana (Grimes 1995) has Ganesha ride the peacock, then give it to Skanda. Then Peshwa patronage (Feldhaus 2003) → 1890s public mandaps. |
+| 13 | why Ganeshotsav is so big in Maharashtra (Gaurav: "link to Kartikeya?") | mythology-and-ritual | **posted** 2026-09-20 | Premise corrected: celebrated in many states; what is Maharashtra's is the *public* festival. Kartikeya race is real text (Shiva Purana, Kumara Khanda ch. 19–20: winner marries first; Skanda leaves "infuriated" for Krauncha) but says nothing about Maharashtra, so it is the hook, not the answer. Answer: Peshwa kuldaivat (Shaniwar Wada) → lost patronage 1818 → public idols 1892 (Rangari) / 1893 (Tilak, Kesari; founder disputed) → state festival 10 Jul 2025. Rejected: Shivaji-era claim (unsourced), "British banned all gatherings" (weak), James Wales 1792 diary (one secondary source). **Rewrite 2026-09-15:** Gaurav wants NO politics, so Tilak/Kesari/Congress quote/2025 state festival are cut. He also asked whether Ganesha came to meet Kartikeya in Maharashtra — no source found; tradition puts Krauncha at Srisailam (Andhra), Palani in Tamil tradition. Real Maharashtra link used instead: Morgaon Mayureshwar — Ganesha Purana (Grimes 1995) has Ganesha ride the peacock, then give it to Skanda. Then Peshwa patronage (Feldhaus 2003) → 1890s public mandaps. |
 
 ## Themes in use
 
@@ -62,9 +62,9 @@ beat, payoff on the Talon ad in Esquire's first issue (Autumn 1933). The
 Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
 
 Bank target is 15 before daily posting starts. Current (2026-09-15):
-**6** approved and unposted — 07-cheers, 08-dolby, 10-zip, 11-terahvin,
-12-currency, 13-ganeshotsav. Posted: 01, 02, 03, 04, 06, 09, and 05 (first API post,
-2026-09-15). **~9 more topics needed.**
+**5** approved and unposted — 07-cheers, 08-dolby, 10-zip, 11-terahvin,
+12-currency. Posted: 01, 02, 03, 04, 06, 09, 05 (first API post, reposted 2026-09-19)
+and 13 (2026-09-20). **~10 more topics needed.**
 
 ## Known issue: audio fault on 09, 11, 12
 
