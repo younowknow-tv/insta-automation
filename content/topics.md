@@ -8,7 +8,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 
 | # | Topic | Theme | Status | Notes |
 |---|---|---|---|---|
-| 07 | why we say "cheers" | everyday-words | **approved** | poison story has no evidence; *chiere* = face |
+| 07 | why we say "cheers" | everyday-words | **posted** 2026-09-27 | poison story has no evidence; *chiere* = face |
 | 08 | what "Dolby" actually means | everyday-words | **approved** | a surname; first invention was killing tape hiss |
 | 09 | ganpati visarjan — the immersion | mythology-and-ritual | **posted** | clay was *designed* to dissolve; POP breaks that logic |
 | 10 | who invented the zip | everyday-words | **approved** (rewrite) | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
@@ -62,9 +62,9 @@ beat, payoff on the Talon ad in Esquire's first issue (Autumn 1933). The
 Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
 
 Bank target is 15 before daily posting starts. Current (2026-09-15):
-**5** approved and unposted — 07-cheers, 08-dolby, 10-zip, 11-terahvin,
+**4** approved and unposted — 08-dolby, 10-zip, 11-terahvin,
 12-currency. Posted: 01, 02, 03, 04, 06, 09, 05 (first API post, reposted 2026-09-19)
-and 13 (2026-09-20). **~10 more topics needed.**
+13 (2026-09-20) and 07 (2026-09-27). **~11 more topics needed.**
 
 ## Known issue: audio fault on 09, 11, 12
 
