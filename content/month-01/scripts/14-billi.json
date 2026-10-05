@@ -26,8 +26,8 @@
     },
     {
       "n": "tension",
-      "t": 5,
-      "line": "इस डर की एक तारीख़ है। 1233 में पोप ग्रेगरी नवें ने जर्मनी भेजी एक चिट्ठी में एक पंथ का ज़िक्र किया, जिसमें एक काली बिल्ली की पूजा बताई गई थी। यूरोप में काली बिल्ली यहीं से जादू-टोने के साथ जुड़ गई। और जो अक्सर कहा जाता है कि इसी वजह से बिल्लियाँ मारी गईं और प्लेग फैला — इतिहासकार उसे नहीं मानते। प्लेग पहले भी आता रहा था।",
+      "t": 16,
+      "line": "इस डर की एक तारीख़ है। 1233 में पोप ग्रेगरी नवें की एक चिट्ठी में एक पंथ का ज़िक्र था, जिसमें काली बिल्ली की पूजा बताई गई। यूरोप में काली बिल्ली यहीं से जादू-टोने से जुड़ गई। और प्लेग वाली कहानी? इतिहासकार उसे नहीं मानते।",
       "mode": "MODERN",
       "query": null,
       "onscreen": [
@@ -56,8 +56,8 @@
     },
     {
       "n": "turn",
-      "t": 30,
-      "line": "अब दूसरी तरफ़ देखिए। ब्रिटेन और आयरलैंड के नाविक जहाज़ पर काली बिल्ली रखते थे — शुभ मानकर। मछुआरों की पत्नियाँ घर में काली बिल्ली पालती थीं, इस उम्मीद में कि पति सुरक्षित लौटें। और जापान में काली बिल्ली आज भी शुभ मानी जाती है। यानी वही बिल्ली — कहीं अशुभ, कहीं शुभ।",
+      "t": 32,
+      "line": "ब्रिटेन और आयरलैंड के नाविक जहाज़ पर काली बिल्ली शुभ मानकर रखते थे — और मछुआरों की पत्नियाँ घर में, ताकि पति सुरक्षित लौटें। जापान में काली बिल्ली आज भी शुभ है। वही बिल्ली — कहीं अशुभ, कहीं शुभ।",
       "mode": "MODERN",
       "query": null,
       "onscreen": [
@@ -86,8 +86,8 @@
     },
     {
       "n": "journey",
-      "t": 52,
-      "line": "और भारत में? यहाँ बिल्ली — मार्जार — देवी षष्ठी का वाहन है। वो देवी, जो बच्चों की रक्षक मानी जाती हैं और पूर्वी भारत में बच्चे के जन्म के छठे दिन पूजी जाती हैं। पुरानी छवियों में वो बिल्ली पर सवार दिखती हैं। और छठी सदी में वराहमिहिर की बृहत्संहिता में शकुन का पूरा शास्त्र लिखा गया — वहाँ बिल्ली पश्चिम दिशा से जुड़ी बताई गई है। अशुभ नहीं।",
+      "t": 48,
+      "line": "और भारत में बिल्ली — मार्जार — देवी षष्ठी का वाहन है, जो बच्चों की रक्षक मानी जाती हैं। छठी सदी की बृहत्संहिता में शकुन का पूरा शास्त्र है — वहाँ भी बिल्ली अशुभ नहीं, पश्चिम दिशा से जुड़ी बताई गई है।",
       "mode": "ANCIENT",
       "query": null,
       "onscreen": [
@@ -115,15 +115,45 @@
       ]
     },
     {
+      "n": "evidence",
+      "t": 64,
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "7,500 बनाम 7,800"
+      ],
+      "line": "तो जाँच क्या कहती है? बिल्ली पर आँकड़े किसी ने नहीं रखे। लेकिन एक और अपशकुन — शुक्रवार तेरह — पर रखे गए। डच बीमा आँकड़ों में उस दिन दुर्घटनाएँ औसत शुक्रवार से कम निकलीं, ज़्यादा नहीं। और 'लकी' चीज़ों पर हुए प्रयोग जब दोहराए गए, नतीजे में कोई फ़र्क़ नहीं मिला — लोगों को बस ख़ुद भाग्यशाली महसूस हुआ।",
+      "note": "The beat Gaurav asked for: an open question is fine, but it must rest on counted evidence.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "calendar page close up",
+          "kind": "video",
+          "must": "calendar"
+        },
+        {
+          "q": "cars traffic on city street",
+          "kind": "video",
+          "must": "traffic"
+        },
+        {
+          "q": "golf ball on green grass",
+          "kind": "video",
+          "must": "golf"
+        }
+      ]
+    },
+    {
       "n": "payoff",
-      "t": 78,
-      "line": "अब नुक़सान की बात। 2020 में एक अमेरिकी शेल्टर की लगभग आठ हज़ार बिल्लियों पर हुए अध्ययन में, काली बिल्लियों को गोद सबसे कम लिया गया। असर बहुत बड़ा नहीं था, पर दिशा साफ़ थी। यानी इस मान्यता से नुक़सान हुआ है, तो बिल्ली का।",
+      "t": 80,
+      "line": "यानी असर दुनिया पर नहीं, मन पर पड़ता है। और एक असर बिल्लियों पर — 2020 में एक अमेरिकी शेल्टर की लगभग आठ हज़ार बिल्लियों के अध्ययन में, काली बिल्लियों को गोद सबसे कम लिया गया। डर किसी और का, क़ीमत बिल्ली की।",
       "mode": "MODERN",
       "query": null,
       "onscreen": [
         "7,983 बिल्लियाँ"
       ],
-      "note": "Land the cost on the cat, not on the believer. Do not overstate the study.",
+      "note": "Verdict first, then the cost. Do not overstate the shelter study.",
       "kind": "auto",
       "shots": 2,
       "queries": [
@@ -141,7 +171,7 @@
     },
     {
       "n": "tag",
-      "t": 95,
+      "t": 96,
       "line": "हर चीज़ की एक कहानी है।",
       "mode": "FIXED",
       "query": null,
@@ -156,8 +186,8 @@
     "#इतिहास",
     "#हरचीज़कीएककहानीहै"
   ],
-  "pinned_comment": "स्रोत: Vox in Rama (1233), पोप ग्रेगरी IX — Wikipedia · 'Cats in the Middle Ages', World History Encyclopedia — प्लेग से जोड़ने वाला दावा इतिहासकार नहीं मानते · Black cat (Wikipedia) — ब्रिटेन/आयरलैंड के नाविक, जापान · Shashthi (Wikipedia) — बिल्ली (मार्जार) देवी का वाहन · बृहत्संहिता, अध्याय 86, श्लोक 22 (wisdomlib) · Carini, Sinski & Weber, 'Coat Color and Cat Outcomes in an Urban U.S. Shelter', Animals 10(10):1720 (2020) — 7,983 बिल्लियाँ",
-  "avoid": "Do NOT mock anyone who follows this belief — ask, show, and let the viewer decide. NO POLITICS. Do NOT say Vox in Rama ordered cats to be killed, and do NOT repeat the claim that it caused the Black Death — historians reject it. Do NOT claim Sanskrit texts call a cat crossing unlucky: Brihat Samhita 86.22 lists the cat among creatures strong in the WEST, not as an evil omen. Do NOT tie black cats to Shani as if it were textual — that is a modern popular claim with weak sourcing. Do NOT overstate the shelter study: one US shelter, 2010-11 data, the authors call the effect weak. Do NOT state as fact that black cats are least adopted everywhere — other studies conflict.",
+  "pinned_comment": "स्रोत: Vox in Rama (1233), पोप ग्रेगरी IX — Wikipedia · 'Cats in the Middle Ages', World History Encyclopedia — प्लेग से जोड़ने वाला दावा इतिहासकार नहीं मानते · Black cat (Wikipedia) — ब्रिटेन/आयरलैंड के नाविक, जापान · Shashthi (Wikipedia) — बिल्ली (मार्जार) देवी का वाहन · बृहत्संहिता, अध्याय 86, श्लोक 22 (wisdomlib) · Carini, Sinski & Weber, 'Coat Color and Cat Outcomes in an Urban U.S. Shelter', Animals 10(10):1720 (2020) — 7,983 बिल्लियाँ · Friday the 13th: Dutch Centre for Insurance Statistics (2008) — उस दिन कम दुर्घटनाएँ · Calin-Jageman & Caldwell, 'Replication of the Superstition and Performance Study by Damisch et al.', Social Psychology (2014) — 'लकी' असर दोहराने पर नहीं मिला",
+  "avoid": "Do NOT mock anyone who follows this belief — ask, show, and let the viewer decide. NO POLITICS. Do NOT say Vox in Rama ordered cats to be killed, and do NOT repeat the claim that it caused the Black Death — historians reject it. Do NOT claim Sanskrit texts call a cat crossing unlucky: Brihat Samhita 86.22 lists the cat among creatures strong in the WEST, not as an evil omen. Do NOT tie black cats to Shani as if it were textual — that is a modern popular claim with weak sourcing. Do NOT overstate the shelter study: one US shelter, 2010-11 data, the authors call the effect weak. Do NOT state as fact that black cats are least adopted everywhere — other studies conflict. Do NOT say 'studies show a cat crossing is harmless' — no one has studied cats; say plainly that no data exists for cats, and cite Friday the 13th as the omen that WAS counted. Do NOT claim the lucky-charm effect is real: the 2010 result failed replication in 2014; only the FEELING of luck differed.",
   "hook_text": [
     "बिल्ली रास्ता काटे",
     "तो क्या होता है?"
