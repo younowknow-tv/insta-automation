@@ -1,0 +1,165 @@
+{
+  "id": "14-billi",
+  "theme": "mythology-and-ritual",
+  "title_hi": "बिल्ली का रास्ता काटना",
+  "title_en": "The black cat crossing",
+  "hook_archetype": "question",
+  "duration_target": 90,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "बिल्ली रास्ता काट जाए — तो हम रुक जाते हैं। लेकिन क्या सच में इसमें कुछ अशुभ है?",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Ask, do not mock. The viewer has done this.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "cat crossing street",
+          "kind": "video",
+          "must": "crossing"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "इस डर की एक तारीख़ है। 1233 में पोप ग्रेगरी नवें ने जर्मनी भेजी एक चिट्ठी में एक पंथ का ज़िक्र किया, जिसमें एक काली बिल्ली की पूजा बताई गई थी। यूरोप में काली बिल्ली यहीं से जादू-टोने के साथ जुड़ गई। और जो अक्सर कहा जाता है कि इसी वजह से बिल्लियाँ मारी गईं और प्लेग फैला — इतिहासकार उसे नहीं मानते। प्लेग पहले भी आता रहा था।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1233"
+      ],
+      "note": "State the document, then kill the plague myth politely.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "black cat walking in a green field",
+          "kind": "video",
+          "must": "black"
+        },
+        {
+          "q": "Franciscan miscellany in Latin with some Italian",
+          "kind": "commons",
+          "must": "miscellany"
+        },
+        {
+          "q": "closeup video of a black cat",
+          "kind": "video",
+          "must": "black"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 30,
+      "line": "अब दूसरी तरफ़ देखिए। ब्रिटेन और आयरलैंड के नाविक जहाज़ पर काली बिल्ली रखते थे — शुभ मानकर। मछुआरों की पत्नियाँ घर में काली बिल्ली पालती थीं, इस उम्मीद में कि पति सुरक्षित लौटें। और जापान में काली बिल्ली आज भी शुभ मानी जाती है। यानी वही बिल्ली — कहीं अशुभ, कहीं शुभ।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "वही बिल्ली"
+      ],
+      "note": "The pivot: the belief is about people, not about cats.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Sailors surround the ship's cat Convoy",
+          "kind": "commons",
+          "must": "cat"
+        },
+        {
+          "q": "sailors on deck of historical sailing ship",
+          "kind": "video",
+          "must": "sailing"
+        },
+        {
+          "q": "charming japanese maneki neko cat in store",
+          "kind": "video",
+          "must": "maneki"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 52,
+      "line": "और भारत में? यहाँ बिल्ली — मार्जार — देवी षष्ठी का वाहन है। वो देवी, जो बच्चों की रक्षक मानी जाती हैं और पूर्वी भारत में बच्चे के जन्म के छठे दिन पूजी जाती हैं। पुरानी छवियों में वो बिल्ली पर सवार दिखती हैं। और छठी सदी में वराहमिहिर की बृहत्संहिता में शकुन का पूरा शास्त्र लिखा गया — वहाँ बिल्ली पश्चिम दिशा से जुड़ी बताई गई है। अशुभ नहीं।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "मार्जार"
+      ],
+      "note": "The Indian anchor. Belief stated as belief; the text stated as text.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "A curious street cat sitting outdoors in Bengaluru",
+          "kind": "photo",
+          "must": "cat"
+        },
+        {
+          "q": "Cat in street Mumbai India",
+          "kind": "commons",
+          "must": "mumbai"
+        },
+        {
+          "q": "playful cats in street garden setting",
+          "kind": "video",
+          "must": "cats"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 78,
+      "line": "अब नुक़सान की बात। 2020 में एक अमेरिकी शेल्टर की लगभग आठ हज़ार बिल्लियों पर हुए अध्ययन में, काली बिल्लियों को गोद सबसे कम लिया गया। असर बहुत बड़ा नहीं था, पर दिशा साफ़ थी। यानी इस मान्यता से नुक़सान हुआ है, तो बिल्ली का।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "7,983 बिल्लियाँ"
+      ],
+      "note": "Land the cost on the cat, not on the believer. Do not overstate the study.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "A cat stands on a chair surrounded by cages in an animal shelter",
+          "kind": "photo",
+          "must": "cat"
+        },
+        {
+          "q": "relaxing black cat on park bench outdoors",
+          "kind": "video",
+          "must": "black"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 95,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "बिल्ली रास्ता काटे तो रुक जाते हैं — पर वही काली बिल्ली ब्रिटेन के नाविकों के लिए शुभ थी, और भारत में देवी षष्ठी का वाहन है।",
+  "hashtags": [
+    "#मान्यता",
+    "#बिल्ली",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Vox in Rama (1233), पोप ग्रेगरी IX — Wikipedia · 'Cats in the Middle Ages', World History Encyclopedia — प्लेग से जोड़ने वाला दावा इतिहासकार नहीं मानते · Black cat (Wikipedia) — ब्रिटेन/आयरलैंड के नाविक, जापान · Shashthi (Wikipedia) — बिल्ली (मार्जार) देवी का वाहन · बृहत्संहिता, अध्याय 86, श्लोक 22 (wisdomlib) · Carini, Sinski & Weber, 'Coat Color and Cat Outcomes in an Urban U.S. Shelter', Animals 10(10):1720 (2020) — 7,983 बिल्लियाँ",
+  "avoid": "Do NOT mock anyone who follows this belief — ask, show, and let the viewer decide. NO POLITICS. Do NOT say Vox in Rama ordered cats to be killed, and do NOT repeat the claim that it caused the Black Death — historians reject it. Do NOT claim Sanskrit texts call a cat crossing unlucky: Brihat Samhita 86.22 lists the cat among creatures strong in the WEST, not as an evil omen. Do NOT tie black cats to Shani as if it were textual — that is a modern popular claim with weak sourcing. Do NOT overstate the shelter study: one US shelter, 2010-11 data, the authors call the effect weak. Do NOT state as fact that black cats are least adopted everywhere — other studies conflict.",
+  "hook_text": [
+    "बिल्ली रास्ता काटे",
+    "तो क्या होता है?"
+  ]
+}
