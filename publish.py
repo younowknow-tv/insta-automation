@@ -5,10 +5,11 @@
     python publish.py --check                       # verify creds + quota
     python publish.py 01-samosa --dry-run           # host + build container, stop
     python publish.py 01-samosa                     # publish for real
+    python publish.py --card shabd-shampoo          # publish a static card / carousel
 
 Renders come from make_video.py; this only ships what is already in output/.
 """
-import argparse, json, re, sys, datetime as dt
+import argparse, json, re, subprocess, sys, datetime as dt
 from pathlib import Path
 from pipeline import config as C
 from pipeline.publish import token as T, host, instagram as ig
@@ -142,6 +143,89 @@ def check():
     return ok
 
 
+CARDS = C.ROOT / "content" / "cards"
+STATIC = C.OUTPUT / "static"
+
+
+def _jpeg(png):
+    """Instagram's photo endpoint takes JPEG only; cards are authored as PNG."""
+    out = png.with_suffix(".jpg")
+    subprocess.run([C.FFMPEG, "-y", "-loglevel", "error", "-i", str(png),
+                    "-q:v", "3", str(out)], check=True)
+    return out
+
+
+def card_slides(cid):
+    """The PNGs cards.py produced, in slide order."""
+    single = STATIC / f"{cid}.png"
+    if single.exists():
+        return [single]
+    many = sorted(STATIC.glob(f"{cid}-[0-9].png"))
+    if not many:
+        raise RuntimeError(f"no card images for {cid} — run: python cards.py {cid}")
+    return many
+
+
+def publish_card(cid, dry=False, comment=True):
+    """Post a card as a photo, or several as a carousel. Same ledger, same credits."""
+    print(f"\n=== publishing card {cid} ===")
+    spec_path = CARDS / f"{cid}.json"
+    if not spec_path.exists():
+        raise RuntimeError(f"no card spec {spec_path}")
+    spec = json.loads(spec_path.read_text())
+    if cid in _ledger():
+        raise RuntimeError(f"{cid} already published ({_ledger()[cid]['at']}) — "
+                           f"delete its row from {LEDGER.name} to force a repost")
+    pngs = card_slides(cid)
+    print(f"  {len(pngs)} slide(s)")
+    cap = caption_with_credits(cid, spec)
+    tok, uid = T.current()
+
+    urls = [host.public_url(_jpeg(p)) for p in pngs]
+    if len(urls) == 1:
+        container = ig.image_container(tok, uid, urls[0], caption=cap)
+    else:
+        kids = [ig.image_container(tok, uid, u, carousel_item=True) for u in urls]
+        container = ig.carousel_container(tok, uid, kids, cap)
+    try:
+        ig.wait(tok, container)
+    except Exception as e:                      # photo containers are usually instant
+        print(f"  (status check skipped: {e})")
+
+    if dry:
+        print("  --dry-run: container built, stopping before publish")
+        return None
+
+    media_id = ig.publish(tok, uid, container)
+    now = dt.datetime.now(dt.timezone.utc).isoformat()
+    _record(cid, media_id=media_id, permalink=None, comment_id=None, at=now,
+            pinned=False, how="publish.py --card")
+    print(f"  PUBLISHED media_id {media_id} (recorded)")
+
+    try:
+        link = ig.permalink(tok, media_id)
+    except Exception as e:
+        link = None
+        print(f"  !! permalink lookup failed ({e}) — the post IS live")
+    print(f"  permalink {link}")
+
+    src = source_comment(cid, spec) if spec.get("pinned_comment") else ""
+    cmt = None
+    if comment and src:
+        cmt = ig.comment(tok, media_id, src)
+        print(f"  source comment {cmt}")
+    _record(cid, media_id=media_id, permalink=link, comment_id=cmt, at=now,
+            pinned=False, how="publish.py --card")
+
+    if cmt:
+        print(f"\n  ACTION REQUIRED — pin the source comment by hand:\n    {link}")
+    elif src:
+        print(f"\n  Comment NOT posted. Post this, then pin it:\n{src}")
+    else:
+        print("\n  No comment needed — the source line is printed on the card itself.")
+    return media_id
+
+
 def publish_one(sid, dry=False, video_url=None, comment=True):
     print(f"\n=== publishing {sid} ===")
     spec, mp4 = preflight(sid)
@@ -193,6 +277,8 @@ if __name__ == "__main__":
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--video-url", help="skip hosting, use this public URL")
+    ap.add_argument("--card", action="store_true",
+                    help="the id is a static card in content/cards/, not a reel")
     ap.add_argument("--no-comment", action="store_true",
                     help="publish without posting the source comment (you post and pin it)")
     a = ap.parse_args()
@@ -206,7 +292,11 @@ if __name__ == "__main__":
     if not a.script_id:
         ap.error("give a script id, --login, or --check")
     try:
-        publish_one(a.script_id, dry=a.dry_run, video_url=a.video_url, comment=not a.no_comment)
+        if a.card:
+            publish_card(a.script_id, dry=a.dry_run, comment=not a.no_comment)
+        else:
+            publish_one(a.script_id, dry=a.dry_run, video_url=a.video_url,
+                        comment=not a.no_comment)
     except Exception as e:
         print(f"\nFAILED: {e}")
         sys.exit(1)

@@ -30,6 +30,25 @@ def container(token, uid, video_url, caption):
     return d["id"]
 
 
+def image_container(token, uid, image_url, caption=None, carousel_item=False):
+    """A photo container. Carousel children carry no caption of their own."""
+    p = {"image_url": image_url}
+    if carousel_item:
+        p["is_carousel_item"] = "true"
+    if caption is not None:
+        p["caption"] = caption
+    d = _call("POST", f"{uid}/media", token, **p)
+    print(f"  container {d['id']}")
+    return d["id"]
+
+
+def carousel_container(token, uid, children, caption):
+    d = _call("POST", f"{uid}/media", token, media_type="CAROUSEL",
+              children=",".join(children), caption=caption)
+    print(f"  carousel container {d['id']} ({len(children)} slides)")
+    return d["id"]
+
+
 def wait(token, cid):
     """Block until Meta finishes transcoding. Raises on ERROR/EXPIRED."""
     waited = 0
