@@ -1,0 +1,168 @@
+{
+  "id": "15-vaigyanik-vajah",
+  "theme": "mythology-and-ritual",
+  "title_hi": "हर परंपरा की 'वैज्ञानिक वजह'",
+  "title_en": "The scientific reason that was added later",
+  "hook_archetype": "contrarian",
+  "duration_target": 85,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "हर पुरानी परंपरा के पीछे आजकल एक 'वैज्ञानिक वजह' बता दी जाती है। ज़्यादातर वजहें बाद में गढ़ी गई हैं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Claim stated flatly. No mocking of the traditions themselves.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "serene oil lamp flame in darkness",
+          "kind": "video",
+          "must": "lamp"
+        }
+      ]
+    },
+    {
+      "n": "examples",
+      "t": 8,
+      "line": "रात में नाख़ून मत काटो — कहा जाता है, पहले बिजली नहीं थी, अंधेरे में चोट लग जाती थी। सूरज ढलने के बाद झाड़ू मत लगाओ — कहा जाता है, दीये की रोशनी में गहना झाड़ू के साथ बाहर चला जाता था। बिल्ली रास्ता काटे तो रुक जाओ — कहा जाता है, जंगल में वो तेंदुए का इशारा था। तीनों तर्कसंगत लगते हैं। और तीनों का कोई स्रोत नहीं मिलता।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "कोई स्रोत नहीं"
+      ],
+      "note": "Three familiar examples, told in the voice people actually use.",
+      "kind": "auto",
+      "shots": 4,
+      "queries": [
+        {
+          "q": "A person using a nail clipper to trim nails",
+          "kind": "photo",
+          "must": "nail"
+        },
+        {
+          "q": "woman sweeping the floor with a broom",
+          "kind": "video",
+          "must": "sweeping"
+        },
+        {
+          "q": "diwali lamps",
+          "kind": "video",
+          "must": "lamps"
+        },
+        {
+          "q": "elegant black cat strolling in a garden",
+          "kind": "video",
+          "must": "cat"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 33,
+      "line": "और जहाँ नियम सच में लिखा है, वहाँ वजह नहीं लिखी। धर्मसिंधु जैसे ग्रंथ बताते हैं कि नाख़ून और बाल किन दिनों में नहीं काटने — रात में, संध्या में, यात्रा के दिन, चतुर्दशी को। पर रोशनी या चोट वाली कोई वजह वहाँ नहीं है। नियम पुराना है, वजह नई।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "नियम पुराना, वजह नई"
+      ],
+      "note": "The pivot, and the strongest point: the texts give rules without reasons.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Brihat Samhita of Varahamihira palm leaf manuscript",
+          "kind": "commons",
+          "must": "samhita"
+        },
+        {
+          "q": "Nail-clippers-variety",
+          "kind": "commons",
+          "must": "clippers"
+        },
+        {
+          "q": "traditional indian ritual with oil lamp",
+          "kind": "video",
+          "must": "ritual"
+        }
+      ]
+    },
+    {
+      "n": "counter",
+      "t": 55,
+      "line": "तो क्या हर बार वजह ग़लत होती है? नहीं। ताँबे के बर्तन वाली परंपरा को किसी ने सच में जाँचा। 2012 के एक अध्ययन में हैज़े और टाइफ़ाइड के बैक्टीरिया वाला पानी ताँबे के घड़े में सोलह घंटे रखा गया — उसके बाद वो बैक्टीरिया जाँच में मिले ही नहीं। प्रयोगशाला का प्रयोग है, इंसानों पर नहीं — पर ये जाँच है, कहानी नहीं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "ताँबा · 16 घंटे"
+      ],
+      "note": "Balance. Sometimes the practice survives testing — say the limits in the same breath.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "person pouring water on a copper mug",
+          "kind": "video",
+          "must": "copper"
+        },
+        {
+          "q": "Copper Water Vessel",
+          "kind": "commons",
+          "must": "copper"
+        },
+        {
+          "q": "scientist working in laboratory with samples",
+          "kind": "video",
+          "must": "laboratory"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 78,
+      "line": "परंपरा को सही साबित करने के लिए विज्ञान ढूँढना एक बात है। उसे विज्ञान से जाँच लेना दूसरी। पहला आरामदायक है — दूसरे से पता चलता है कि असल में क्या काम करता है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "The verdict: a method, not a judgement on anyone's faith.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "Diya, an oil lamp",
+          "kind": "commons",
+          "must": "diya"
+        },
+        {
+          "q": "scientist pipetting sample in lab",
+          "kind": "video",
+          "must": "lab"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 95,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "हर परंपरा के पीछे जो 'वैज्ञानिक वजह' सुनाई जाती है, वो अक्सर बाद में गढ़ी गई होती है। पर ताँबे के बर्तन वाली परंपरा जाँच में टिक गई।",
+  "hashtags": [
+    "#परंपरा",
+    "#विज्ञान",
+    "#मान्यता",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: धर्मसिंधु, क्षौर प्रकरण — नाख़ून/बाल के निषिद्ध दिन (kamakoti.org का संक्षिप्त अंग्रेज़ी संस्करण; मूल संस्कृत से मिलान बाक़ी) · Sudha et al., 'Storing Drinking-water in Copper pots Kills Contaminating Diarrhoeagenic Bacteria', J Health Popul Nutr 30(1):17-21 (2012) — प्रयोगशाला अध्ययन, 16 घंटे · रात में नाख़ून, झाड़ू और बिल्ली वाली 'वजहें' केवल ब्लॉग/लेखों में मिलती हैं, किसी ग्रंथ या दस्तावेज़ में नहीं · पृष्ठभूमि: Meera Nanda, 'Science Sanskritized' (Routledge Handbook of South Asian Religions, 2020) — आधुनिक विज्ञान को परंपरा के समर्थन में इस्तेमाल करने की प्रवृत्ति पर",
+  "avoid": "NO POLITICS in the voiceover: no parties, no movements, no nationalism. Nanda's argument is about Hindu nationalism — cite the pattern she documents in the pinned comment only, never name the politics on screen. Do NOT mock any practice or the people who follow it; the target is the invented EXPLANATION, not the tradition. Do NOT say the Dharmasindhu 'bans' nail-cutting generally — it lists specific prohibited days and occasions, and the source used is a condensed English edition. Do NOT overstate the copper study: lab experiment, seeded water, 16 hours, no human health outcome — say so. Do NOT claim 'science proves tradition wrong' as a blanket statement; the reel's point is about method.",
+  "hook_text": [
+    "हर परंपरा की",
+    "'साइंटिफिक वजह'?"
+  ]
+}
