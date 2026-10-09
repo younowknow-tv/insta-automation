@@ -45,7 +45,7 @@ def _ass(slide):
 
     ev = []
     if slide.get("series"):
-        ev.append(f"{{\\pos({W//2},250)}}{esc(slide['series'])}|Series")
+        ev.append(f"{{\\pos({W//2},{slide.get('series_y', 340)})}}{esc(slide['series'])}|Series")
     ev.append(f"{{\\pos({W//2},{slide.get('title_y', 560)})}}{head}|Title")
     if slide.get("body"):
         ev.append(f"{{\\pos({W//2},{slide.get('body_y', 900)})}}{esc(slide['body'])}|Body")
@@ -81,6 +81,17 @@ def build(cid):
     for n, slide in enumerate(slides):
         slide.setdefault("series", spec.get("series"))
         src, inputs = _background(slide, cid, n)
+        # Two house styles, chosen per post, not blended:
+        #   "ink"   — flat colour, text only (the शब्द की जड़ look)
+        #   "photo" — full-bleed archival image, dimmed, text over it (the carousel look)
+        # "split" (picture above, ink panel below) exists for text too long to sit
+        # legibly on a busy photograph.
+        layout = slide.get("layout") or ("photo" if inputs else "ink")
+        split = slide.get("split", 640) if layout == "split" else 0
+        if split:
+            slide.setdefault("series_y", split + 70)
+            slide.setdefault("title_y", split + 180)
+            slide.setdefault("body_y", split + 410)
         with tempfile.TemporaryDirectory() as t:
             a = Path(t) / "card.ass"
             a.write_text(_ass(slide), encoding="utf-8")
@@ -90,11 +101,21 @@ def build(cid):
             else:
                 cmd += ["-i", inputs[0]]
             cmd += ["-i", str(LOGO)]
-            # fill 4:5, dim so white text holds, then text, then logo
-            fc = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-                  f"eq=brightness=-0.16:saturation=0.90,"
-                  f"drawbox=x=0:y=0:w={W}:h={H}:color=black@{slide.get('dim', 0.42)}:t=fill,"
-                  f"ass={a}[t];[1:v]scale=132:-1[logo];[t][logo]overlay=(W-w)/2:70")
+            ink = slide.get("bg", "#0d0d10").replace("#", "0x")
+            fc = [f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+                  f"eq=brightness=-0.10:saturation=0.90"]
+            if split:
+                fc.append(f"drawbox=x=0:y={split}:w={W}:h={H - split}:color={ink}@0.94:t=fill")
+                fc.append(f"drawbox=x=0:y={split}:w={W}:h=3:color=0xD7A000@0.9:t=fill")  # accent rule
+                fc.append(f"drawbox=x=0:y=0:w={W}:h=260:color=black@0.35:t=fill")        # logo legibility
+            elif layout == "photo":
+                fc.append(f"drawbox=x=0:y=0:w={W}:h={H}:color=black@{slide.get('dim', 0.42)}:t=fill")
+            # "ink" needs no scrim — the background is already the flat colour
+            # the profile PNGs are opaque black squares; key the black out so the
+            # wordmark floats instead of sitting in a pasted-on box
+            fc = (",".join(fc) + f",ass={a}[t];"
+                  f"[1:v]scale=200:-1,colorkey=0x000000:0.32:0.05[logo];"
+                  f"[t][logo]overlay=(W-w)/2:76")
             dst = OUT / (f"{cid}.png" if len(slides) == 1 else f"{cid}-{n + 1}.png")
             cmd += ["-filter_complex", fc, "-frames:v", "1", str(dst)]
             subprocess.run(cmd, check=True)

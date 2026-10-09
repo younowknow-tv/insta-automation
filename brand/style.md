@@ -24,3 +24,21 @@ opinion — run it once ~40 videos of baseline exist. Whichever wins, freeze it.
 Drop commercially-cleared MP3s into `brand/music/`. The renderer picks the first
 alphabetically and ducks it under the voice. Keep a licence note per track — a
 "free" track with an attribution clause is a claim waiting to happen.
+
+## Static cards
+
+Built by `cards.py` from a JSON in `content/cards/`; finished PNGs land in
+`output/static/` (local only, like the reels).
+
+| | Value | Locked? |
+|---|---|---|
+| Size | 1080x1350 (4:5) — most vertical space IG gives a feed image | yes |
+| Logo | `brand/profile/pfp-nyk.png`, 200px wide, top centre at y=76, black keyed out | yes |
+| Layouts | `ink` (flat colour, text only) and `photo` (full-bleed image, dimmed) | yes |
+| Accent | gold &H0000D7FF — second title line, series label | yes |
+| Source line | every card carries one, 32px, bottom | yes |
+
+Two styles, alternated across posts — Gaurav 2026-10-09: "some week single card
+style and some posts with 3-5 style". They are not blended into one design.
+A third layout, `split` (picture above, ink panel below), exists for text too
+long to sit legibly on a photograph.
