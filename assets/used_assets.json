@@ -193,7 +193,11 @@
   "pexels:8091890",
   "commons:29961607",
   "pexels:8490416",
-  "commons:73983623"
+  "commons:73983623",
+  "commons:12310131",
+  "pexelsphoto:13410037",
+  "commons:73983620",
+  "commons:39603527"
  ],
  "assets": {
   "01-samosa-01-00.mp4": "pexels:37649378",
@@ -387,7 +391,11 @@
   "15-vaigyanik-vajah-03-02.mp4": "pexels:8091890",
   "15-vaigyanik-vajah-04-00.jpg": "commons:29961607",
   "15-vaigyanik-vajah-04-01.mp4": "pexels:8490416",
-  "15-vaigyanik-vajah-02-00.jpg": "commons:73983623"
+  "15-vaigyanik-vajah-02-00.jpg": "commons:73983623",
+  "asli-panna-shunya-0.jpg": "commons:12310131",
+  "billi-record-0.jpeg": "pexelsphoto:13410037",
+  "billi-record-1.jpg": "commons:73983620",
+  "billi-record-2.jpg": "commons:39603527"
  },
  "credits": {
   "05-shunya-02-00.jpg": "Bakhshali numerals 2.jpg — Augustus Hoernle (1841-1918) (Public domain), via Wikimedia Commons",
@@ -437,7 +445,10 @@
   "15-vaigyanik-vajah-02-01.jpg": "Nail-clippers-variety.jpg — Evan-Amos (Public domain), via Wikimedia Commons",
   "15-vaigyanik-vajah-03-01.jpg": "Copper Water Vessel (9834836673).jpg — Gary Todd from Xinzheng, China (CC0), via Wikimedia Commons",
   "15-vaigyanik-vajah-04-00.jpg": "Diya, an oil lamp.jpg — siddarth varanasi (CC BY 2.0), via Wikimedia Commons",
-  "15-vaigyanik-vajah-02-00.jpg": "6th-century Brihat Samhita of Varahamihira, Bhattotpala commentary manuscript, Chapter 3, Sanskrit, Grantha script, palm leaf 1 2r 2v.jpg — Ms Sarah Welch (CC BY-SA 4.0), via Wikimedia Commons"
+  "15-vaigyanik-vajah-02-00.jpg": "6th-century Brihat Samhita of Varahamihira, Bhattotpala commentary manuscript, Chapter 3, Sanskrit, Grantha script, palm leaf 1 2r 2v.jpg — Ms Sarah Welch (CC BY-SA 4.0), via Wikimedia Commons",
+  "asli-panna-shunya-0.jpg": "Bakhshali numerals 1.jpg — Augustus Hoernle (1841-1918) (Public domain), via Wikimedia Commons",
+  "billi-record-1.jpg": "6th-century Brihat Samhita of Varahamihira, 1279 CE Hindu text palm leaf manuscript, Pratima lakshana, Sanskrit, Nepalaksara script, folio 1 talapatra from a Buddhist monastery, 1v, 2r 2v leaves.jpg — Ms Sarah Welch (CC BY-SA 4.0), via Wikimedia Commons",
+  "billi-record-2.jpg": "Sailors surround the ship's cat \"Convoy\" asleep in a miniature hammock on board HMS HERMIONE, Gibraltar, 26 November 1941. A6410.jpg — Royal Navy official photographer, Beadell, S J (Lt) (Public domain), via Wikimedia Commons"
  },
  "queries": {
   "10-zip-00-00.jpeg": "jeans zipper close up",
@@ -493,6 +504,10 @@
   "15-vaigyanik-vajah-03-02.mp4": "scientist working in laboratory with samples",
   "15-vaigyanik-vajah-04-00.jpg": "Diya, an oil lamp",
   "15-vaigyanik-vajah-04-01.mp4": "scientist pipetting sample in lab",
-  "15-vaigyanik-vajah-02-00.jpg": "Brihat Samhita of Varahamihira palm leaf manuscript"
+  "15-vaigyanik-vajah-02-00.jpg": "Brihat Samhita of Varahamihira palm leaf manuscript",
+  "asli-panna-shunya-0.jpg": "Bakhshali manuscript",
+  "billi-record-0.jpeg": "A leopard walking through the dry grasslands",
+  "billi-record-1.jpg": "Brihat Samhita of Varahamihira palm leaf manuscript",
+  "billi-record-2.jpg": "Sailors surround the ship's cat Convoy"
  }
 }

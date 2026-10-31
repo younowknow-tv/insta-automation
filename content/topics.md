@@ -9,7 +9,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | # | Topic | Theme | Status | Notes |
 |---|---|---|---|---|
 | 07 | why we say "cheers" | everyday-words | **posted** 2026-09-27 | poison story has no evidence; *chiere* = face |
-| 08 | what "Dolby" actually means | everyday-words | **approved** | a surname; first invention was killing tape hiss |
+| 08 | what "Dolby" actually means | everyday-words | **posted** 2026-10-31 | a surname; first invention was killing tape hiss |
 | 09 | ganpati visarjan — the immersion | mythology-and-ritual | **posted** | clay was *designed* to dissolve; POP breaks that logic |
 | 10 | who invented the zip | everyday-words | **posted** 2026-10-03 (rewrite) | Sundback 1913/1917; "zipper" was a boot brand, 1923. ~50 yrs to reach trousers |
 | 11 | तेरहवीं — 13 days after death | mythology-and-ritual | **posted** 2026-10-02 | Garuda Purana puts *sapindikarana* on day **12**, not 13; some observe 12, South India often 16. So 13 is custom, not scripture. **Most sensitive yet** — religious + death. |
@@ -65,7 +65,7 @@ Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
 
 Bank target is 15 before daily posting starts. Current (2026-09-15):
 **2** approved and unposted — 08-dolby, 12-currency (plus 14-billi rendered but shelved). Posted: 01, 02, 03, 04, 06, 09, 05 (first API post, reposted 2026-09-19)
-13 (2026-09-20), 07 (2026-09-27), 11 (2026-10-02), 10 (2026-10-03) and 15 (2026-10-09). **~13 more topics needed.**
+13 (2026-09-20), 07 (2026-09-27), 11 (2026-10-02), 10 (2026-10-03), 15 (2026-10-09) and 08 (2026-10-31). **~14 more topics needed.**
 
 ## Known issue: audio fault on 09, 11, 12
 
