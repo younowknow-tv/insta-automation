@@ -1,0 +1,162 @@
+{
+  "id": "17-mirch",
+  "theme": "kitchen-history",
+  "title_hi": "मिर्च",
+  "title_en": "India had no chilli",
+  "hook_archetype": "contrarian",
+  "duration_target": 75,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "भारतीय खाना और मिर्च — जैसे एक ही चीज़ हों। लेकिन पाँच सौ साल पहले, भारत में मिर्च थी ही नहीं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Flat claim about something in every kitchen. Nothing to defend, only to learn.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "Drying Guntur Chilli",
+          "kind": "commons",
+          "must": "chilli"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 6,
+      "line": "मिर्च का घर अमेरिका है — मेक्सिको और दक्षिण अमेरिका। कोलंबस की यात्राओं के बाद वो यूरोप पहुँची, और फिर पुर्तगाली जहाज़ों के साथ दुनिया भर में। इतिहासकार मानते हैं कि सोलहवीं सदी की शुरुआत में वो गोवा पहुँची।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "~1500"
+      ],
+      "note": "Hedge the date: sources vary between late 1400s and the first decades of the 1500s.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "red chili peppers close up",
+          "kind": "video",
+          "must": "chili"
+        },
+        {
+          "q": "old map of America",
+          "kind": "commons",
+          "must": "america"
+        },
+        {
+          "q": "sailing ship on open sea",
+          "kind": "video",
+          "must": "ship"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 24,
+      "line": "तो उससे पहले तीखापन आता कहाँ से था? पिप्पली से — भारतीय लंबी मिर्च, जो हज़ारों साल से यहाँ से बाहर भेजी जाती थी। और काली मिर्च से, जो सिर्फ़ मालाबार के तट पर उगती थी।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "पिप्पली"
+      ],
+      "note": "The forgotten spice is the heart of the reel.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Detailed shot of fresh Indian pipli Piper longum",
+          "kind": "photo",
+          "must": "piper"
+        },
+        {
+          "q": "Piper longum kz01",
+          "kind": "commons",
+          "must": "longum"
+        },
+        {
+          "q": "black peppercorns close up",
+          "kind": "video",
+          "must": "peppercorns"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 44,
+      "line": "मिर्च ने दोनों को पीछे छोड़ दिया। वजह सीधी थी — काली मिर्च सिर्फ़ एक पट्टी में उगती थी, और मिर्च लगभग हर जलवायु में उग जाती थी। तीखापन भी कहीं ज़्यादा। एक-दो पीढ़ी में वो पूरे उपमहाद्वीप में फैल गई।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Why it won: climate and potency, not taste alone.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "green chili plants growing on a farm",
+          "kind": "video",
+          "must": "chili"
+        },
+        {
+          "q": "Drying of Red chilli at Nongpoh Meghalaya",
+          "kind": "commons",
+          "must": "chilli"
+        },
+        {
+          "q": "indian market stall with spices in bowls",
+          "kind": "video",
+          "must": "market",
+          "avoid": "saffron"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 64,
+      "line": "आज पिप्पली बाज़ार में मुश्किल से मिलती है। और जिस मिर्च के बिना हम खाने की कल्पना नहीं कर सकते — वो बाहर से आई थी, और यहीं की होकर रह गई।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Land warmly. Not 'your food is foreign' — 'it came, and it became ours'.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "red chilli powder in bowl",
+          "kind": "photo",
+          "must": "chilli"
+        },
+        {
+          "q": "indian food cooking in pan with spices",
+          "kind": "video",
+          "must": "spices"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 76,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "पाँच सौ साल पहले भारत में मिर्च थी ही नहीं। तीखापन पिप्पली और काली मिर्च से आता था — मिर्च अमेरिका से, पुर्तगाली जहाज़ों के साथ आई।",
+  "hashtags": [
+    "#मिर्च",
+    "#खानेकीकहानी",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: K. T. Achaya, Indian Food: A Historical Companion — मिर्च पुर्तगालियों के ज़रिए भारत पहुँची और पिप्पली की जगह ले ली · Long pepper / Piper longum (Wikipedia) — मिर्च के आने के बाद पिप्पली का चलन घटता गया · मिर्च के भारत पहुँचने की सटीक तारीख़ विवादित है: स्रोत 15वीं सदी के अंत से 16वीं सदी के तीसरे दशक तक बताते हैं",
+  "avoid": "Do NOT give a precise arrival year — sources range from the late 1490s to the 1520s; say 'सोलहवीं सदी की शुरुआत' and that historians differ. Do NOT say Indian food was 'bland' before chilli; it had pippali, black pepper, mustard and ginger — say heat came from elsewhere. Do NOT frame this as 'your food is not Indian': the reel's close is that the chilli came and became Indian. Do NOT claim Columbus brought chillies to India; he reached the Americas, the Portuguese carried them east. NO POLITICS, no colonial-blame framing.",
+  "hook_text": [
+    "भारत में मिर्च",
+    "थी ही नहीं"
+  ]
+}
