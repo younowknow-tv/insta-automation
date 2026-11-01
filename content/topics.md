@@ -93,7 +93,7 @@ beat, payoff on the Talon ad in Esquire's first issue (Autumn 1933). The
 Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
 
 Bank target is 15 before daily posting starts. Current (2026-09-15):
-**2** approved and unposted — 08-dolby, 12-currency (plus 14-billi rendered but shelved). Posted: 01, 02, 03, 04, 06, 09, 05 (first API post, reposted 2026-09-19)
+**2** approved and unposted — 12-currency, 16-bata (plus 14-billi rendered but shelved).
 13 (2026-09-20), 07 (2026-09-27), 11 (2026-10-02), 10 (2026-10-03), 15 (2026-10-09) and 08 (2026-10-31). **~14 more topics needed.**
 
 ## Known issue: audio fault on 09, 11, 12
