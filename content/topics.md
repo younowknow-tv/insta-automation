@@ -18,6 +18,32 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | 14 | बिल्ली का रास्ता काटना — is it really bad? | mythology-and-ritual | **shelved** (not posted; Gaurav preferred 15) | Gaurav's topic. Europe's fear dates to Vox in Rama (1233); the plague link is rejected by historians. Same cat is LUCKY for British/Irish sailors and in Japan. India: cat (मार्जार) is goddess Shashthi's vahana; Brihat Samhita 86.22 lists the cat as strong in the WEST, not unlucky — so the "Sanskrit texts say it is bad" claim was dropped. Payoff: Carini et al., Animals 2020, 7,983 cats — black cats adopted least (authors call the effect weak). Shani link rejected as weakly sourced. |
 | 15 | हर परंपरा की 'वैज्ञानिक वजह' — जो बाद में गढ़ी गई | mythology-and-ritual | **posted** 2026-10-09 | Spin-off from 14. Three familiar "logical reasons" (nails at night, sweeping after sunset, the cat) have no source. Dharmasindhu's kshaura rules list prohibited days WITHOUT giving reasons (kamakoti condensed English edn; Sanskrit not yet matched). Counter-example for balance: Sudha et al., J Health Popul Nutr 2012 — cholera/typhoid bacteria unrecoverable after 16h in copper pots (lab only). Meera Nanda's 'Science Sanskritized' (2020) documents the pattern but frames it around Hindu nationalism, so it is cited in the pinned comment only, never on screen. |
 
+## What performs (2026-11-01)
+
+| Reel | Age | Views | Shares |
+|---|---|---|---|
+| 08-dolby | 30h | **4,754** | 54 |
+| 13-ganeshotsav | 42d | 904 | 2 |
+| 11-terahvin | 30d | 380 | 0 |
+| 10-zip | 29d | 357 | 1 |
+| 07-cheers | 35d | 233 | 1 |
+| 15-vaigyanik-vajah | 23d | **12** | 0 |
+
+Dolby is 5x anything before it, and it is not the theme that did it: 07-cheers and
+10-zip are the same `everyday-words` theme and did a tenth of it. The subject is
+what moved — **a brand name the viewer reads every day on a device**. Instant
+recognition, nothing to argue with, and 54 shares carried the reach.
+
+15 looks suppressed rather than merely unpopular — 12 views in 23 days on the same
+account that did 4,754 in 30 hours three weeks later. It told people the reasons
+behind their customs were invented. Do not script that posture again.
+
+**Next vein — daily brand and product names, Dolby's exact treatment** (the name is a
+person, a place, or a word with a literal meaning). Each needs verification first:
+Bluetooth (a Danish king) · Wi-Fi (not "wireless fidelity") · Bata (Czech, not Indian) ·
+Parle (Vile Parle) · Amul · Maggi (Julius Maggi) · Nirma · Bisleri (Italian) ·
+Xerox (Greek, "dry writing") · Adidas (Adolf Dassler) · Google (googol).
+
 ## Themes in use
 
 - `kitchen-history` — samosa, chai
