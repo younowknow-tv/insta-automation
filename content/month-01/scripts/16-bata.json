@@ -1,0 +1,157 @@
+{
+  "id": "16-bata",
+  "theme": "brand-names",
+  "title_hi": "बाटा",
+  "title_en": "Bata is a surname",
+  "hook_archetype": "contrarian",
+  "duration_target": 75,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "जिस दुकान से आपके स्कूल के जूते आए थे — बाटा। नाम सुनकर लगता है भारतीय ब्रांड है। है नहीं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Dolby's treatment: a name everyone says daily, and the answer is a person.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "Bata Shoe Store in Kulri Bazaar",
+          "kind": "commons",
+          "must": "bata"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 7,
+      "line": "बाटा एक परिवार का उपनाम है। चेक भाषा में लिखा जाता है Baťa, और बोला जाता है 'बात्या'। 1894 में चेक शहर ज़्लीन में तीन भाई-बहनों — तोमाश, अंतोनिन और आना — ने जूतों की कंपनी शुरू की। परिवार आठ पीढ़ियों से जूते बनाता आया था।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "Baťa · 1894"
+      ],
+      "note": "The reveal, early. Pronunciation detail is the hook people repeat.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Bata Shoe Company Founders",
+          "kind": "commons",
+          "must": "founders"
+        },
+        {
+          "q": "Postcard Zlín Obchodní dům Department Store",
+          "kind": "commons",
+          "must": "postcard"
+        },
+        {
+          "q": "shoemaker working with leather by hand",
+          "kind": "video",
+          "must": "leather"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 25,
+      "line": "भारत में कंपनी 1931-32 में आई — कलकत्ता के पास कोन्नगर में एक छोटी फ़ैक्ट्री, जिसे चेकोस्लोवाकिया से आए कारीगरों ने शुरू किया। फिर 1934 में गंगा किनारे एक पूरा शहर बसाया गया: फ़ैक्ट्री, घर, स्कूल, अस्पताल। नाम रखा गया — बाटानगर।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "बाटानगर · 1934"
+      ],
+      "note": "The Indian anchor: a town in West Bengal named after a Czech company.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "BATA INDIA LTD Batananagar West Bengal",
+          "kind": "commons",
+          "must": "bata"
+        },
+        {
+          "q": "Ganga ghat on the river Ganges at Batanagar",
+          "kind": "commons",
+          "must": "batanagar"
+        },
+        {
+          "q": "craftsman making leather shoes in workshop",
+          "kind": "video",
+          "must": "shoes",
+          "avoid": "motorcycle"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 46,
+      "line": "तोमाश बाटा की 1932 में एक विमान हादसे में मौत हो गई। 1945 में चेकोस्लोवाकिया में कंपनी का राष्ट्रीयकरण कर दिया गया, और परिवार कनाडा चला गया — जहाँ उन्होंने एक और शहर बसाया: बाटावा।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Do not show a crash. A period aircraft is enough.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "vintage propeller aircraft on airfield",
+          "kind": "video",
+          "must": "vintage"
+        },
+        {
+          "q": "Zlín Tomáš Baťa's Skyscraper 1938 Karfík",
+          "kind": "commons",
+          "must": "skyscraper"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 61,
+      "line": "आज बाटा इंडिया भारतीय शेयर बाज़ार में लिस्टेड है, पर इसका नियंत्रण स्विट्ज़रलैंड में बैठी बाटा ब्रांड्स के पास है। यानी जो नाम सबसे भारतीय लगता है — वो दरअसल एक चेक परिवार का उपनाम है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Land back on the viewer's own assumption.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "Bata Shoes store Wenceslas Square",
+          "kind": "commons",
+          "must": "wenceslas"
+        },
+        {
+          "q": "modern shoe display in retail store",
+          "kind": "video",
+          "must": "shoe"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 76,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "बाटा भारतीय ब्रांड नहीं है — ये एक चेक परिवार का उपनाम है। 1894 में ज़्लीन में शुरू हुई कंपनी, और 1934 में गंगा किनारे बसा पूरा शहर: बाटानगर।",
+  "hashtags": [
+    "#बाटा",
+    "#ब्रांडकीकहानी",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Bata Corporation (Wikipedia) — 1894, ज़्लीन; तोमाश, अंतोनिन और आना बाटा · Batanagar (Wikipedia) — 1934 में बसा शहर · Embassy of the Czech Republic, New Delhi: 'First Czech Investor in India: Bata' — कोन्नगर, 1931-32 · Bata India Ltd — BSE/NSE लिस्टेड, प्रवर्तक Bata Brands S.A. (लुज़ान, स्विट्ज़रलैंड)",
+  "avoid": "Dates differ between sources — say 1894 for the founding (21 Sept and 24 Aug both appear) and '1931-32' for India (incorporation 1931, Konnagar production 1932). Do NOT give a store count; published figures conflict (1,450 vs 1,860+). Do NOT say Bata India is foreign-owned outright: it is Indian-listed with a Swiss controlling shareholder — say exactly that. Do NOT show or describe the plane crash; state the fact and move on. Do NOT claim the family still runs the Indian company day to day. NO POLITICS: nationalisation in 1945 is stated as an event, with no comment on communism or any government.",
+  "hook_text": [
+    "बाटा भारतीय",
+    "ब्रांड नहीं है"
+  ]
+}
