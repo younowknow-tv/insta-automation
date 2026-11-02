@@ -1,0 +1,158 @@
+{
+  "id": "23-jalebi",
+  "theme": "kitchen-history",
+  "title_hi": "जलेबी",
+  "title_en": "Jalebi's name came from outside",
+  "hook_archetype": "question",
+  "duration_target": 70,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "जलेबी का नाम जलेबी क्यों है? क्योंकि ये नाम भी बाहर से आया है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Short hook. The sweet itself carries the hook visually.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "Delicious crispy jalebi served on a terracotta plate",
+          "kind": "photo",
+          "must": "jalebi"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "फ़ारसी और अरबी रसोई में एक मिठाई थी — ज़लाबिया। दसवीं सदी की अरबी पाककला की किताबों में इसकी विधि मिलती है, और रमज़ान में बनने वाली मिठाइयों में इसका नाम आता है। हिंदी-उर्दू का 'जलेबी' इसी ज़लाबिया से बना।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "ज़लाबिया → जलेबी"
+      ],
+      "note": "Etymology is well attested: dictionaries route jalebi < Persian zalābiya.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "arabic calligraphy manuscript page",
+          "kind": "commons",
+          "must": "manuscript"
+        },
+        {
+          "q": "sweet syrup dessert being fried",
+          "kind": "video",
+          "must": "fried"
+        },
+        {
+          "q": "middle eastern sweets on plate",
+          "kind": "photo",
+          "must": "sweets"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 24,
+      "line": "भारत में इसका सबसे पुराना ज़िक्र पंद्रहवीं सदी में मिलता है। करीब 1450 के जैन ग्रंथ 'प्रियंकरनृपकथा' में एक व्यापारी के भोज में जलेबी परोसी जाती है। और 1600 के आसपास लिखी 'गुण्यगुणबोधिनी' में इससे मिलती-जुलती मिठाई की सामग्री और विधि दर्ज है।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "~1450"
+      ],
+      "note": "Two Indian texts, dated. Say 'मिलती-जुलती' for the 1600 one — sources overstate it as identical.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "palm leaf manuscript Jain text",
+          "kind": "commons",
+          "must": "manuscript"
+        },
+        {
+          "q": "indian sweet shop display",
+          "kind": "video",
+          "must": "sweet"
+        },
+        {
+          "q": "jalebi in sugar syrup",
+          "kind": "photo",
+          "must": "jalebi"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 44,
+      "line": "दिलचस्प बात ये कि पंद्रहवीं सदी में इसे कुंडलिका और जलवल्लिका जैसे नाम भी मिले। यानी जो चीज़ बाहर से आई, उसे यहाँ के नाम भी मिल गए।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "कुंडलिका"
+      ],
+      "note": "The nicest detail: a borrowed sweet getting Sanskrit names.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "jalebi spiral close up",
+          "kind": "photo",
+          "must": "jalebi"
+        },
+        {
+          "q": "halwai making sweets in kadai",
+          "kind": "video",
+          "must": "sweets"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 58,
+      "line": "आज जलेबी भारत की सबसे पहचानी मिठाइयों में है — शादी हो, त्योहार हो, या जलेबी-रबड़ी। नाम बाहर का, और मिठाई यहीं की होकर रह गई।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Warm close, same shape as the chilli reel.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "Stack of delicious traditional Indian jalebi sweets",
+          "kind": "photo",
+          "must": "jalebi"
+        },
+        {
+          "q": "indian wedding feast food",
+          "kind": "video",
+          "must": "food"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 72,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "जलेबी का नाम फ़ारसी 'ज़लाबिया' से आया है। भारत में इसका सबसे पुराना ज़िक्र करीब 1450 के एक जैन ग्रंथ में मिलता है — और तब इसे कुंडलिका भी कहा गया।",
+  "hashtags": [
+    "#जलेबी",
+    "#खानेकीकहानी",
+    "#शब्दकीजड़",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Dictionary.com / Wiktionary — jalebi < हिंदी-उर्दू जलेबी < फ़ारसी zalābiya; Hobson-Jobson (K. T. Achaya के हवाले से) इसे अरबी zalabiya या फ़ारसी zalibiya का रूपांतर बताता है · Zalabiyeh (Wikipedia) — दसवीं सदी की अरबी पाककला की किताबों में विधि · प्रियंकरनृपकथा (लगभग 1450) में जलेबी का उल्लेख; गुण्यगुणबोधिनी (लगभग 1600) में मिलती-जुलती विधि · पंद्रहवीं सदी में कुंडलिका/जलवल्लिका नाम",
+  "avoid": "Do NOT say the 1600 text describes an identical jalebi — popular sources overstate it; say 'मिलती-जुलती'. Do NOT claim a single country invented it: the WORD is traced to Persian/Arabic, and sources do not settle whether the Persian or Arabic form came first. Do NOT give the Kitab al-Tabikh an author or exact year — our sources do not agree. Do NOT frame this as 'jalebi is not Indian': the close is that the name came from outside and the sweet became Indian. NO POLITICS, no communal framing of a Persian or Arabic origin.",
+  "hook_text": [
+    "जलेबी का नाम",
+    "बाहर से आया है"
+  ]
+}

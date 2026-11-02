@@ -1,0 +1,158 @@
+{
+  "id": "22-idli",
+  "theme": "kitchen-history",
+  "title_hi": "इडली",
+  "title_en": "The oldest record of idli",
+  "hook_archetype": "question",
+  "duration_target": 75,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "इडली का सबसे पुराना ज़िक्र कहाँ मिलता है — और क्या वो आज वाली इडली थी?",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "A question about evidence, not about who owns the dish.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "idli plate steamed",
+          "kind": "photo",
+          "must": "idli"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 5,
+      "line": "सबसे पुराना ज़िक्र कन्नड़ ग्रंथ 'वड्डाराधने' में माना जाता है। इसे आमतौर पर 920 ई. का कहा जाता है, हालाँकि तारीख़ पर विद्वान एकमत नहीं। वहाँ 'इड्डलिगे' उन अठारह पकवानों में गिनाई गई है, जो एक घर में मेहमान के सामने परोसे जाते हैं।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "वड्डाराधने · ~920 ई."
+      ],
+      "note": "Give the date and the doubt in the same breath.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Vedas palm leaf manuscript Tamil Grantha Script",
+          "kind": "commons",
+          "must": "manuscript"
+        },
+        {
+          "q": "appetizing Idli cakes with herbs and chutney",
+          "kind": "photo",
+          "must": "idli"
+        },
+        {
+          "q": "south indian breakfast served on banana leaf",
+          "kind": "photo",
+          "must": "indian"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 26,
+      "line": "फिर 1130 ई. के संस्कृत ग्रंथ 'मानसोल्लास' में 'इड्डरिका' मिलती है — उड़द दाल के छोटे गोले, घी में तले हुए। यानी भाप में पके नहीं। चावल के दाने भी उसमें नहीं हैं।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "मानसोल्लास · 1130"
+      ],
+      "note": "The crucial difference: fried, not steamed; dal, not rice-and-dal.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "urad dal lentils soaking",
+          "kind": "photo",
+          "must": "dal"
+        },
+        {
+          "q": "frying dumplings in ghee pan",
+          "kind": "video",
+          "must": "frying"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 42,
+      "line": "तो आज वाली इडली — चावल और उड़द का घोल, लंबा ख़मीर, और भाप — उसके साफ़ निशान तेरहवीं सदी के बाद मिलते हैं। इसी वजह से खाने के इतिहासकार के. टी. आचार्य ने सवाल उठाया: कहीं ख़मीर और भाप की तकनीक बाहर से तो नहीं आई — शायद इंडोनेशिया से। उनके आलोचकों का जवाब है कि जिस व्यंजन का वो नाम लेते हैं, उसका कोई रिकॉर्ड ही नहीं मिलता।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "एक खुला सवाल"
+      ],
+      "note": "Both sides, attributed, in the same beat. No verdict.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "fermented batter in bowl",
+          "kind": "video",
+          "must": "batter"
+        },
+        {
+          "q": "steam rising from bamboo steamer",
+          "kind": "video",
+          "must": "steam"
+        },
+        {
+          "q": "old library books research",
+          "kind": "video",
+          "must": "books"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 64,
+      "line": "यानी पक्का जवाब किसी के पास नहीं। ज़िक्र हज़ार साल पुराना है, आज वाली इडली उससे नई है — और बीच की कहानी अब भी खुली हुई है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Open ending, but a precise one — the reel says exactly what is known.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "idli with sambar and chutney",
+          "kind": "photo",
+          "must": "idli"
+        },
+        {
+          "q": "south indian tiffin restaurant serving",
+          "kind": "video",
+          "must": "indian"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 80,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "इडली का सबसे पुराना ज़िक्र कन्नड़ ग्रंथ वड्डाराधने में माना जाता है, और 1130 के मानसोल्लास में 'इड्डरिका' — पर वो तली हुई थी, भाप में पकी नहीं। आज वाली इडली के निशान तेरहवीं सदी के बाद मिलते हैं।",
+  "hashtags": [
+    "#इडली",
+    "#खानेकीकहानी",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: वड्डाराधने (शिवकोटाचार्य) — 'इड्डलिगे' का उल्लेख; तारीख़ विवादित: आमतौर पर 920 ई., पर Wikipedia 6वीं-9वीं सदी की सीमा देता है · मानसोल्लास (सोमेश्वर तृतीय, 1130 ई.) — 'इड्डरिका', घी में तले उड़द के गोले · K. T. Achaya — आज वाली इडली (चावल+उड़द, लंबा ख़मीर, भाप) के निशान लगभग 1250 ई. के बाद; उन्होंने इंडोनेशियाई स्रोत की संभावना जताई · आलोचना: जिस इंडोनेशियाई व्यंजन 'केदली' का हवाला दिया जाता है, उसका स्वतंत्र रिकॉर्ड नहीं मिलता · Lizzie Collingham अरब व्यापारियों से जोड़ने वाला मत रखती हैं",
+  "avoid": "This reel takes NO side on where idli came from — reel 15 was buried for telling people a thing of theirs was not theirs. Report the records, name Achaya's hypothesis AND the criticism, and end open. Do NOT say 'idli is Indonesian' or 'idli is not Indian'. Do NOT state 920 CE as settled — say it is the usual date and scholars differ. Do NOT name the Indonesian dish on screen as if it exists: critics cannot find any record of it, so the voiceover refers to it without asserting it. NO POLITICS, no regional rivalry between Karnataka and Tamil Nadu over the dish.",
+  "hook_text": [
+    "इडली का सबसे",
+    "पुराना ज़िक्र?"
+  ]
+}
