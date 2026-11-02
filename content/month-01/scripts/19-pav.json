@@ -1,0 +1,156 @@
+{
+  "id": "19-pav",
+  "theme": "kitchen-history",
+  "title_hi": "पाव",
+  "title_en": "Pav is a Portuguese word",
+  "hook_archetype": "delayed_reveal",
+  "duration_target": 70,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "वड़ा पाव, मिसल पाव, पाव भाजी — मुंबई का सबसे अपना खाना। पर इसमें छिपा 'पाव' मराठी शब्द नहीं है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Affectionate, not gotcha. Mumbai should want to share this.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "Vada Pav Indian street food",
+          "kind": "commons",
+          "must": "vada"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 6,
+      "line": "पुर्तगाली में ब्रेड को कहते हैं — pão। गोवा में पुर्तगालियों के साथ ये ब्रेड आई, और उसके साथ ये शब्द भी। कोंकणी और मराठी में वही pão बन गया — पाव।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "pão → पाव"
+      ],
+      "note": "The reveal. Wiktionary gives Marathi पाव (bread) as borrowed from Portuguese pão.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "freshly baked bread rolls in bakery",
+          "kind": "video",
+          "must": "bread"
+        },
+        {
+          "q": "Church in Old Goa Portuguese architecture",
+          "kind": "commons",
+          "must": "goa"
+        },
+        {
+          "q": "baker kneading dough in bakery",
+          "kind": "video",
+          "must": "dough"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 22,
+      "line": "गोवा में ब्रेड बनाने वाले को आज भी पोदेर कहते हैं — पुर्तगाली padeiro से, यानी बेकर। सुबह-सुबह साइकिल पर ब्रेड बाँटने वाला पोदेर गोवा की रोज़ की तस्वीर है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "padeiro → पोदेर"
+      ],
+      "note": "A second word from the same door — makes the borrowing feel real.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "bread seller on bicycle street",
+          "kind": "video",
+          "must": "bicycle"
+        },
+        {
+          "q": "basket of bread loaves",
+          "kind": "video",
+          "must": "bread"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 38,
+      "line": "अब एक उलझन। कई लोग कहते हैं — पाव का मतलब तो चौथाई होता है, इसलिए नाम पाव पड़ा। मराठी में पाव सच में चौथाई होता है, पर वो अलग शब्द है। ब्रेड वाला पाव सीधे पुर्तगाली pão से आया है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "दो अलग शब्द"
+      ],
+      "note": "Kill the folk etymology politely — two separate words, same spelling.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "sliced bread loaf on table",
+          "kind": "video",
+          "must": "bread"
+        },
+        {
+          "q": "vendor weighing goods on a market scale",
+          "kind": "video",
+          "must": "weighing",
+          "avoid": "laboratory"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 56,
+      "line": "और वड़ा पाव? वो बहुत बाद का है — 1960 के दशक में दादर स्टेशन के बाहर एक ठेले से शुरू हुआ। यानी मुंबई की सबसे मुंबईया चीज़ के नाम में एक पुर्तगाली शब्द छिपा बैठा है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1960 का दशक"
+      ],
+      "note": "Sources conflict on 1966 vs 1971 — say the decade.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "mumbai street food stall vendor",
+          "kind": "video",
+          "must": "street"
+        },
+        {
+          "q": "local train station crowd india",
+          "kind": "video",
+          "must": "train"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 72,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "वड़ा पाव का 'पाव' मराठी नहीं, पुर्तगाली है — pão, यानी ब्रेड। और गोवा में बेकर आज भी 'पोदेर' कहलाता है, पुर्तगाली padeiro से।",
+  "hashtags": [
+    "#पाव",
+    "#वड़ापाव",
+    "#शब्दकीजड़",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Wiktionary — मराठी पाव (ब्रेड): पुर्तगाली pão से लिया गया, कोंकणी पाव इसका सजातीय; और पाव (चौथाई) एक अलग प्रविष्टि है · 'पोदेर' < पुर्तगाली padeiro (बेकर) · वड़ा पाव की शुरुआत 1960 के दशक में दादर स्टेशन के बाहर — तारीख़ पर स्रोत एकमत नहीं (1966 और 1971, दोनों मिलते हैं)",
+  "avoid": "Do NOT pick a year for vada pav — 1966 and 1971 both appear; say '1960 का दशक'. Do NOT say the 'quarter' meaning is wrong: पाव DOES mean a quarter in Marathi — it is simply a different word from the bread one. Do NOT name a single inventor of vada pav as settled fact; accounts credit Ashok Vaidya, and another name also appears. NO POLITICS and no colonial-blame framing: this is a word that came through a door and stayed. Do NOT claim pav bread itself is Portuguese in recipe — the WORD is; Indian pav is its own bread today.",
+  "hook_text": [
+    "'पाव' मराठी",
+    "शब्द नहीं है"
+  ]
+}

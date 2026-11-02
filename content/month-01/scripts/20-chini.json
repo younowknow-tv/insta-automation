@@ -1,0 +1,159 @@
+{
+  "id": "20-chini",
+  "theme": "kitchen-history",
+  "title_hi": "चीनी",
+  "title_en": "The world's word for sugar came from India",
+  "hook_archetype": "delayed_reveal",
+  "duration_target": 70,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "चाय में जो चम्मच भर चीनी आप डालते हैं — दुनिया के आधे देश उसे जिस नाम से बुलाते हैं, वो नाम यहीं से गया है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Reverse of the chilli reel: this one went out, not in.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "white sugar pouring into a bowl",
+          "kind": "video",
+          "must": "sugar",
+          "avoid": "tape"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 7,
+      "line": "अंग्रेज़ी का sugar — संस्कृत के 'शर्करा' से बना है। शर्करा से फ़ारसी शकर, वहाँ से अरबी सुक्कर, फिर लैटिन, फ़्रेंच sucre, और अंग्रेज़ी sugar। एक ही शब्द, पाँच भाषाओं से होता हुआ।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": [
+        "शर्करा → sugar"
+      ],
+      "note": "The chain is the content. Say it slowly.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "Sugarcane Field Srirangapatna Karnataka",
+          "kind": "commons",
+          "must": "sugarcane"
+        },
+        {
+          "q": "sugar crystals macro close up",
+          "kind": "video",
+          "must": "sugar"
+        },
+        {
+          "q": "old manuscript page handwriting",
+          "kind": "commons",
+          "must": "manuscript"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 26,
+      "line": "और candy? वो अरबी 'क़ंदी' से आया, जो जुड़ता है संस्कृत के 'खण्डक' से — यानी टुकड़ा, डला। मिस्री के डले। यानी अंग्रेज़ी की मिठाई का नाम भी यहीं की देन है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "खण्डक → candy"
+      ],
+      "note": "Second word, same door. This is the share-worthy bit.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "rock sugar crystals mishri",
+          "kind": "photo",
+          "must": "sugar"
+        },
+        {
+          "q": "colorful candy sweets close up",
+          "kind": "video",
+          "must": "candy"
+        },
+        {
+          "q": "Jaggery cubes",
+          "kind": "commons",
+          "must": "jaggery"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 44,
+      "line": "वजह ये थी कि गन्ने के रस से दानेदार चीनी बनाने की तकनीक यहाँ विकसित हुई। कहते हैं सिकंदर के साथियों ने भारत में ऐसा शहद देखा, जो मधुमक्खियों के बिना बनता था।",
+      "mode": "ANCIENT",
+      "query": null,
+      "onscreen": null,
+      "note": "'कहते हैं' — the Alexander line is a repeated classical anecdote, not a document we hold.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "Making Jaggery Gur in Punjab",
+          "kind": "commons",
+          "must": "jaggery"
+        },
+        {
+          "q": "traditional sugarcane juice extraction process",
+          "kind": "video",
+          "must": "sugarcane"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 58,
+      "line": "और सबसे मज़ेदार बात आख़िर में। हिंदी में हम इसे 'चीनी' कहते हैं — नाम चीन से जोड़ा जाता है। वजह पक्की नहीं है, इतिहासकार भी अंदाज़ा ही लगाते हैं। यानी जो मिठास यहाँ से दुनिया भर में गई, घर में उसका नाम बाहर का रह गया।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "चीनी?"
+      ],
+      "note": "Open question stated as an open question. Do not assert the China story.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "adding sugar to a cup of tea",
+          "kind": "video",
+          "must": "tea"
+        },
+        {
+          "q": "Sugar cubes V1",
+          "kind": "commons",
+          "must": "sugar"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 74,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "अंग्रेज़ी का 'sugar' संस्कृत के शर्करा से बना है, और 'candy' का रिश्ता खण्डक से। पर हिंदी में हम जिसे चीनी कहते हैं — उस नाम की वजह आज तक पक्की नहीं है।",
+  "hashtags": [
+    "#चीनी",
+    "#शब्दकीजड़",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Etymonline, 'sugar' — पुरानी फ़्रेंच sucre < मध्यकालीन लैटिन succarum < अरबी sukkar < फ़ारसी shakar < संस्कृत शर्करा · Wikipedia, 'List of English words of Sanskrit origin' — candy < अरबी qandi, संस्कृत खण्डक (टुकड़ा) से जुड़ा · गन्ना और चीनी बनाने की शुरुआत भारतीय उपमहाद्वीप में मानी जाती है (Wikipedia: Sugar) · 'चीनी' नाम चीन से जोड़ा जाता है, पर इसका कारण प्रमाणित नहीं — स्रोत आपस में असहमत हैं",
+  "avoid": "Do NOT assert that चीनी is named after China because refining came from China — the mechanism is unverified and sources conflict (one even derives it from Persian shakar, which looks wrong). Say the name is linked to China and the reason is not settled. Do NOT claim sugar was 'invented' in India on a date; say the technique developed here and that sugarcane is native to the region. The Alexander 'honey without bees' line is a classical anecdote — keep 'कहते हैं'. Do NOT turn this into national pride or a jab at any country. NO POLITICS.",
+  "hook_text": [
+    "'Sugar' शब्द",
+    "यहीं से गया है"
+  ]
+}
