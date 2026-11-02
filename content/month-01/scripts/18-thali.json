@@ -1,0 +1,168 @@
+{
+  "id": "18-thali",
+  "theme": "kitchen-history",
+  "title_hi": "आधी थाली",
+  "title_en": "Half your plate is not from here",
+  "hook_archetype": "contrarian",
+  "duration_target": 75,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "अपनी थाली देखिए — आलू की सब्ज़ी, टमाटर की ग्रेवी, हरी मिर्च, राजमा। इनमें से एक भी चीज़ पाँच सौ साल पहले भारत में नहीं थी।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "Name things the viewer ate this week.",
+      "kind": "auto",
+      "shots": 1,
+      "queries": [
+        {
+          "q": "indian thali meal plate",
+          "kind": "photo",
+          "must": "thali"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 8,
+      "line": "ये सब अमेरिका से आईं — मेक्सिको, पेरू, ब्राज़ील। 1492 के बाद यूरोपीय जहाज़ों ने एक महाद्वीप के पौधे दूसरे तक पहुँचा दिए। इतिहास में इसे कोलंबियन एक्सचेंज कहते हैं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "1492 के बाद"
+      ],
+      "note": "Name the mechanism once, plainly.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "fresh tomatoes on vine",
+          "kind": "video",
+          "must": "tomatoes"
+        },
+        {
+          "q": "antique world map engraving",
+          "kind": "commons",
+          "must": "map"
+        },
+        {
+          "q": "tall ship sailing at sea",
+          "kind": "video",
+          "must": "sailing"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 26,
+      "line": "कुछ चीज़ों का रिकॉर्ड साफ़ है। काजू ब्राज़ील से पुर्तगाली लेकर आए। और पपीता — 1623 में एक इतालवी यात्री ने इसे पुर्तगाली दमन में देखकर लिखा।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "दमन · 1623"
+      ],
+      "note": "Lead with what is documented, so the hedge that follows is credible.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "cashew nuts close up",
+          "kind": "photo",
+          "must": "cashew"
+        },
+        {
+          "q": "papaya fruit cut open",
+          "kind": "video",
+          "must": "papaya"
+        },
+        {
+          "q": "old handwritten travel journal page",
+          "kind": "commons",
+          "must": "journal"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 44,
+      "line": "आलू और टमाटर कब पहुँचे — इसकी पक्की तारीख़ नहीं मिलती। इतिहासकार भी अंदाज़ा लगाते हैं। पर एक इशारा भाषा में छिपा है: कई भारतीय भाषाओं में आलू को बटाटा कहते हैं, और पुर्तगाली में आलू है batata।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "batata → बटाटा"
+      ],
+      "note": "Say plainly that the date is unknown — the language clue is a clue, not proof.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "potato harvest in field",
+          "kind": "video",
+          "must": "potato"
+        },
+        {
+          "q": "red kidney beans in a bowl",
+          "kind": "photo",
+          "must": "beans"
+        },
+        {
+          "q": "potatoes in a market basket",
+          "kind": "video",
+          "must": "potatoes"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 64,
+      "line": "और जो वाक़ई यहाँ की हैं? हल्दी, अदरक, काली मिर्च, आम। यानी थाली कोई जमी हुई चीज़ नहीं है। वो हर सदी में बदलती रही है — और आज भी बदल रही है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "End on continuity, not loss.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "fresh turmeric roots",
+          "kind": "photo",
+          "must": "turmeric"
+        },
+        {
+          "q": "ripe mangoes on a tree",
+          "kind": "video",
+          "must": "mango"
+        },
+        {
+          "q": "indian home cooked meal served",
+          "kind": "video",
+          "must": "meal"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 80,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "आलू, टमाटर, मिर्च, राजमा, काजू, पपीता — ये सब अमेरिका से आए। थाली हर सदी में बदलती रही है।",
+  "hashtags": [
+    "#थाली",
+    "#खानेकीकहानी",
+    "#इतिहास",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: काजू और पपीता — 'The Portuguese and the Introduction of American Fruit Plants into India' (शोध पत्र); पपीता का उल्लेख पियेत्रो देल्ला वाले ने 1623 में पुर्तगाली दमन में किया · राजमा (Phaseolus vulgaris) अमेरिका में पालतू बनाया गया (Wikipedia) · मिर्च: K. T. Achaya, Indian Food: A Historical Companion · आलू और टमाटर के भारत पहुँचने की तारीख़ प्रमाणित नहीं है — यह reel उसे अनुमान ही कहती है",
+  "avoid": "Do NOT give arrival dates for potato or tomato — they are not documented; say so out loud. The batata/बटाटा resemblance is a CLUE, never proof. Do NOT say Indians 'had no vegetables' before 1500 — list what was already here (turmeric, ginger, black pepper, mango, rice, lentils, brinjal). Do NOT frame this as loss or as colonial theft; the close is that a plate keeps changing. Rajma's exact American origin is disputed between Mesoamerica and the Andes — just say America. NO POLITICS.",
+  "hook_text": [
+    "आधी थाली",
+    "यहाँ की नहीं है"
+  ]
+}
