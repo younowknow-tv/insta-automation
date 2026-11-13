@@ -20,7 +20,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | 16 | बाटा — the brand everyone thinks is Indian | brand-names | **posted** 2026-11-02 | First of the Dolby vein. Baťa is a Czech family surname (pronounced 'batya'); founded 1894 in Zlín by Tomáš, Antonín and Anna. India 1931-32 at Konnagar; Batanagar built on the Ganges from 1934. Tomáš died in a 1932 plane crash; nationalised 1945; family moved to Canada and built Batawa. Bata India is BSE/NSE listed with Bata Brands S.A. (Lausanne) as controlling shareholder. Store counts conflict across sources, so none is quoted. |
 | 17 | मिर्च — India had no chilli until ~500 years ago | kitchen-history | **approved** 2026-11-01 | Chilli is American, carried east by the Portuguese, in Goa early 1500s (sources range 1490s-1520s, so the reel hedges). Heat before it came from pippali (long pepper) and Malabar black pepper. Achaya is the standard source. |
 | 18 | आधी थाली भारत से नहीं है | kitchen-history | **posted** 2026-11-07 | Potato, tomato, chilli, rajma, cashew, papaya — post-1500 American arrivals. NOTE: cashew and papaya are documented (Portuguese 16th c.; Della Valle saw papaya at Daman, 1623); potato and tomato dates are NOT firmly sourced — hedge or omit. |
-| 19 | पाव — a Portuguese word | kitchen-history | **approved** 2026-11-01 | Wiktionary confirms Marathi पाव (bread) is borrowed from Portuguese pão, cognate with Konkani — and पाव (quarter) is a SEPARATE entry, which kills the common folk etymology. Also पोदेर < padeiro. Vada pav from a Dadar stall in the 1960s (1966 vs 1971 conflict, so the reel says the decade). |
+| 19 | पाव — a Portuguese word | kitchen-history | **posted** 2026-11-13 | Wiktionary confirms Marathi पाव (bread) is borrowed from Portuguese pão, cognate with Konkani — and पाव (quarter) is a SEPARATE entry, which kills the common folk etymology. Also पोदेर < padeiro. Vada pav from a Dadar stall in the 1960s (1966 vs 1971 conflict, so the reel says the decade). |
 | 20 | चीनी, और दुनिया का 'sugar' | kitchen-history | **approved** 2026-11-01 | Best sourced of the six: sugar < Sanskrit शर्करा via Persian/Arabic (Etymonline); candy < Arabic qandi < Sanskrit खण्डक. Sugar travelled OUT of India. The चीनी-from-China story is NOT asserted: widely repeated, mechanism unverified, sources conflict — the reel says so out loud. |
 | 21 | कॉफ़ी — सात बीज | kitchen-history | **needs reframe** | Baba Budan's seven beans is LEGEND only — no primary documentation, dates conflict (16th vs 17th c.). Tell it as legend, or drop. |
 | 22 | इडली — the oldest record | kitchen-history | **approved** 2026-11-02 | Gaurav asked for it anyway, so it was REFRAMED as an evidence question: Vaddaradhane (usually 920 CE, date contested) has 'iddalige'; Manasollasa (1130) has 'iddarika' — fried urad balls, not steamed; today's idli traceable after ~1250. Achaya's Indonesian hypothesis AND the criticism are both named; the reel takes no side, which avoids the posture that got reel 15 suppressed. |
@@ -30,7 +30,9 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 
 | Reel | Age | Views | Shares |
 |---|---|---|---|
-| 08-dolby | 30h | **4,754** | 54 |
+| 08-dolby | 13d | **6,254** | 57 |
+| 18-thali | 6d | 977 | 5 |
+| 16-bata | 11d | **118** | 0 |
 | 13-ganeshotsav | 42d | 904 | 2 |
 | 11-terahvin | 30d | 380 | 0 |
 | 10-zip | 29d | 357 | 1 |
@@ -46,7 +48,11 @@ recognition, nothing to argue with, and 54 shares carried the reach.
 account that did 4,754 in 30 hours three weeks later. It told people the reasons
 behind their customs were invented. Do not script that posture again.
 
-**Next vein — daily brand and product names, Dolby's exact treatment** (the name is a
+**Update 2026-11-13:** the brand-name theory did NOT hold — 16-bata died at 118, below the
+account's normal 230-380 band, while 18-thali (food) did 977 in six days. Dolby still looks like
+a one-off outlier, and food is the better-performing vein so far.
+
+**Original note — daily brand and product names, Dolby's exact treatment** (the name is a
 person, a place, or a word with a literal meaning). Each needs verification first:
 Bluetooth (a Danish king) · Wi-Fi (not "wireless fidelity") · Bata (Czech, not Indian) ·
 Parle (Vile Parle) · Amul · Maggi (Julius Maggi) · Nirma · Bisleri (Italian) ·
@@ -100,8 +106,8 @@ beat, payoff on the Talon ad in Esquire's first issue (Autumn 1933). The
 Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
 
 Bank target is 15 before daily posting starts. Current (2026-09-15):
-**6** approved and unposted — 12-currency, 17-mirch, 19-pav, 20-chini, 22-idli, 23-jalebi (plus 14-billi rendered but shelved).
-13 (2026-09-20), 07 (2026-09-27), 11 (2026-10-02), 10 (2026-10-03), 15 (2026-10-09), 08 (2026-10-31), 16 (2026-11-02) and 18 (2026-11-07). **~14 more topics needed.**
+**5** approved and unposted — 12-currency, 17-mirch, 20-chini, 22-idli, 23-jalebi (plus 14-billi rendered but shelved).
+13 (2026-09-20), 07 (2026-09-27), 11 (2026-10-02), 10 (2026-10-03), 15 (2026-10-09), 08 (2026-10-31), 16 (2026-11-02), 18 (2026-11-07) and 19 (2026-11-13). **~14 more topics needed.**
 
 ## Known issue: audio fault on 09, 11, 12
 

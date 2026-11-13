@@ -276,7 +276,10 @@
   "pexels:8811060",
   "pexelsphoto:4331491",
   "pexelsphoto:36215924",
-  "commons:73916940"
+  "commons:73916940",
+  "pexels:39687575",
+  "pexels:34333825",
+  "pexels:5028622"
  ],
  "assets": {
   "01-samosa-01-00.mp4": "pexels:37649378",
@@ -553,7 +556,10 @@
   "23-jalebi-04-01.mp4": "pexels:8811060",
   "22-idli-01-01.jpeg": "pexelsphoto:4331491",
   "23-jalebi-04-00.jpeg": "pexelsphoto:36215924",
-  "22-idli-01-00.jpg": "commons:73916940"
+  "22-idli-01-00.jpg": "commons:73916940",
+  "fastest-0.mp4": "pexels:39687575",
+  "fastest-1.mp4": "pexels:34333825",
+  "fastest-2.mp4": "pexels:5028622"
  },
  "credits": {
   "05-shunya-02-00.jpg": "Bakhshali numerals 2.jpg — Augustus Hoernle (1841-1918) (Public domain), via Wikimedia Commons",
@@ -768,6 +774,9 @@
   "23-jalebi-04-01.mp4": "indian wedding feast food",
   "22-idli-01-01.jpeg": "appetizing Idli cakes with herbs and chutney",
   "23-jalebi-04-00.jpeg": "Stack of delicious traditional Indian jalebi sweets",
-  "22-idli-01-00.jpg": "Vedas palm leaf manuscript Tamil Grantha Script"
+  "22-idli-01-00.jpg": "Vedas palm leaf manuscript Tamil Grantha Script",
+  "fastest-0.mp4": "fiber optic cables glowing",
+  "fastest-1.mp4": "satellite orbiting earth animation",
+  "fastest-2.mp4": "server room data centre racks"
  }
 }
