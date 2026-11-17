@@ -25,7 +25,7 @@ Status: `idea` → `verified` → `built` → `posted`
 | # | Card | Series | Status | Note |
 |---|---|---|---|---|
 | c01 | शैम्पू ← चाँपो | शब्द की जड़ | **built** | from reel 02; OED |
-| c02 | बिल्ली: कहानी बनाम रिकॉर्ड (3 slides) | सुनी हुई कहानी | **built** | from reel 14 research (reel shelved) |
+| c02 | बिल्ली: कहानी बनाम रिकॉर्ड (3 slides) | सुनी हुई कहानी | **posted** 2026-11-16 | from reel 14 research (reel shelved) |
 | c03 | बख़्शाली पांडुलिपि | असली पन्ना | **built** | from reel 05; 2017 vs 2024 dating |
 
 ## Free from research already done and checked

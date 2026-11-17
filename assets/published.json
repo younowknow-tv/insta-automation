@@ -126,5 +126,13 @@
   "at": "2026-11-13T14:31:33.430296+00:00",
   "pinned": false,
   "how": "publish.py"
+ },
+ "billi-record": {
+  "media_id": "18051896288824587",
+  "permalink": "https://www.instagram.com/p/Df0q7alCXc6/",
+  "comment_id": "18108235262347474",
+  "at": "2026-11-17T00:43:44.943263+00:00",
+  "pinned": false,
+  "how": "publish.py --card"
  }
 }
