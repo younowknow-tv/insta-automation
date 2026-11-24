@@ -12,6 +12,17 @@ and we pick them together the way we pick reel topics.
 
 Status: `idea` → `verified` → `built` → `posted`
 
+## PAUSED 2026-11-24 — cards cannot reach anyone yet
+
+The first carousel (c02) got **2 views, reach 1, in eight days**. The account has
+**38 followers**. Reels are recommended to non-followers — that is where 1,000-6,000
+views come from — while static posts and carousels are shown almost only to existing
+followers. So a card is capped at roughly 38 people today.
+
+The generator and the three series stay as they are. Revisit when the follower count
+is in the low thousands; until then every production hour goes into reels.
+
+
 ## Series
 
 | Series | Layout | What it is |

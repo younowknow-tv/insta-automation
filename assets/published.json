@@ -134,5 +134,13 @@
   "at": "2026-11-17T00:43:44.943263+00:00",
   "pinned": false,
   "how": "publish.py --card"
+ },
+ "12-currency": {
+  "media_id": "18067922924535223",
+  "permalink": "https://www.instagram.com/reel/DgIb_QagUmC/",
+  "comment_id": "17907285228670822",
+  "at": "2026-11-24T16:58:39.471602+00:00",
+  "pinned": false,
+  "how": "publish.py"
  }
 }
