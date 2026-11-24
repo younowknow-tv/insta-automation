@@ -25,6 +25,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | 21 | कॉफ़ी — सात बीज | kitchen-history | **needs reframe** | Baba Budan's seven beans is LEGEND only — no primary documentation, dates conflict (16th vs 17th c.). Tell it as legend, or drop. |
 | 22 | इडली — the oldest record | kitchen-history | **approved** 2026-11-02 | Gaurav asked for it anyway, so it was REFRAMED as an evidence question: Vaddaradhane (usually 920 CE, date contested) has 'iddalige'; Manasollasa (1130) has 'iddarika' — fried urad balls, not steamed; today's idli traceable after ~1250. Achaya's Indonesian hypothesis AND the criticism are both named; the reel takes no side, which avoids the posture that got reel 15 suppressed. |
 | 23 | जलेबी | kitchen-history | **approved** 2026-11-02 | jalebi < Persian zalābiya (dictionaries, Hobson-Jobson via Achaya); 10th-c. Arabic cookbooks carry the recipe; India's oldest mention c.1450 in the Jain text Priyamkarnrpakatha, and 15th-c. names कुंडलिका/जलवल्लिका. The 1600 Gunyagunabodhini recipe is called 'similar', not identical — popular sources overstate it. |
+| 24 | बेटा या बेटी — शरीर में लिंग कैसे तय होता है | body-and-science | **rendered** 2026-11-24 | Gaurav's topic. Egg always carries X; the father's sperm carries X or Y, so the blame put on mothers is biologically wrong. Gonad is bipotential for roughly the first 6-7 weeks (sources differ: some count from fertilisation, some from LMP). SRY on the Y, discovered 1990 (Sinclair et al., Nature 346:240-244), switches it to testis; without it, ovary. One honest line that the pathway varies in some people. Ends on PCPNDT 1994 — determining AND disclosing fetal sex are both offences. NO penalty figures quoted: sources conflict (3 vs 5 yrs, ₹50k vs ₹1 lakh). Names no method of determining or influencing sex, by design. |
 
 ## What performs (2026-11-01)
 
@@ -67,7 +68,8 @@ Xerox (Greek, "dry writing") · Adidas (Adolf Dassler) · Google (googol).
 - `numbers-and-sky` — shunya
 - `mythology-and-ritual` — **confirmed by Gaurav 2026-09-13** (visarjan, terahvin)
 - `money-and-trade` — **confirmed by Gaurav 2026-09-13** (gulf rupee)
-- `brand-names` — NEW, opened by 16-bata after 08-dolby broke out. 08 should move here from
+- `body-and-science` — NEW, opened by 24-beta-beti
+- `brand-names` — opened by 16-bata after 08-dolby broke out. 08 should move here from
   `everyday-words`: a brand name is a different promise from a word origin, and the numbers say so.
 
 CLAUDE.md says six to eight stories in one theme plus connective narration and a

@@ -1,0 +1,165 @@
+{
+  "id": "24-beta-beti",
+  "theme": "body-and-science",
+  "title_hi": "बेटा या बेटी",
+  "title_en": "What decides a baby's sex",
+  "hook_archetype": "contrarian",
+  "duration_target": 75,
+  "beats": [
+    {
+      "n": "hook",
+      "t": 0,
+      "line": "घरों में आज भी कहा जाता है — 'बेटा नहीं हुआ', और उँगली माँ की तरफ़ उठती है। जीव विज्ञान कहता है: ये माँ तय करती ही नहीं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": null,
+      "note": "The social belief first, then the science. Never mocking the family — correcting the blame.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "dna double helix animation",
+          "kind": "video",
+          "must": "dna"
+        },
+        {
+          "q": "pregnant woman holding her belly",
+          "kind": "video",
+          "must": "pregnant"
+        }
+      ]
+    },
+    {
+      "n": "tension",
+      "t": 7,
+      "line": "माँ के अंडाणु में हमेशा एक X गुणसूत्र होता है — हमेशा। पिता के शुक्राणु में X भी हो सकता है, और Y भी। जो शुक्राणु पहले पहुँचता है, वही तय कर देता है — XX, या XY।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "XX या XY"
+      ],
+      "note": "The core fact, stated plainly.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "sperm cells under microscope",
+          "kind": "video",
+          "must": "sperm"
+        },
+        {
+          "q": "cell dividing microscope view",
+          "kind": "video",
+          "must": "cell"
+        },
+        {
+          "q": "dna strands blue scientific",
+          "kind": "video",
+          "must": "dna"
+        }
+      ]
+    },
+    {
+      "n": "journey",
+      "t": 26,
+      "line": "पर कहानी यहीं ख़त्म नहीं होती। गर्भ में शुरुआती छह-सात हफ़्ते तक भ्रूण की वो ग्रंथि एक जैसी होती है — न अंडाशय, न वृषण। दोनों बनने की संभावना उसमें होती है।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "6-7 हफ़्ते"
+      ],
+      "note": "Sources differ on the exact week because some count from fertilisation and some from the last period — hence 'करीब'.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "scientist looking into microscope laboratory",
+          "kind": "video",
+          "must": "microscope"
+        },
+        {
+          "q": "embryo development illustration cells",
+          "kind": "video",
+          "must": "cells"
+        }
+      ]
+    },
+    {
+      "n": "turn",
+      "t": 44,
+      "line": "फिर Y गुणसूत्र पर बैठा एक जीन चालू होता है — SRY। वैज्ञानिकों ने इसे 1990 में खोजा था। SRY चालू हुआ, तो वही ग्रंथि वृषण बनती है। नहीं हुआ, तो अंडाशय। और बाहरी अंग भी शुरू में एक जैसे दिखते हैं — फ़र्क़ करीब नौवें हफ़्ते के बाद साफ़ होने लगता है। कुछ लोगों में ये रास्ते अलग तरह से भी चलते हैं।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "SRY · 1990"
+      ],
+      "note": "One dated discovery, and one honest line that the pathway varies in some people.",
+      "kind": "auto",
+      "shots": 3,
+      "queries": [
+        {
+          "q": "scientist pipetting samples in lab",
+          "kind": "video",
+          "must": "lab"
+        },
+        {
+          "q": "genetic research dna sequencing screen",
+          "kind": "video",
+          "must": "dna"
+        },
+        {
+          "q": "petri dish in laboratory close up",
+          "kind": "video",
+          "must": "laboratory"
+        }
+      ]
+    },
+    {
+      "n": "payoff",
+      "t": 70,
+      "line": "यानी एक शुक्राणु, और एक छोटा सा जीन। किसी का दोष नहीं। और भारत में गर्भ में लिंग की जाँच करना या उसे बताना — दोनों क़ानूनन अपराध हैं, 1994 के पीसीपीएनडीटी क़ानून के तहत।",
+      "mode": "MODERN",
+      "query": null,
+      "onscreen": [
+        "PCPNDT, 1994"
+      ],
+      "note": "End on the law. No penalty figures — published numbers conflict.",
+      "kind": "auto",
+      "shots": 2,
+      "queries": [
+        {
+          "q": "law book and gavel on desk",
+          "kind": "video",
+          "must": "law"
+        },
+        {
+          "q": "mother holding newborn baby hands",
+          "kind": "video",
+          "must": "baby"
+        }
+      ]
+    },
+    {
+      "n": "tag",
+      "t": 86,
+      "line": "हर चीज़ की एक कहानी है।",
+      "mode": "FIXED",
+      "query": null,
+      "onscreen": null,
+      "note": "Fixed end card."
+    }
+  ],
+  "caption": "'बेटा नहीं हुआ' — और इल्ज़ाम माँ पर। जबकि अंडाणु में हमेशा X होता है, और X या Y पिता के शुक्राणु से आता है। भारत में गर्भ में लिंग की जाँच और उसे बताना, दोनों क़ानूनन अपराध हैं।",
+  "hashtags": [
+    "#विज्ञान",
+    "#जेनेटिक्स",
+    "#बेटीबचाओ",
+    "#हरचीज़कीएककहानीहै"
+  ],
+  "pinned_comment": "स्रोत: Sinclair et al., 'A gene from the human sex-determining region encodes a protein with homology to a conserved DNA-binding motif', Nature 346:240-244 (1990) — SRY की खोज · UNSW Embryology / Larsen, Human Embryology — भ्रूण की ग्रंथि शुरुआती हफ़्तों तक द्विसंभावी (bipotential) रहती है; हफ़्तों की गिनती स्रोत के हिसाब से थोड़ी अलग होती है (निषेचन से, या आख़िरी माहवारी से) · Pre-Conception and Pre-Natal Diagnostic Techniques Act, 1994 (2003 में संशोधित) — लिंग जाँच और लिंग बताना, दोनों प्रतिबंधित; अल्ट्रासाउंड केवल चिकित्सकीय कारणों से",
+  "avoid": "NEVER describe or hint at any method of determining or influencing a baby's sex — the reel exists to remove blame and to state the law. Do NOT quote PCPNDT penalties: published figures conflict (3 vs 5 years, ₹50,000 vs ₹1 lakh). Do NOT state the week of differentiation as exact — sources differ because some count from fertilisation and others from the last menstrual period; say 'करीब'. Do NOT claim diet, timing, position or any folk method changes the sex — no evidence. Do NOT conflate biological sex with gender identity; this reel is only about how the body's sex develops. Keep the line that the pathway varies in some people — it is accurate and it costs nothing. NO POLITICS, no naming of any scheme, party or government.",
+  "hook_text": [
+    "बेटा या बेटी —",
+    "तय कौन करता है?"
+  ]
+}
