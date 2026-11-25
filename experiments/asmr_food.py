@@ -1,49 +1,60 @@
 #!/usr/bin/env python3
-"""One-off: turn a long locked-off eating video into a silent ASMR food reel.
+"""One-off: a silent ASMR kadhi-chawal reel, cut from four phone clips.
 
-    python experiments/asmr_food.py ~/Downloads/IMG_8003.MOV
+    python experiments/asmr_food.py
 
-Not part of the daily pipeline. No voice, no captions, no music — Gaurav adds
-the track in the Instagram app, so the MP4 ships with a silent stereo stream
-(a video-only file gives the app nothing to lay music against).
+Not part of the daily pipeline. No voice, no captions, no music — the track
+goes on in the Instagram app, so the MP4 ships with a silent stereo stream
+(a video-only file gives the app nothing to lay music against). Unbranded:
+this is for a new channel, not now_you_know.tv.
 
-WHY IT LOOKS THE WAY IT DOES
-----------------------------
-The source is twelve minutes of one fixed top-down shot: a plate of kadhi-pakora
-and rice on a wooden table, eaten by hand. One camera, one angle, no cutaways.
-Three problems follow from that, and this script is the answer to them.
+THE FOUR SOURCES
+----------------
+Three serving clips shot in 4K, handheld, well lit (the pot with its chilli
+tadka, the ladle, the thecha, the finished plate), and then twelve minutes of
+eating, shot in 1080 from one fixed overhead angle on a wooden table.
 
-1. No coverage. Every "shot" is a crop of the same frame. Pushing in to
-   different parts of the plate at different zooms is the only thing that makes
-   a cut read as a cut rather than as a jump.
+They are different films. The serving clips have real coverage and good colour
+and need almost nothing. The eating clip has one angle, flat indoor light and
+no cutaways, and everything below is the answer to that.
+
+1. No coverage. Every "shot" from the eating clip is a crop of the same frame.
+   Pushing in to different parts of the plate at different zooms is the only
+   thing that makes a cut read as a cut rather than as a jump.
 
 2. The table is dull and it is 40% of the frame. Rather than matte the plate
    (a hand crosses the rim constantly, and a cutout would slice the wrist), the
    background is replaced by compositing through a feathered ellipse:
    - CUTOUT   — only where no hand is in frame. The plate is masked at its rim,
-     shrunk, given a soft drop shadow and set on defocused fog. The
-     plate genuinely floats. Used twice: the opening, and the second helping.
+     shrunk, given a soft drop shadow and set on defocused fog, so it floats.
+     Used twice: entering the meal, and the clean plate at the end.
    - VIGNETTE — wherever a hand appears. A frame-sized ellipse with a wide
-     feather, so the table dissolves into fog towards the corners and a
-     wrist entering frame fades into it instead of being cut in half.
+     feather, so the table dissolves into fog towards the corners and a wrist
+     entering frame fades into it instead of being cut in half.
    One mask generator, two sets of numbers.
 
+   The vignette earns its keep twice over now: the kitchen counter and the
+   dining table are two different rooms, and dissolving both into the same fog
+   is what makes them read as one film.
+
 3. Nothing happens for minutes at a time. The edit keeps only the moments that
-   are events — plate lands, rice added, chutney spooned on, bite lifted — and
-   runs the eating between them at 6-40x.
+   are events — tadka stirred in, kadhi poured, bite lifted — and runs the
+   eating between them at 5-30x. Roughly 70% of the runtime is 1x or slower.
 
-Two things the first pass got wrong, both fixed here and worth not repeating:
+Three things earlier passes got wrong, all worth not repeating:
 
-  * Mist was screen-blended over the WHOLE frame. Screen lifts blacks, so the
-    food went milky and the white plate blew out to pink. Mist is now blended
-    into the background only, before the food is composited over it — so it
-    drifts behind the plate and never touches it.
-  * The background was warm autumn bokeh, which merged with warm food into
-    orange soup. It is now fog over a dark valley: the plate is the only warm thing
-    in frame, which is what makes it read as food.
+  * blend=screen was run in YUV. Screen pushes values up, and on the U and V
+    planes that means both chroma channels at once — which is magenta. Any
+    blend that is not a per-plane-safe mode has to be done in RGB.
+  * Mist was screen-blended over the WHOLE frame, which lifts the blacks until
+    the food goes milky and a white plate clips to pink. Mist now goes into the
+    background before the food is composited over it.
+  * The eating clip was graded warm globally, which took the rice and the hand
+    with it. selectivecolor does it properly: see GRADE_WARM.
 
-The plate changes partway through (there is a second helping at 6:51 in the
-source). That is kept, not hidden — its arrival is the midpoint beat.
+NOT USED: the last ten seconds of IMG_7806 are a child eating, including their
+face. Left out deliberately — the channel rule is no faces, and a child is not
+ours to publish. Everything before 0:13 of that clip is plate footage and is in.
 """
 import subprocess, sys, tempfile
 from pathlib import Path
@@ -60,8 +71,20 @@ MIST = C.ASSETS / "asmr-steam.mp4"
 # logo watermark and no NYK endcard. Set BRAND to a PNG path to put a mark back.
 BRAND = None
 
-# Plate geometry, measured off frames at 0:02 and 6:56 and nudged a few px
-# inside the rim. The camera never moves, so these are constants — no tracking.
+# The dish name over the clean plate at the end. CHANNEL is empty until the new
+# channel is named; set it and it prints under the dish, smaller.
+TITLE = ("KADHI", "CHAWAL")
+CHANNEL = ""
+
+DL = Path.home() / "Downloads"
+POT = DL / "IMG_7804.MOV"       # 4K: the pot, the tadka, the ladle, plating
+THECHA = DL / "IMG_7805.MOV"    # 4K: the thecha going on
+PLATED = DL / "IMG_7806.MOV"    # 4K: the finished plate (first 13s only)
+EATING = DL / "IMG_8003.MOV"    # 1080, 12 min, one fixed overhead angle
+
+# Plate geometry for the EATING clip, measured off frames at 0:02 and 6:56 and
+# nudged a few px inside the rim. That camera never moves, so these are
+# constants — no tracking. (The 4K clips are handheld and never masked.)
 PLATE1 = (529, 697, 500, 554)      # cx, cy, semi-axis x, semi-axis y
 PLATE2 = (532, 997, 508, 566)
 PLATE3 = (517, 905, 503, 598)      # same plate at the end, nudged by the eating
@@ -69,27 +92,40 @@ PLATE3 = (517, 905, 503, 598)      # same plate at the end, nudged by the eating
 # Roughly 70% of the runtime is at 1x or slower. The fast passes are there to
 # skip the parts where nothing happens, not to set the tempo — an ASMR cut that
 # is fast all the way through has nothing to be slow against.
+#
+# The 4K clips run at zoom 1.0: they were framed by hand for a phone screen and
+# are already tight, so cropping them only risks clipping the action. Zoom is a
+# repair for the eating clip, which was not framed for anything.
 SHOTS = [
-    # --- plate one -------------------------------------------------------
-    dict(name="01-hero",    ss=1.2,   dur=2.6,  speed=0.75, style="cutout",
+    # --- served ----------------------------------------------------------
+    dict(name="01-tadka",   src="POT",    ss=0.6,   dur=3.0, speed=1.0,
+         zoom=1.0, c=(540, 960), grade="light", push=(1.00, 1.06)),
+    dict(name="02-ladle",   src="POT",    ss=9.8,   dur=2.6, speed=0.8,
+         zoom=1.0, c=(540, 960), grade="light"),
+    dict(name="03-pour",    src="POT",    ss=13.4,  dur=2.2, speed=1.0,
+         zoom=1.0, c=(540, 960), grade="light"),
+    dict(name="04-pakora",  src="POT",    ss=27.0,  dur=2.0, speed=0.85,
+         zoom=1.0, c=(540, 960), grade="light"),
+    dict(name="05-thecha",  src="THECHA", ss=1.6,   dur=2.8, speed=1.0,
+         zoom=1.0, c=(540, 960), grade="light"),
+    dict(name="06-plated",  src="PLATED", ss=0.6,   dur=2.4, speed=1.0,
+         zoom=1.0, c=(540, 960), grade="light", push=(1.00, 1.05)),
+    # --- eaten -----------------------------------------------------------
+    dict(name="07-hero",    ss=1.2,   dur=2.6,  speed=0.75, style="cutout",
          plate=PLATE1, push=(1.00, 1.09)),
-    dict(name="02-bite-a",  ss=45.2,  dur=3.6,  speed=1.0,  zoom=1.45, c=(529, 697)),
-    dict(name="03-mix-a",   ss=62.0,  dur=20.0, speed=5.0,  zoom=1.30, c=(529, 690)),
-    dict(name="04-bite-b",  ss=122.4, dur=3.6,  speed=1.0,  zoom=1.42, c=(520, 690)),
-    # --- plate two: the second helping -----------------------------------
-    dict(name="05-lands",   ss=411.55, dur=1.6, speed=1.0,  zoom=1.10, c=(531, 980)),
-    dict(name="06-float",   ss=415.2, dur=2.0,  speed=0.8,  style="cutout",
-         plate=PLATE2, push=(1.07, 1.00)),
-    dict(name="07-rice",    ss=420.2, dur=3.2,  speed=1.0,  zoom=1.25, c=(531, 980)),
-    dict(name="08-chutney", ss=427.0, dur=1.3,  speed=0.6,  zoom=1.22, c=(531, 950)),
-    dict(name="09-mix-b",   ss=436.0, dur=16.0, speed=5.0,  zoom=1.32, c=(531, 990)),
-    # --- the plate goes clean --------------------------------------------
-    dict(name="10-lapse",   ss=490.0, dur=110.0, speed=30.0, zoom=1.18, c=(520, 930)),
-    # bookend: the reel opens on a full plate floating in fog and closes on
-    # the same plate wiped clean. exp pulls the white plate back from clipping.
-    dict(name="11-clean",   ss=727.6, dur=3.0,  speed=0.8,  style="cutout",
-         plate=PLATE3, push=(1.00, 1.06), exp=-0.045),
+    dict(name="08-bite-a",  ss=45.2,  dur=3.6,  speed=1.0,  zoom=1.45, c=(529, 697)),
+    dict(name="09-mix-a",   ss=62.0,  dur=20.0, speed=5.0,  zoom=1.30, c=(529, 690)),
+    dict(name="10-bite-b",  ss=122.4, dur=3.6,  speed=1.0,  zoom=1.42, c=(520, 690)),
+    dict(name="11-mix-b",   ss=436.0, dur=16.0, speed=5.0,  zoom=1.32, c=(531, 990)),
+    dict(name="12-lapse",   ss=490.0, dur=110.0, speed=30.0, zoom=1.18, c=(520, 930)),
+    # --- finished --------------------------------------------------------
+    # The clean plate floats like the full one did, and the dish name lands on
+    # it. exp pulls the white plate back from clipping under the warm grade.
+    dict(name="13-clean",   ss=727.0, dur=4.3,  speed=0.8,  style="cutout",
+         plate=PLATE3, push=(1.00, 1.05), exp=-0.045, title=True),
 ]
+
+SOURCES = {"POT": POT, "THECHA": THECHA, "PLATED": PLATED}
 
 # The phone shot this under cool indoor light, so the kadhi came out a pale
 # greenish yellow. selectivecolor is doing the work a global warm-up cannot:
@@ -98,13 +134,27 @@ SHOTS = [
 # the rice stays rice. The curves pair finishes the white balance; the highlight
 # points keep the plate from clipping, and a stronger push than this (tested)
 # turns both the kadhi orange and the hand with it.
-GRADE = ("selectivecolor="
-         "yellows=-0.22 0.16 0.30 0.02:"
-         "reds=-0.25 0.18 0.28 -0.03:"
-         "neutrals=-0.04 0.02 0.05 0,"
-         "curves=r='0/0 0.4/0.46 0.85/0.90 1/1':b='0/0 0.4/0.33 0.85/0.86 1/1',"
-         "eq=contrast=1.14:saturation=1.30,"
-         "unsharp=5:5:0.5:5:5:0.0")
+GRADE_WARM = ("selectivecolor="
+              "yellows=-0.17 0.11 0.21 0.02:"
+              "reds=-0.19 0.13 0.21 -0.02:"
+              "neutrals=-0.03 0.015 0.035 0,"
+              "curves=r='0/0 0.4/0.44 0.85/0.89 1/1':b='0/0 0.4/0.355 0.85/0.88 1/1',"
+              "eq=contrast=1.12:saturation=1.20,"
+              "unsharp=5:5:0.5:5:5:0.0")
+
+# The 4K clips were shot in good warm light and the kadhi in them is already
+# gold with a real chilli tadka on it. Running GRADE_WARM over them would cook
+# them orange, so they get a fraction of the same move and nothing else.
+#
+# The two grades have to MEET, which is why GRADE_WARM is milder than it was
+# when the eating clip stood alone. Graded to look its best by itself, it cut
+# to the 4K footage with visibly pinker rice and a pinker hand. Continuity
+# across a cut beats either shot winning on its own.
+GRADE_LIGHT = ("selectivecolor=yellows=-0.08 0.05 0.11 0:reds=-0.08 0.05 0.09 0,"
+               "eq=contrast=1.09:saturation=1.15,"
+               "unsharp=5:5:0.40:5:5:0.0")
+
+GRADES = {"warm": GRADE_WARM, "light": GRADE_LIGHT}
 
 
 def _dur(p):
@@ -147,6 +197,42 @@ def _background(seed):
         "[bgraw][mist]blend=all_mode=screen:all_opacity=0.50:shortest=1,"
         "format=yuv420p[bg]",
     ]
+
+
+def _title_ass(path, out_dur):
+    """The dish name, set on the clean plate.
+
+    Dark on the plate rather than white over it: the plate is the brightest
+    thing in frame, so white would need an outline and an outline would make it
+    a caption. Two lines because twelve letters at this size do not fit on one,
+    and the point of the note was that it should be big.
+    """
+    hold = max(0.6, out_dur - 0.05)
+    lines = [(1.10, 772, TITLE[0]), (1.28, 962, TITLE[1])]
+    if CHANNEL:
+        lines.append((1.70, 1180, CHANNEL))
+    head = (f"[Script Info]\nScriptType: v4.00+\nPlayResX: {W}\nPlayResY: {H}\n"
+            "WrapStyle: 2\nScaledBorderAndShadow: yes\n\n[V4+ Styles]\n"
+            "Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,"
+            "BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,"
+            "BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding\n"
+            # warm charcoal (&H00BBGGRR), no outline, a soft shadow for lift
+            "Style: Dish,Avenir Next,170,&H0020242A,&H0020242A,&H00FFFFFF,&H70FFFFFF,"
+            "1,0,0,0,100,100,14,0,1,0,3,5,0,0,0,1\n"
+            "Style: Chan,Avenir Next,54,&H0040444A,&H0040444A,&H00FFFFFF,&H70FFFFFF,"
+            "0,0,0,0,100,100,10,0,1,0,2,5,0,0,0,1\n\n[Events]\n"
+            "Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text\n")
+    body = "".join(
+        f"Dialogue: 0,{_ts(t)},{_ts(hold)},{'Chan' if txt == CHANNEL else 'Dish'},"
+        f",0,0,0,,{{\\fad(520,0)\\pos({W // 2},{y})}}{txt}\n"
+        for t, y, txt in lines)
+    Path(path).write_text(head + body, encoding="utf-8")
+
+
+def _ts(t):
+    h, rem = divmod(max(0.0, t), 3600)
+    m, s = divmod(rem, 60)
+    return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
 def shot(src, s, tmp, i):
@@ -197,19 +283,27 @@ def shot(src, s, tmp, i):
             _mask(m, W // 2, H // 2, 700, 1210, 0.32)
         cmd += ["-loop", "1", "-i", str(m)]
         fc += [
-            f"[0:v]fps={FPS},crop={cw}:{ch}:{x}:{y},scale={W}:{H},setsar=1,"
-            f"setpts=(PTS-STARTPTS)/{s['speed']},format=yuv420p[f]",
+            # scale to 1080x1920 BEFORE the crop, so one set of crop numbers
+            # works for the 1080 eating clip and the 4K serving clips alike
+            f"[0:v]fps={FPS},scale={W}:{H},crop={cw}:{ch}:{x}:{y},scale={W}:{H},"
+            f"setsar=1,setpts=(PTS-STARTPTS)/{s['speed']},format=yuv420p[f]",
             f"[3:v]scale={W}:{H},format=gray[m]",
             "[f][m]alphamerge[fa]",
             "[bg][fa]overlay=0:0:shortest=1[comp]",
         ]
 
-    tail = f"[comp]" + (f"eq=brightness={s['exp']}," if s.get("exp") else "") + GRADE
+    grade = GRADES[s.get("grade", "warm")]
+    tail = f"[comp]" + (f"eq=brightness={s['exp']}," if s.get("exp") else "") + grade
     if s.get("push"):
         z0, z1 = s["push"]
         n = max(2, int(round(out_dur * FPS)))
         tail += (f",zoompan=z='{z0}+({z1 - z0})*on/{n}':d=1:"
                  f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS}")
+    if s.get("title"):
+        # after the zoompan, so the type stays rock steady while the shot moves
+        a = tmp / "title.ass"
+        _title_ass(a, out_dur)
+        tail += f",ass={a}"
 
     if BRAND:
         cmd += ["-loop", "1", "-i", str(BRAND)]
@@ -229,10 +323,15 @@ def shot(src, s, tmp, i):
     return out
 
 
-def build(src):
+def build():
     OUT.mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp())
-    parts = [shot(src, s, tmp, i) for i, s in enumerate(SHOTS)]
+    missing = [p for p in (POT, THECHA, PLATED, EATING) if not p.exists()]
+    if missing:
+        raise SystemExit("missing source clip(s):\n  " +
+                         "\n  ".join(str(p) for p in missing))
+    parts = [shot(SOURCES.get(s.get("src"), EATING), s, tmp, i)
+             for i, s in enumerate(SHOTS)]
 
     # No endcard. The NYK card belongs to the other channel, and ending on the
     # empty floating plate loops straight back into the full one.
@@ -254,6 +353,4 @@ def build(src):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print(__doc__); sys.exit(1)
-    build(Path(sys.argv[1]).expanduser())
+    build()
