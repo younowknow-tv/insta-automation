@@ -291,7 +291,15 @@
   "pexels:31767905",
   "pexels:8731388",
   "pexels:6392156",
-  "pexels:5423959"
+  "pexels:5423959",
+  "pexels:34463519",
+  "pexels:4320603",
+  "pexels:10001424",
+  "pexels:27127710",
+  "pexels:9694239",
+  "pexels:34381988",
+  "pexels:27563948",
+  "pexels:11503048"
  ],
  "assets": {
   "01-samosa-01-00.mp4": "pexels:37649378",
@@ -583,7 +591,15 @@
   "24-beta-beti-03-02.mp4": "pexels:31767905",
   "24-beta-beti-04-00.mp4": "pexels:8731388",
   "24-beta-beti-04-01.mp4": "pexels:6392156",
-  "24-beta-beti-00-01.mp4": "pexels:5423959"
+  "24-beta-beti-00-01.mp4": "pexels:5423959",
+  "asmr-bg-garden.mp4": "pexels:34463519",
+  "asmr-fog.mp4": "pexels:4320603",
+  "asmr-bg-river.mp4": "pexels:10001424",
+  "asmr-mist.mp4": "pexels:27127710",
+  "asmr-steam.mp4": "pexels:9694239",
+  "asmr-bg-green.mp4": "pexels:34381988",
+  "asmr-bg-grass.mp4": "pexels:27563948",
+  "asmr-bg-forest.mp4": "pexels:11503048"
  },
  "credits": {
   "05-shunya-02-00.jpg": "Bakhshali numerals 2.jpg — Augustus Hoernle (1841-1918) (Public domain), via Wikimedia Commons",
@@ -813,6 +829,14 @@
   "24-beta-beti-03-02.mp4": "petri dish in laboratory close up",
   "24-beta-beti-04-00.mp4": "law book and gavel on desk",
   "24-beta-beti-04-01.mp4": "mother holding newborn baby hands",
-  "24-beta-beti-00-01.mp4": "pregnant woman holding her belly"
+  "24-beta-beti-00-01.mp4": "pregnant woman holding her belly",
+  "asmr-bg-garden.mp4": "garden leaves bokeh blur",
+  "asmr-fog.mp4": "smoke on black background",
+  "asmr-bg-river.mp4": "river water flowing",
+  "asmr-mist.mp4": "fog mist morning forest",
+  "asmr-steam.mp4": "steam black background",
+  "asmr-bg-green.mp4": "green leaves bokeh dark",
+  "asmr-bg-grass.mp4": "grass meadow blurred bokeh",
+  "asmr-bg-forest.mp4": "forest leaves green dark"
  }
 }
