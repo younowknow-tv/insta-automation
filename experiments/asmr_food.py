@@ -55,7 +55,10 @@ W, H, FPS = C.W, C.H, C.FPS
 OUT = C.OUTPUT / "experiments"
 GROUND = C.ASSETS / "asmr-mist.mp4"         # fog over a dark valley: warm food needs a cool ground
 MIST = C.ASSETS / "asmr-steam.mp4"
-LOGO = C.ROOT / "brand" / "profile" / "pfp-nyk.png"
+
+# This is for a NEW channel, not now_you_know.tv, so it ships unbranded: no
+# logo watermark and no NYK endcard. Set BRAND to a PNG path to put a mark back.
+BRAND = None
 
 # Plate geometry, measured off frames at 0:02 and 6:56 and nudged a few px
 # inside the rim. The camera never moves, so these are constants — no tracking.
@@ -63,34 +66,45 @@ PLATE1 = (529, 697, 500, 554)      # cx, cy, semi-axis x, semi-axis y
 PLATE2 = (532, 997, 508, 566)
 PLATE3 = (517, 905, 503, 598)      # same plate at the end, nudged by the eating
 
+# Roughly 70% of the runtime is at 1x or slower. The fast passes are there to
+# skip the parts where nothing happens, not to set the tempo — an ASMR cut that
+# is fast all the way through has nothing to be slow against.
 SHOTS = [
     # --- plate one -------------------------------------------------------
-    dict(name="01-hero",    ss=1.2,   dur=1.9,  speed=0.75, style="cutout",
-         plate=PLATE1, push=(1.00, 1.08)),
-    dict(name="02-bite-a",  ss=45.9,  dur=2.5,  speed=1.0,  zoom=1.45, c=(529, 697)),
-    dict(name="03-mix-a",   ss=60.0,  dur=24.0, speed=8.0,  zoom=1.30, c=(529, 690)),
-    dict(name="04-bite-b",  ss=123.0, dur=2.2,  speed=1.0,  zoom=1.42, c=(520, 690)),
+    dict(name="01-hero",    ss=1.2,   dur=2.6,  speed=0.75, style="cutout",
+         plate=PLATE1, push=(1.00, 1.09)),
+    dict(name="02-bite-a",  ss=45.2,  dur=3.6,  speed=1.0,  zoom=1.45, c=(529, 697)),
+    dict(name="03-mix-a",   ss=62.0,  dur=20.0, speed=5.0,  zoom=1.30, c=(529, 690)),
+    dict(name="04-bite-b",  ss=122.4, dur=3.6,  speed=1.0,  zoom=1.42, c=(520, 690)),
     # --- plate two: the second helping -----------------------------------
-    dict(name="05-lands",   ss=411.55, dur=1.35, speed=1.0,  zoom=1.10, c=(531, 980)),
-    dict(name="06-float",   ss=415.2, dur=1.6,  speed=0.8,  style="cutout",
+    dict(name="05-lands",   ss=411.55, dur=1.6, speed=1.0,  zoom=1.10, c=(531, 980)),
+    dict(name="06-float",   ss=415.2, dur=2.0,  speed=0.8,  style="cutout",
          plate=PLATE2, push=(1.07, 1.00)),
-    dict(name="07-rice",    ss=420.4, dur=2.4,  speed=1.0,  zoom=1.25, c=(531, 980)),
-    dict(name="08-chutney", ss=427.0, dur=1.3,  speed=0.5,  zoom=1.22, c=(531, 950)),
-    dict(name="09-mix-b",   ss=434.0, dur=18.0, speed=6.0,  zoom=1.32, c=(531, 990)),
+    dict(name="07-rice",    ss=420.2, dur=3.2,  speed=1.0,  zoom=1.25, c=(531, 980)),
+    dict(name="08-chutney", ss=427.0, dur=1.3,  speed=0.6,  zoom=1.22, c=(531, 950)),
+    dict(name="09-mix-b",   ss=436.0, dur=16.0, speed=5.0,  zoom=1.32, c=(531, 990)),
     # --- the plate goes clean --------------------------------------------
-    dict(name="10-lapse",   ss=480.0, dur=120.0, speed=40.0, zoom=1.18, c=(520, 930)),
+    dict(name="10-lapse",   ss=490.0, dur=110.0, speed=30.0, zoom=1.18, c=(520, 930)),
     # bookend: the reel opens on a full plate floating in fog and closes on
     # the same plate wiped clean. exp pulls the white plate back from clipping.
-    dict(name="11-clean",   ss=727.6, dur=2.6,  speed=0.8,  style="cutout",
+    dict(name="11-clean",   ss=727.6, dur=3.0,  speed=0.8,  style="cutout",
          plate=PLATE3, push=(1.00, 1.06), exp=-0.045),
 ]
 
-# Deeper shadows and a touch more colour, but no red push: the first pass used
-# colorbalance to "warm" the image and turned the white plate pink.
-GRADE = ("eq=contrast=1.10:saturation=1.22:brightness=0.005,"
-         "curves=all='0/0 0.28/0.24 0.72/0.76 1/1',"
-         "colorbalance=rs=0.015:bs=-0.022:rm=0.01:bm=-0.015,"
-         "unsharp=5:5:0.45:5:5:0.0")
+# The phone shot this under cool indoor light, so the kadhi came out a pale
+# greenish yellow. selectivecolor is doing the work a global warm-up cannot:
+# it pulls cyan out of the YELLOWS and REDS and adds magenta, which turns the
+# kadhi gold and brings the tadka specks forward, while leaving WHITES alone so
+# the rice stays rice. The curves pair finishes the white balance; the highlight
+# points keep the plate from clipping, and a stronger push than this (tested)
+# turns both the kadhi orange and the hand with it.
+GRADE = ("selectivecolor="
+         "yellows=-0.22 0.16 0.30 0.02:"
+         "reds=-0.25 0.18 0.28 -0.03:"
+         "neutrals=-0.04 0.02 0.05 0,"
+         "curves=r='0/0 0.4/0.46 0.85/0.90 1/1':b='0/0 0.4/0.33 0.85/0.86 1/1',"
+         "eq=contrast=1.14:saturation=1.30,"
+         "unsharp=5:5:0.5:5:5:0.0")
 
 
 def _dur(p):
@@ -197,11 +211,14 @@ def shot(src, s, tmp, i):
         tail += (f",zoompan=z='{z0}+({z1 - z0})*on/{n}':d=1:"
                  f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS}")
 
-    cmd += ["-loop", "1", "-i", str(LOGO)]
-    fc += [tail + "[gr]",
-           "[4:v]scale=150:-1,colorkey=0x000000:0.32:0.05,format=rgba,"
-           "colorchannelmixer=aa=0.40[lg]",
-           "[gr][lg]overlay=(W-w)/2:86:shortest=1[v]"]
+    if BRAND:
+        cmd += ["-loop", "1", "-i", str(BRAND)]
+        fc += [tail + "[gr]",
+               "[4:v]scale=150:-1,colorkey=0x000000:0.32:0.05,format=rgba,"
+               "colorchannelmixer=aa=0.40[lg]",
+               "[gr][lg]overlay=(W-w)/2:86:shortest=1[v]"]
+    else:
+        fc += [tail + "[v]"]
 
     cmd += ["-filter_complex", ";".join(fc), "-map", "[v]",
             "-t", f"{out_dur:.3f}", "-an",
@@ -217,14 +234,8 @@ def build(src):
     tmp = Path(tempfile.mkdtemp())
     parts = [shot(src, s, tmp, i) for i, s in enumerate(SHOTS)]
 
-    # endcard trimmed to 2s: four seconds of brand card at the end of a 30s
-    # ASMR loop is dead air, and these reels live on the rewatch.
-    end = tmp / "end.mp4"
-    subprocess.run([C.FFMPEG, "-y", "-loglevel", "error", "-i", str(C.ENDCARD),
-                    "-t", "2.0", "-vf", f"scale={W}:{H},fps={FPS},setsar=1",
-                    "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
-                    "-pix_fmt", "yuv420p", str(end)], check=True)
-    parts.append(end)
+    # No endcard. The NYK card belongs to the other channel, and ending on the
+    # empty floating plate loops straight back into the full one.
 
     out = OUT / "asmr-kadhi.mp4"
     cmd = [C.FFMPEG, "-y", "-loglevel", "error"]
