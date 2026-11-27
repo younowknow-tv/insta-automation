@@ -25,7 +25,7 @@ Status: `idea` → `researched` → `scripted` → `rendered` → `approved` →
 | 21 | कॉफ़ी — सात बीज | kitchen-history | **needs reframe** | Baba Budan's seven beans is LEGEND only — no primary documentation, dates conflict (16th vs 17th c.). Tell it as legend, or drop. |
 | 22 | इडली — the oldest record | kitchen-history | **approved** 2026-11-02 | Gaurav asked for it anyway, so it was REFRAMED as an evidence question: Vaddaradhane (usually 920 CE, date contested) has 'iddalige'; Manasollasa (1130) has 'iddarika' — fried urad balls, not steamed; today's idli traceable after ~1250. Achaya's Indonesian hypothesis AND the criticism are both named; the reel takes no side, which avoids the posture that got reel 15 suppressed. |
 | 23 | जलेबी | kitchen-history | **approved** 2026-11-02 | jalebi < Persian zalābiya (dictionaries, Hobson-Jobson via Achaya); 10th-c. Arabic cookbooks carry the recipe; India's oldest mention c.1450 in the Jain text Priyamkarnrpakatha, and 15th-c. names कुंडलिका/जलवल्लिका. The 1600 Gunyagunabodhini recipe is called 'similar', not identical — popular sources overstate it. |
-| 24 | बेटा या बेटी — शरीर में लिंग कैसे तय होता है | body-and-science | **approved** 2026-11-24 | Gaurav's topic. Egg always carries X; the father's sperm carries X or Y, so the blame put on mothers is biologically wrong. Gonad is bipotential for roughly the first 6-7 weeks (sources differ: some count from fertilisation, some from LMP). SRY on the Y, discovered 1990 (Sinclair et al., Nature 346:240-244), switches it to testis; without it, ovary. One honest line that the pathway varies in some people. Ends on PCPNDT 1994 — determining AND disclosing fetal sex are both offences. NO penalty figures quoted: sources conflict (3 vs 5 yrs, ₹50k vs ₹1 lakh). Names no method of determining or influencing sex, by design. |
+| 24 | बेटा या बेटी — शरीर में लिंग कैसे तय होता है | body-and-science | **posted** 2026-11-27 | Gaurav's topic. Egg always carries X; the father's sperm carries X or Y, so the blame put on mothers is biologically wrong. Gonad is bipotential for roughly the first 6-7 weeks (sources differ: some count from fertilisation, some from LMP). SRY on the Y, discovered 1990 (Sinclair et al., Nature 346:240-244), switches it to testis; without it, ovary. One honest line that the pathway varies in some people. Ends on PCPNDT 1994 — determining AND disclosing fetal sex are both offences. NO penalty figures quoted: sources conflict (3 vs 5 yrs, ₹50k vs ₹1 lakh). Names no method of determining or influencing sex, by design. |
 
 ## What performs (2026-11-01)
 
@@ -110,7 +110,7 @@ beat, payoff on the Talon ad in Esquire's first issue (Autumn 1933). The
 Backlog is EMPTY as of 2026-09-13. All six month-two topics are scripted.
 
 Bank target is 15 before daily posting starts. Current (2026-09-15):
-**5** approved and unposted — 17-mirch, 20-chini, 22-idli, 23-jalebi, 24-beta-beti (plus 14-billi rendered but shelved).
+**4** approved and unposted — 17-mirch, 20-chini, 22-idli, 23-jalebi (plus 14-billi rendered but shelved).
 13 (2026-09-20), 07 (2026-09-27), 11 (2026-10-02), 10 (2026-10-03), 15 (2026-10-09), 08 (2026-10-31), 16 (2026-11-02), 18 (2026-11-07), 19 (2026-11-13) and 12 (2026-11-24). **~14 more topics needed.**
 
 ## Known issue: audio fault on 09, 11, 12
