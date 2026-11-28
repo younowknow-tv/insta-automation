@@ -299,7 +299,16 @@
   "pexels:9694239",
   "pexels:34381988",
   "pexels:27563948",
-  "pexels:11503048"
+  "pexels:11503048",
+  "pexels:35300404",
+  "pexels:29420616",
+  "pexels:40947917",
+  "pexels:35323521",
+  "pexels:13038199",
+  "pexels:34877657",
+  "pexels:31501463",
+  "pexels:40326845",
+  "pexels:35007405"
  ],
  "assets": {
   "01-samosa-01-00.mp4": "pexels:37649378",
@@ -599,7 +608,16 @@
   "asmr-steam.mp4": "pexels:9694239",
   "asmr-bg-green.mp4": "pexels:34381988",
   "asmr-bg-grass.mp4": "pexels:27563948",
-  "asmr-bg-forest.mp4": "pexels:11503048"
+  "asmr-bg-forest.mp4": "pexels:11503048",
+  "wed-hall.mp4": "pexels:35300404",
+  "wed-lights.mp4": "pexels:29420616",
+  "wed-marigold.mp4": "pexels:40947917",
+  "wed-a.mp4": "pexels:35323521",
+  "wed-b.mp4": "pexels:13038199",
+  "wed-c.mp4": "pexels:34877657",
+  "wed-d.mp4": "pexels:31501463",
+  "wed-bokeh.mp4": "pexels:40326845",
+  "wed-garland.mp4": "pexels:35007405"
  },
  "credits": {
   "05-shunya-02-00.jpg": "Bakhshali numerals 2.jpg — Augustus Hoernle (1841-1918) (Public domain), via Wikimedia Commons",
@@ -837,6 +855,15 @@
   "asmr-steam.mp4": "steam black background",
   "asmr-bg-green.mp4": "green leaves bokeh dark",
   "asmr-bg-grass.mp4": "grass meadow blurred bokeh",
-  "asmr-bg-forest.mp4": "forest leaves green dark"
+  "asmr-bg-forest.mp4": "forest leaves green dark",
+  "wed-hall.mp4": "indian wedding decoration",
+  "wed-lights.mp4": "wedding reception lights night",
+  "wed-marigold.mp4": "marigold flower garland",
+  "wed-a.mp4": "indian wedding ceremony mandap",
+  "wed-b.mp4": "wedding venue decoration stage flowers",
+  "wed-c.mp4": "indian wedding celebration people",
+  "wed-d.mp4": "banquet hall wedding reception tables",
+  "wed-bokeh.mp4": "golden bokeh lights blurred",
+  "wed-garland.mp4": "marigold garland hanging decoration"
  }
 }

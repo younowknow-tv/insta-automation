@@ -13,7 +13,31 @@ these anywhere.
 | Build | Script | State |
 |---|---|---|
 | ASMR kadhi-chawal | `asmr_food.py` | **approved 2026-11-24, held — do not post.** For a NEW channel, not now_you_know.tv. Unbranded; `CHANNEL = ""` until the channel is named. |
+| Wedding scene swap | `wedding_scene.py` + `PersonMask.swift` | **built 2026-11-28, not posted.** `IMG_8076.MOV` — two people eating in a cafe, put in front of a marigold wall. |
 | World's fastest data transfer | `fastest.py` | built 2026-11-10, never posted. Three open points were never settled: silence over Gaurav's clip, trimming its dull first ~5s, and consent for the identifiable people in it. |
+
+## wedding_scene.py — how far the matte goes
+
+Mattes come from Apple's Vision framework via `PersonMask.swift`, compiled on
+first run. Local, no model download, ~40s for 297 frames.
+
+The limit worth knowing before asking for more of these: a person matte marks
+people and nothing else. Subjects who are **eating** come with a table, and
+cutting on the person matte alone floats them in mid-air with their hands over
+nothing. This clip works because the camera is locked, so the table could be
+held in with a static half-plane. **A handheld clip would need the table
+tracked, which is a different and much larger job.**
+
+What that leaves: the chairs are below the line too, and replacing them sits
+the woman on thin air — so everything below the table stays as shot, and the
+new venue can only appear in the band above it. In this framing the subjects
+fill ~85% of frame, so that band is thin. It is why the backdrop is a flower
+wall and not a wedding hall: a hall, a stage and a banquet room were all tried
+and all read as "a warm blurry room" at that size. Marigolds read even as a
+sliver.
+
+**For the next one of these: leave room around the subjects when shooting.**
+Space is what makes a scene swap possible; there is no recovering it later.
 
 ## asmr_food.py — source clips
 
